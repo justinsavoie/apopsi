@@ -1,0 +1,526 @@
+PROJECT SPECIFICATION
+Synthetic Public Opinion Simulation Framework
+Language: Python
+
+---------------------------------------------------------------------
+PROJECT OVERVIEW
+---------------------------------------------------------------------
+
+Goal:
+Build a Python framework capable of generating synthetic public opinion
+survey datasets using multiple generation paradigms.
+
+The system must support:
+
+1. Traditional statistical simulation (IRT / latent trait models)
+2. LLM-based persona response generation
+3. Agent-based opinion simulation
+4. Evaluation of synthetic data against real survey datasets
+
+All generation must start from PERSONAS.
+
+Synthetic responses should be produced by one of three generators:
+
+- IRT generator
+- LLM generator
+- Agent-based generator
+
+The system must allow automatic ingestion of real surveys
+(SPSS, CSV, Stata) and produce standardized schemas.
+
+Synthetic responses must be comparable to the real dataset
+through automated evaluation.
+
+The framework must support both API-based LLMs and local models.
+
+Supported LLM providers:
+
+- Together API
+- Ollama (local models)
+
+The system should be modular and extensible.
+
+
+---------------------------------------------------------------------
+CORE ARCHITECTURE
+---------------------------------------------------------------------
+
+Main pipeline:
+
+Real Survey
+     |
+     v
+Survey Ingestion
+     |
+     v
+Standard Survey Schema
+     |
+     v
+Persona Generation
+     |
+     v
+Response Generator
+     |
+     +--- IRT
+     +--- LLM
+     +--- Agent Simulation
+     |
+     v
+Synthetic Dataset
+     |
+     v
+Evaluation vs Real Data
+     |
+     v
+Evaluation Reports
+
+
+---------------------------------------------------------------------
+DIRECTORY STRUCTURE
+---------------------------------------------------------------------
+
+synthetic-opinion-lab/
+
+survey/
+    ingestion.py
+    schema.py
+
+personas/
+    persona.py
+    persona_generator.py
+    trait_models.py
+
+generators/
+    irt/
+        irt_generator.py
+        item_models.py
+
+    llm/
+        llm_generator.py
+        prompt_templates.py
+
+    agents/
+        agent.py
+        simulation.py
+        network.py
+
+llm_providers/
+    base_provider.py
+    together_provider.py
+    ollama_provider.py
+
+evaluation/
+    distribution_metrics.py
+    correlation_metrics.py
+    regression_tests.py
+    evaluation_pipeline.py
+
+pipelines/
+    experiment_runner.py
+    survey_replication_pipeline.py
+
+experiments/
+    configs/
+    results/
+
+
+---------------------------------------------------------------------
+SURVEY INGESTION MODULE
+---------------------------------------------------------------------
+
+Purpose:
+Convert raw survey datasets into standardized internal schema.
+
+Supported formats:
+
+.sav  (SPSS)
+.dta  (Stata)
+.csv
+.tsv
+
+Libraries:
+
+pyreadstat
+pandas
+
+Survey ingestion must produce:
+
+1. Clean dataframe
+2. Survey schema JSON
+
+Example schema:
+
+{
+  "survey_name": "Canadian Opinion Survey",
+  "questions": [
+    {
+      "id": "Q1",
+      "text": "Do you support the carbon tax?",
+      "type": "likert",
+      "options": [
+        "Strongly oppose",
+        "Oppose",
+        "Neutral",
+        "Support",
+        "Strongly support"
+      ]
+    }
+  ]
+}
+
+Supported question types initially:
+
+binary
+likert
+categorical
+numeric
+
+Skip logic and complex routing can be ignored in version 1.
+
+Outputs:
+
+clean_data.parquet
+survey_schema.json
+
+
+---------------------------------------------------------------------
+PERSONA SYSTEM
+---------------------------------------------------------------------
+
+Personas represent synthetic respondents.
+
+Personas contain three layers.
+
+1. Demographics
+2. Latent traits
+3. Narrative description
+
+Persona schema:
+
+{
+  "id": "persona_1043",
+
+  "demographics": {
+    "age": 42,
+    "gender": "female",
+    "education": "college",
+    "income": "middle",
+    "province": "Quebec",
+    "urban": true
+  },
+
+  "traits": {
+    "ideology": 0.6,
+    "authoritarianism": -0.4,
+    "trust_in_government": 0.2,
+    "populism": 0.8,
+    "cosmopolitanism": -0.1
+  },
+
+  "narrative": "Marie is a 42 year old nurse living in Quebec City. 
+  She is moderately conservative, values stability and national 
+  identity, and distrusts political elites."
+}
+
+Trait values should range between -2 and +2.
+
+Trait distributions must support correlation structures using
+multivariate normal sampling.
+
+Trait model must allow specifying covariance matrix.
+
+
+---------------------------------------------------------------------
+PERSONA GENERATION
+---------------------------------------------------------------------
+
+Inputs:
+
+- desired population size
+- demographic distributions
+- trait covariance structure
+
+Example call:
+
+personas = PersonaGenerator.generate(
+    n = 5000,
+    demographic_distribution = "canada_census",
+    trait_model = "correlated"
+)
+
+Output:
+
+List[Persona]
+
+
+---------------------------------------------------------------------
+RESPONSE GENERATOR INTERFACE
+---------------------------------------------------------------------
+
+All generators must follow this interface:
+
+class ResponseGenerator:
+
+    def generate(self, personas, survey):
+        pass
+
+Input:
+
+personas: list of Persona objects
+survey: Survey object
+
+Output:
+
+pandas DataFrame
+
+Each row = respondent
+Each column = survey question
+
+
+---------------------------------------------------------------------
+IRT GENERATOR
+---------------------------------------------------------------------
+
+Uses latent traits to generate responses.
+
+Support models:
+
+2PL logistic
+graded response model (for Likert items)
+
+Example probability model:
+
+P(response) = logistic(alpha * (theta - beta))
+
+Where:
+
+theta = persona trait
+beta = item difficulty
+alpha = discrimination
+
+Item parameters must be configurable.
+
+IRT generator must support:
+
+binary items
+likert items
+
+Libraries allowed:
+
+numpy
+scipy
+pyro
+pymc
+
+
+---------------------------------------------------------------------
+LLM GENERATOR
+---------------------------------------------------------------------
+
+Uses persona narrative to generate responses via LLM.
+
+Prompt template example:
+
+"You are a survey respondent.
+
+Profile:
+{persona narrative}
+
+Question:
+{question text}
+
+Options:
+{options}
+
+Respond with the number of the option only."
+
+Output must be structured.
+
+Example:
+
+{"response": 4}
+
+
+---------------------------------------------------------------------
+LLM PROVIDERS
+---------------------------------------------------------------------
+
+LLM providers must follow a unified interface.
+
+class LLMProvider:
+
+    def generate(self, prompt):
+        pass
+
+
+Supported providers:
+
+TogetherProvider
+OllamaProvider
+
+TogetherProvider uses Together API.
+
+OllamaProvider runs local models via Ollama.
+
+Model selection must be configurable.
+
+
+---------------------------------------------------------------------
+AGENT SIMULATION GENERATOR
+---------------------------------------------------------------------
+
+Agent-based opinion simulation inspired by generative agents.
+
+Each persona becomes an agent.
+
+Agents have:
+
+persona
+opinion state
+memory
+social connections
+
+Simulation loop:
+
+for timestep in simulation:
+
+    agents consume information
+    agents interact with neighbors
+    agents update opinions
+
+Opinion update example:
+
+new_opinion = weighted_average(
+    self_opinion,
+    neighbors_opinions,
+    media_signal
+)
+
+After simulation ends, agents answer survey questions.
+
+
+---------------------------------------------------------------------
+SYNTHETIC DATASET FORMAT
+---------------------------------------------------------------------
+
+Synthetic dataset must contain:
+
+respondent_id
+persona traits
+survey responses
+
+Example:
+
+respondent_id | age | ideology | Q1 | Q2 | Q3
+
+
+Output formats supported:
+
+parquet
+csv
+stata
+
+
+---------------------------------------------------------------------
+EVALUATION MODULE
+---------------------------------------------------------------------
+
+Compare synthetic dataset with real survey dataset.
+
+Metrics required:
+
+Distribution similarity
+
+KL divergence
+Wasserstein distance
+Jensen-Shannon divergence
+
+Correlation structure comparison
+
+compare correlation matrices
+
+Regression replication
+
+Run regression models on real and synthetic datasets and compare
+coefficients.
+
+Example model:
+
+vote_choice ~ ideology + education + age
+
+Visualization outputs:
+
+distribution plots
+correlation heatmaps
+coefficient comparison
+
+
+---------------------------------------------------------------------
+EVALUATION REPORT
+---------------------------------------------------------------------
+
+Generate automated report:
+
+evaluation_report.html
+
+Contents:
+
+distribution comparisons
+correlation comparison
+regression comparison
+summary metrics
+
+
+---------------------------------------------------------------------
+EXPERIMENT PIPELINE
+---------------------------------------------------------------------
+
+Main entry point:
+
+run_experiment()
+
+Example:
+
+run_experiment(
+    survey_file = "canadian_identity.sav",
+    generator = "llm",
+    model = "llama3",
+    n_personas = 5000
+)
+
+Pipeline steps:
+
+1. ingest survey
+2. generate personas
+3. generate synthetic responses
+4. evaluate against real data
+5. produce report
+
+
+---------------------------------------------------------------------
+LONG TERM EXTENSIONS
+---------------------------------------------------------------------
+
+Network structures for agents
+
+media exposure simulation
+
+time-based opinion dynamics
+
+policy shocks
+
+campaign effects
+
+multilingual survey support
+
+
+---------------------------------------------------------------------
+DESIGN PRINCIPLE
+---------------------------------------------------------------------
+
+All synthetic data generation must start from PERSONAS.
+
+Generators must never operate directly on surveys without
+persona inputs.
+
+Personas are the universal interface for the system.

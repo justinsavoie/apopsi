@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p synthetic-opinion-lab/{survey,personas,generators/{irt,llm,agents},llm_providers,evaluation,pipelines,experiments/{configs,results}})",
+      "Bash(touch synthetic-opinion-lab/__init__.py)",
+      "Bash(find synthetic-opinion-lab -type d -exec touch {}/__init__.py ;)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
