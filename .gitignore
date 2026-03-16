@@ -14,10 +14,9 @@ __pycache__/
 *.pyd
 .Python
 
-# Output parquet/data files (keep .qmd and .html reports)
-*/clean_data.parquet
-*/raw_data.parquet
-*/comparison/synthetic_*.parquet
+# Output files
+*.parquet
+*.html
 
 # macOS
 .DS_Store
