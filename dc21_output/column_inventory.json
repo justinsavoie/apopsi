@@ -1,0 +1,3933 @@
+[
+  {
+    "id": "StartDate",
+    "label": "Start Date",
+    "value_labels": {},
+    "n_unique": 7806,
+    "n_missing": 0
+  },
+  {
+    "id": "EndDate",
+    "label": "End Date",
+    "value_labels": {},
+    "n_unique": 7840,
+    "n_missing": 0
+  },
+  {
+    "id": "Duration__in_seconds_",
+    "label": "Duration (in seconds)",
+    "value_labels": {},
+    "n_unique": 2652,
+    "n_missing": 0
+  },
+  {
+    "id": "RecordedDate",
+    "label": "Recorded Date",
+    "value_labels": {},
+    "n_unique": 7829,
+    "n_missing": 0
+  },
+  {
+    "id": "ResponseId",
+    "label": "Response ID",
+    "value_labels": {},
+    "n_unique": 7949,
+    "n_missing": 0
+  },
+  {
+    "id": "UserLanguage",
+    "label": "User Language",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_consent_t_First_Click",
+    "label": "Timing - First Click",
+    "value_labels": {},
+    "n_unique": 6450,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_consent_t_Last_Click",
+    "label": "Timing - Last Click",
+    "value_labels": {},
+    "n_unique": 7135,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_consent_t_Page_Submit",
+    "label": "Timing - Page Submit",
+    "value_labels": {},
+    "n_unique": 7130,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_consent_t_Click_Count",
+    "label": "Timing - Click Count",
+    "value_labels": {},
+    "n_unique": 42,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_consent",
+    "label": "Letter of Information and Consent\n\n\nProject Title: Democracy in Canada\n\nPrincipa",
+    "value_labels": {
+      "1": "I consent to participate in this study. I have read all of the information about the study.",
+      "2": "I do not consent to participate."
+    },
+    "n_unique": 1,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_yob",
+    "label": "To make sure we are talking to a cross section of\n  Canadians, we need to get a",
+    "value_labels": {
+      "1": "1920",
+      "2": "1921",
+      "3": "1922",
+      "4": "1923",
+      "5": "1924",
+      "6": "1925",
+      "7": "1926",
+      "8": "1927",
+      "9": "1928",
+      "10": "1929",
+      "11": "1930",
+      "12": "1931",
+      "13": "1932",
+      "14": "1933",
+      "15": "1934",
+      "16": "1935",
+      "17": "1936",
+      "18": "1937",
+      "19": "1938",
+      "20": "1939",
+      "21": "1940",
+      "22": "1941",
+      "23": "1942",
+      "24": "1943",
+      "25": "1944",
+      "26": "1945",
+      "27": "1946",
+      "28": "1947",
+      "29": "1948",
+      "30": "1949",
+      "31": "1950",
+      "32": "1951",
+      "33": "1952",
+      "34": "1953",
+      "35": "1954",
+      "36": "1955",
+      "37": "1956",
+      "38": "1957",
+      "39": "1958",
+      "40": "1959",
+      "41": "1960",
+      "42": "1961",
+      "43": "1962",
+      "44": "1963",
+      "45": "1964",
+      "46": "1965",
+      "47": "1966",
+      "48": "1967",
+      "49": "1968",
+      "50": "1969",
+      "51": "1970",
+      "52": "1971",
+      "53": "1972",
+      "54": "1973",
+      "55": "1974",
+      "56": "1975",
+      "57": "1976",
+      "58": "1977",
+      "59": "1978",
+      "60": "1979",
+      "61": "1980",
+      "62": "1981",
+      "63": "1982",
+      "64": "1983",
+      "65": "1984",
+      "66": "1985",
+      "67": "1986",
+      "68": "1987",
+      "69": "1988",
+      "70": "1989",
+      "71": "1990",
+      "72": "1991",
+      "73": "1992",
+      "74": "1993",
+      "75": "1994",
+      "76": "1995",
+      "77": "1996",
+      "78": "1997",
+      "79": "1998",
+      "80": "1999",
+      "81": "2000",
+      "82": "2001",
+      "83": "2002",
+      "84": "2003",
+      "85": "2004",
+      "86": "2005",
+      "87": "2006",
+      "88": "2007",
+      "89": "2008",
+      "90": "2009",
+      "91": "2010"
+    },
+    "n_unique": 78,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_yob_2003_age",
+    "label": "How old are you?",
+    "value_labels": {
+      "1": "17",
+      "2": "18"
+    },
+    "n_unique": 0,
+    "n_missing": 7949
+  },
+  {
+    "id": "age_in_years",
+    "label": "Age in years",
+    "value_labels": {},
+    "n_unique": 78,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_citizenship",
+    "label": "Are you a...",
+    "value_labels": {
+      "1": "Canadian citizen",
+      "2": "Permanent resident",
+      "3": "Other"
+    },
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_gender",
+    "label": "How do you describe yourself?",
+    "value_labels": {
+      "1": "A man",
+      "2": "A woman",
+      "3": "Other (eg. Trans, non-binary, two-spirit, genderqueer, gender-fluid)"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_province",
+    "label": "Which province or territory are you currently living in?",
+    "value_labels": {
+      "1": "Alberta",
+      "2": "British Columbia",
+      "3": "Manitoba",
+      "4": "New Brunswick",
+      "5": "Newfoundland and Labrador",
+      "6": "Northwest Territories",
+      "7": "Nova Scotia",
+      "8": "Nunavut",
+      "9": "Ontario",
+      "10": "Prince Edward Island",
+      "11": "Quebec",
+      "12": "Saskatchewan",
+      "13": "Yukon Territories"
+    },
+    "n_unique": 10,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_education",
+    "label": "What is the highest level of education that you have completed?",
+    "value_labels": {
+      "1": "No schooling",
+      "2": "Some elementary school",
+      "3": "Completed elementary school",
+      "4": "Some secondary/ high school",
+      "5": "Completed secondary/ high school",
+      "6": "Some technical, community college, CEGEP, College Classique",
+      "7": "Completed technical, community college, CEGEP, College Classique",
+      "8": "Some university",
+      "9": "Bachelor's degree",
+      "10": "Master's degree",
+      "11": "Professional degree or doctorate"
+    },
+    "n_unique": 11,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_democratic_sat",
+    "label": "On the whole, how satisfied are you with\nthe way democracy works in Canada?",
+    "value_labels": {
+      "1": "Very satisfied",
+      "2": "Fairly satisfied",
+      "3": "Not very satisfied",
+      "4": "Not at all satisfied"
+    },
+    "n_unique": 5,
+    "n_missing": 1956
+  },
+  {
+    "id": "dc21_pol_interest_1",
+    "label": "How interested are you in politics generally? Set the slider to a number from 0",
+    "value_labels": {},
+    "n_unique": 12,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vote_choice",
+    "label": "If a federal election were held today, which party would you be most likely to v",
+    "value_labels": {
+      "1": "Liberal Party",
+      "2": "Conservative Party",
+      "3": "New Democratic Party",
+      "4": "Bloc Qu\u00e9b\u00e9cois",
+      "5": "Green Party",
+      "6": "Another party (please specify)",
+      "7": "I am not eligible to vote",
+      "8": "I would not vote"
+    },
+    "n_unique": 9,
+    "n_missing": 339
+  },
+  {
+    "id": "dc21_vote_choice_6_TEXT",
+    "label": "If a federal election were held today, which party would you be most likely to v",
+    "value_labels": {},
+    "n_unique": 155,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vote_choice_DO_1",
+    "label": "If a federal election were held today, which party would you be most likely to v",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 339
+  },
+  {
+    "id": "dc21_vote_choice_DO_2",
+    "label": "If a federal election were held today, which party would you be most likely to v",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 339
+  },
+  {
+    "id": "dc21_vote_choice_DO_3",
+    "label": "If a federal election were held today, which party would you be most likely to v",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 339
+  },
+  {
+    "id": "dc21_vote_choice_DO_4",
+    "label": "If a federal election were held today, which party would you be most likely to v",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 5993
+  },
+  {
+    "id": "dc21_vote_choice_DO_5",
+    "label": "If a federal election were held today, which party would you be most likely to v",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 339
+  },
+  {
+    "id": "dc21_vote_choice_DO_6",
+    "label": "If a federal election were held today, which party would you be most likely to v",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 339
+  },
+  {
+    "id": "dc21_vote_choice_DO_7",
+    "label": "If a federal election were held today, which party would you be most likely to v",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 339
+  },
+  {
+    "id": "dc21_vote_choice_DO_8",
+    "label": "If a federal election were held today, which party would you be most likely to v",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 339
+  },
+  {
+    "id": "dc21_provvote",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {
+      "1": "Liberal",
+      "2": "ndp",
+      "3": "Green",
+      "4": "Coalition Avenir Qu\u00e9bec",
+      "5": "Parti Qu\u00e9b\u00e9cois",
+      "6": "Qu\u00e9bec Solidaire",
+      "7": "United Conservative",
+      "8": "Alberta Party",
+      "9": "Buffalo Party",
+      "10": "Saskatchewan Party",
+      "11": "Progressive Conservative",
+      "12": "People's Alliance",
+      "13": "Yukon Party",
+      "14": "Another party (please specify)",
+      "15": "I am not eligible to vote",
+      "16": "I would not vote"
+    },
+    "n_unique": 16,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_provvote_14_TEXT",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 187,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_provvote_DO_1",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 868
+  },
+  {
+    "id": "dc21_provvote_DO_2",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 1996
+  },
+  {
+    "id": "dc21_provvote_DO_3",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_provvote_DO_4",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 5953
+  },
+  {
+    "id": "dc21_provvote_DO_5",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 5953
+  },
+  {
+    "id": "dc21_provvote_DO_6",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 5953
+  },
+  {
+    "id": "dc21_provvote_DO_7",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 7081
+  },
+  {
+    "id": "dc21_provvote_DO_8",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 7081
+  },
+  {
+    "id": "dc21_provvote_DO_9",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 7701
+  },
+  {
+    "id": "dc21_provvote_DO_10",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 7701
+  },
+  {
+    "id": "dc21_provvote_DO_11",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 3737
+  },
+  {
+    "id": "dc21_provvote_DO_12",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 1,
+    "n_missing": 7805
+  },
+  {
+    "id": "dc21_provvote_DO_13",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 0,
+    "n_missing": 7949
+  },
+  {
+    "id": "dc21_provvote_DO_14",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_provvote_DO_15",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_provvote_DO_16",
+    "label": "If a provincial election were held today in [QID125244152-ChoiceGroup-SelectedCh",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_leader_ratings_23",
+    "label": "How do you feel about the federal party leaders below? Set the slider to a numbe",
+    "value_labels": {},
+    "n_unique": 102,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_leader_ratings_24",
+    "label": "How do you feel about the federal party leaders below? Set the slider to a numbe",
+    "value_labels": {},
+    "n_unique": 102,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_leader_ratings_25",
+    "label": "How do you feel about the federal party leaders below? Set the slider to a numbe",
+    "value_labels": {},
+    "n_unique": 102,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_leader_ratings_26",
+    "label": "How do you feel about the federal party leaders below? Set the slider to a numbe",
+    "value_labels": {},
+    "n_unique": 102,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_leader_ratings_27",
+    "label": "How do you feel about the federal party leaders below? Set the slider to a numbe",
+    "value_labels": {},
+    "n_unique": 101,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_leader_ratings_DO_23",
+    "label": "How do you feel about the federal party leaders below? Set the slider to a numbe",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_leader_ratings_DO_24",
+    "label": "How do you feel about the federal party leaders below? Set the slider to a numbe",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_leader_ratings_DO_25",
+    "label": "How do you feel about the federal party leaders below? Set the slider to a numbe",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_leader_ratings_DO_26",
+    "label": "How do you feel about the federal party leaders below? Set the slider to a numbe",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_leader_ratings_DO_27",
+    "label": "How do you feel about the federal party leaders below? Set the slider to a numbe",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_t_First_Click",
+    "label": "Timing - First Click",
+    "value_labels": {},
+    "n_unique": 6130,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_t_Last_Click",
+    "label": "Timing - Last Click",
+    "value_labels": {},
+    "n_unique": 7160,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_t_Page_Submit",
+    "label": "Timing - Page Submit",
+    "value_labels": {},
+    "n_unique": 7239,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_t_Click_Count",
+    "label": "Timing - Click Count",
+    "value_labels": {},
+    "n_unique": 32,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_1",
+    "label": "Which level of government is primarily responsible for the following policy area",
+    "value_labels": {
+      "1": "Federal",
+      "2": "Provincial",
+      "3": "Municipal"
+    },
+    "n_unique": 4,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_2",
+    "label": "Which level of government is primarily responsible for the following policy area",
+    "value_labels": {
+      "1": "Federal",
+      "2": "Provincial",
+      "3": "Municipal"
+    },
+    "n_unique": 4,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_3",
+    "label": "Which level of government is primarily responsible for the following policy area",
+    "value_labels": {
+      "1": "Federal",
+      "2": "Provincial",
+      "3": "Municipal"
+    },
+    "n_unique": 4,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_4",
+    "label": "Which level of government is primarily responsible for the following policy area",
+    "value_labels": {
+      "1": "Federal",
+      "2": "Provincial",
+      "3": "Municipal"
+    },
+    "n_unique": 4,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_5",
+    "label": "Which level of government is primarily responsible for the following policy area",
+    "value_labels": {
+      "1": "Federal",
+      "2": "Provincial",
+      "3": "Municipal"
+    },
+    "n_unique": 4,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_6",
+    "label": "Which level of government is primarily responsible for the following policy area",
+    "value_labels": {
+      "1": "Federal",
+      "2": "Provincial",
+      "3": "Municipal"
+    },
+    "n_unique": 4,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_DO_1",
+    "label": "Which level of government is primarily responsible for the following policy area",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_DO_2",
+    "label": "Which level of government is primarily responsible for the following policy area",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_DO_3",
+    "label": "Which level of government is primarily responsible for the following policy area",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_DO_4",
+    "label": "Which level of government is primarily responsible for the following policy area",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_DO_5",
+    "label": "Which level of government is primarily responsible for the following policy area",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_jurisdiction_DO_6",
+    "label": "Which level of government is primarily responsible for the following policy area",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_confidence_inst_1",
+    "label": "Please indicate how much confidence you have in the following: - The courts",
+    "value_labels": {
+      "1": "A great deal",
+      "2": "Quite a lot",
+      "3": "Not very much",
+      "4": "None at all"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_confidence_inst_2",
+    "label": "Please indicate how much confidence you have in the following: - The federal gov",
+    "value_labels": {
+      "1": "A great deal",
+      "2": "Quite a lot",
+      "3": "Not very much",
+      "4": "None at all"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_confidence_inst_3",
+    "label": "Please indicate how much confidence you have in the following: - The media",
+    "value_labels": {
+      "1": "A great deal",
+      "2": "Quite a lot",
+      "3": "Not very much",
+      "4": "None at all"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_confidence_inst_4",
+    "label": "Please indicate how much confidence you have in the following: - Your provincial",
+    "value_labels": {
+      "1": "A great deal",
+      "2": "Quite a lot",
+      "3": "Not very much",
+      "4": "None at all"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_confidence_inst_5",
+    "label": "Please indicate how much confidence you have in the following: - Elections Canad",
+    "value_labels": {
+      "1": "A great deal",
+      "2": "Quite a lot",
+      "3": "Not very much",
+      "4": "None at all"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_confidence_inst_6",
+    "label": "Please indicate how much confidence you have in the following: - [Field-EMB]",
+    "value_labels": {
+      "1": "A great deal",
+      "2": "Quite a lot",
+      "3": "Not very much",
+      "4": "None at all"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_confidence_inst_7",
+    "label": "Please indicate how much confidence you have in the following: - Police officers",
+    "value_labels": {
+      "1": "A great deal",
+      "2": "Quite a lot",
+      "3": "Not very much",
+      "4": "None at all"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_confidence_inst_DO_1",
+    "label": "Please indicate how much confidence you have in the following: - Display Order T",
+    "value_labels": {},
+    "n_unique": 7,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_confidence_inst_DO_2",
+    "label": "Please indicate how much confidence you have in the following: - Display Order T",
+    "value_labels": {},
+    "n_unique": 7,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_confidence_inst_DO_3",
+    "label": "Please indicate how much confidence you have in the following: - Display Order T",
+    "value_labels": {},
+    "n_unique": 7,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_confidence_inst_DO_4",
+    "label": "Please indicate how much confidence you have in the following: - Display Order Y",
+    "value_labels": {},
+    "n_unique": 7,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_confidence_inst_DO_5",
+    "label": "Please indicate how much confidence you have in the following: - Display Order E",
+    "value_labels": {},
+    "n_unique": 7,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_confidence_inst_DO_6",
+    "label": "Please indicate how much confidence you have in the following: - Display Order $",
+    "value_labels": {},
+    "n_unique": 7,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_confidence_inst_DO_7",
+    "label": "Please indicate how much confidence you have in the following: - Display Order P",
+    "value_labels": {},
+    "n_unique": 7,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_fed_gov_satisfa",
+    "label": "How satisfied are you with the performance of the federal government under Justi",
+    "value_labels": {
+      "1": "Very satisfied",
+      "2": "Fairly satisfied",
+      "3": "Not very satisfied",
+      "4": "Not at all satisfied"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_prov_gov_satis",
+    "label": "How satisfied are you with the performance of your provincial government under [",
+    "value_labels": {
+      "1": "Very satisfied",
+      "2": "Fairly satisfied",
+      "3": "Not very satisfied",
+      "4": "Not at all satisfied"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_pos_equal_1",
+    "label": "We have gone too far in pushing equal rights in this country.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 4,
+    "n_missing": 2214
+  },
+  {
+    "id": "dc21_pos_women_home",
+    "label": "Society would be better off if fewer women worked outside the home.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 2252
+  },
+  {
+    "id": "dc21_womenparl",
+    "label": "The best way to protect women's interests is to have more women in Parliament.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 2236
+  },
+  {
+    "id": "dc21_pos_experts",
+    "label": "I\u2019d rather put my trust in the wisdom of ordinary people than the opinions of ex",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 4,
+    "n_missing": 2285
+  },
+  {
+    "id": "dc21_pos_lose_touch",
+    "label": "Those elected to Parliament soon lose touch with the people.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 5138
+  },
+  {
+    "id": "dc21_pos_pol_lie",
+    "label": "Politicians are willing to lie to get elected.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 5138
+  },
+  {
+    "id": "dc21_pos_career_pol",
+    "label": "Ordinary people, not career politicians, should make our most important policy d",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 4,
+    "n_missing": 2286
+  },
+  {
+    "id": "dc21_pos_jobs",
+    "label": "When\n  there is a conflict between protecting the environment and creating jobs,",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 4,
+    "n_missing": 2298
+  },
+  {
+    "id": "dc21_canid1",
+    "label": "I have a lot in common with other Canadians",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 4,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_pos_group_id",
+    "label": "My ethnicity is an important part of\nmy identity.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_pos_assim",
+    "label": "Too many recent immigrants just don't want to fit in to Canadian society.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_pos_take_jobs",
+    "label": "Immigrants take jobs away from other Canadians.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_pos_look_after",
+    "label": "We should look after Canadians born in this country first and others second.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_pos_ab_deserve",
+    "label": "Over the past few years, Indigenous peoples have gotten less than they deserve.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 3994
+  },
+  {
+    "id": "dc21_pos_ab_colonial",
+    "label": "Generations of colonialism and discrimination have created conditions that make",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 3994
+  },
+  {
+    "id": "dc21_pos_bilingualis",
+    "label": "We have gone too far in pushing bilingualism in Canada.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 3994
+  },
+  {
+    "id": "dc21_pos_relig_sym",
+    "label": "There should be restrictions on religious symbols in public life.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 3994
+  },
+  {
+    "id": "dc21_pos_govt_progra",
+    "label": "Government can no longer [Field-govt_programs_word] the kinds of programs and se",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 3955
+  },
+  {
+    "id": "dc21_pos_govt_effect",
+    "label": "Governments used to be better at getting things done.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 3955
+  },
+  {
+    "id": "dc21_pos_no_differen",
+    "label": "Elections make no difference to what happens in this country.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 3955
+  },
+  {
+    "id": "dc21_feedback_screen",
+    "label": "Have you contacted a government office in the past 12 months?",
+    "value_labels": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "n_unique": 2,
+    "n_missing": 3955
+  },
+  {
+    "id": "dc21_feedback_1",
+    "label": "Thinking about your most recent contact, how would you rate the treatment that y",
+    "value_labels": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "n_unique": 8,
+    "n_missing": 6797
+  },
+  {
+    "id": "dc21_feedback_2",
+    "label": "Thinking about your most recent contact, how would you rate the treatment that y",
+    "value_labels": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "n_unique": 8,
+    "n_missing": 6797
+  },
+  {
+    "id": "dc21_feedback_3",
+    "label": "Thinking about your most recent contact, how would you rate the treatment that y",
+    "value_labels": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "n_unique": 8,
+    "n_missing": 6797
+  },
+  {
+    "id": "dc21_feedback_4",
+    "label": "Thinking about your most recent contact, how would you rate the treatment that y",
+    "value_labels": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7"
+    },
+    "n_unique": 8,
+    "n_missing": 6797
+  },
+  {
+    "id": "dc21_feedback_DO_1",
+    "label": "Thinking about your most recent contact, how would you rate the treatment that y",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 6797
+  },
+  {
+    "id": "dc21_feedback_DO_2",
+    "label": "Thinking about your most recent contact, how would you rate the treatment that y",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 6797
+  },
+  {
+    "id": "dc21_feedback_DO_3",
+    "label": "Thinking about your most recent contact, how would you rate the treatment that y",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 6797
+  },
+  {
+    "id": "dc21_feedback_DO_4",
+    "label": "Thinking about your most recent contact, how would you rate the treatment that y",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 6797
+  },
+  {
+    "id": "dc21_cc1",
+    "label": "Do you think that climate change is happening?",
+    "value_labels": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_cc2",
+    "label": "What do you think is the main cause of climate\nchange? - Selected Choice",
+    "value_labels": {
+      "1": "Human activities such as burning fossil fuels for energy",
+      "2": "Natural changes in the environment",
+      "3": "Equal parts human activities and natural changes",
+      "4": "Other"
+    },
+    "n_unique": 4,
+    "n_missing": 792
+  },
+  {
+    "id": "dc21_cc2_4_TEXT",
+    "label": "What do you think is the main cause of climate\nchange? - Other - Text",
+    "value_labels": {},
+    "n_unique": 74,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_news_time_spent",
+    "label": "On average, how much time do you usually spend watching, reading, and listening",
+    "value_labels": {
+      "1": "None",
+      "2": "1-15 minutes",
+      "3": "16-30 minutes",
+      "4": "31-60 minutes",
+      "5": "Between 1 and 2 hours",
+      "6": "More than 2 hours"
+    },
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_soc_media_freq",
+    "label": "How often do you use social media (Facebook, Twitter, Snapchat, TikTok, Instagra",
+    "value_labels": {
+      "1": "Multiple times a day",
+      "2": "Daily",
+      "3": "More than once a week",
+      "4": "Weekly",
+      "5": "More than once a month",
+      "6": "Once a month or less",
+      "7": "Never"
+    },
+    "n_unique": 8,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_disc_pol_freq",
+    "label": "How often do you discuss politics with family and friends?",
+    "value_labels": {
+      "1": "Daily",
+      "2": "More than once a week",
+      "3": "Weekly",
+      "4": "More than once a month",
+      "5": "Monthly",
+      "6": "Rarely"
+    },
+    "n_unique": 7,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_disc_pol_disag",
+    "label": "During the last month, how often have you discussed politics with someone who di",
+    "value_labels": {
+      "1": "Never",
+      "2": "Once or twice",
+      "3": "A few times",
+      "4": "Quite often",
+      "5": "All the time"
+    },
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_soc_net_size",
+    "label": "Thinking about people who are not family members or relatives, how many close fr",
+    "value_labels": {
+      "1": "None",
+      "2": "1",
+      "3": "2-5",
+      "4": "More than 5"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_soc_net_types_1",
+    "label": "How many of your close friends \u2026 - Belong to a visibly different ethnicity than",
+    "value_labels": {
+      "1": "None",
+      "2": "1",
+      "3": "2-5",
+      "4": "More than 5"
+    },
+    "n_unique": 5,
+    "n_missing": 590
+  },
+  {
+    "id": "dc21_soc_net_types_DO_1",
+    "label": "How many of your close friends \u2026 - Display Order Belong to a visibly different e",
+    "value_labels": {},
+    "n_unique": 1,
+    "n_missing": 590
+  },
+  {
+    "id": "dc21_inequality_gap",
+    "label": "How much do you think should be done to reduce the gap between the rich and the",
+    "value_labels": {
+      "1": "Much more",
+      "2": "Somewhat more",
+      "3": "About the same as now",
+      "4": "Somewhat less",
+      "5": "Much less"
+    },
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_imm_level",
+    "label": "Do you\n  think Canada should admit:",
+    "value_labels": {
+      "1": "More immigrants",
+      "2": "Fewer immigrants",
+      "3": "About the same number of immigrants as now"
+    },
+    "n_unique": 4,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_refugee_level",
+    "label": "Do you\n  think Canada should admit:",
+    "value_labels": {
+      "1": "More refugees",
+      "2": "Fewer refugees",
+      "3": "About the same number of refugees as now"
+    },
+    "n_unique": 4,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_groups_therm_1_1",
+    "label": "How do you feel about the following groups in Canada? Set the slider to any numb",
+    "value_labels": {},
+    "n_unique": 102,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_groups_therm_1_2",
+    "label": "How do you feel about the following groups in Canada? Set the slider to any numb",
+    "value_labels": {},
+    "n_unique": 102,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_groups_therm_1_4",
+    "label": "How do you feel about the following groups in Canada? Set the slider to any numb",
+    "value_labels": {},
+    "n_unique": 102,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_groups_therm_1_5",
+    "label": "How do you feel about the following groups in Canada? Set the slider to any numb",
+    "value_labels": {},
+    "n_unique": 102,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_groups_therm_1_6",
+    "label": "How do you feel about the following groups in Canada? Set the slider to any numb",
+    "value_labels": {},
+    "n_unique": 102,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_groups_therm_1_7",
+    "label": "How do you feel about the following groups in Canada? Set the slider to any numb",
+    "value_labels": {},
+    "n_unique": 102,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_groups_therm_1_DO_1",
+    "label": "How do you feel about the following groups in Canada? Set the slider to any numb",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_groups_therm_1_DO_2",
+    "label": "How do you feel about the following groups in Canada? Set the slider to any numb",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_groups_therm_1_DO_4",
+    "label": "How do you feel about the following groups in Canada? Set the slider to any numb",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_groups_therm_1_DO_5",
+    "label": "How do you feel about the following groups in Canada? Set the slider to any numb",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_groups_therm_1_DO_6",
+    "label": "How do you feel about the following groups in Canada? Set the slider to any numb",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_groups_therm_1_DO_7",
+    "label": "How do you feel about the following groups in Canada? Set the slider to any numb",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_ladder_current_1",
+    "label": "Where would you place your current financial situation on the scale below, where",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_ladder_future_1",
+    "label": "Where would you place your expected financial situation in 5 years on the scale",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_mailtrust",
+    "label": "Voting by mail in Canada is equally as trustworthy as voting in person.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_pos_govt_care",
+    "label": "The government does not care much about what people like me think.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_pos_govt_comp",
+    "label": "Sometimes, politics and government seem so complicated that a person like me can",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_pos_govt_say",
+    "label": "People like me don't have any say about what the government does.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_pos_family_val",
+    "label": "This country would have many fewer problems if there was more emphasis on tradit",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_newerlife",
+    "label": "Newer lifestyles are contributing to the breakdown of our society.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_pos_govt_jobs",
+    "label": "The government should leave it entirely to the private sector to create jobs.",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_ties_us",
+    "label": "Do you think Canada's ties with the United States should be...",
+    "value_labels": {
+      "1": "Much closer",
+      "2": "Somewhat closer",
+      "3": "About the same as now",
+      "4": "Somewhat more distant",
+      "5": "Much more distant"
+    },
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_ties_china",
+    "label": "Do you think Canada's ties with China should be...",
+    "value_labels": {
+      "1": "Much closer",
+      "2": "Somewhat closer",
+      "3": "About the same as now",
+      "4": "Somewhat more distant",
+      "5": "Much more distant"
+    },
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_party_id",
+    "label": "In federal politics, do you usually think of yourself as a: - Selected Choice",
+    "value_labels": {
+      "1": "Liberal",
+      "2": "Conservative",
+      "3": "ndp",
+      "4": "Bloc Qu\u00e9b\u00e9cois",
+      "5": "Green",
+      "6": "Another party (please specify)",
+      "7": "No party"
+    },
+    "n_unique": 8,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_party_id_6_TEXT",
+    "label": "In federal politics, do you usually think of yourself as a: - Another party (ple",
+    "value_labels": {},
+    "n_unique": 80,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_party_id_DO_1",
+    "label": "In federal politics, do you usually think of yourself as a: - Display Order Libe",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_party_id_DO_2",
+    "label": "In federal politics, do you usually think of yourself as a: - Display Order Cons",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_party_id_DO_3",
+    "label": "In federal politics, do you usually think of yourself as a: - Display Order NDP",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_party_id_DO_4",
+    "label": "In federal politics, do you usually think of yourself as a: - Display Order Bloc",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 5953
+  },
+  {
+    "id": "dc21_party_id_DO_5",
+    "label": "In federal politics, do you usually think of yourself as a: - Display Order Gree",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_party_id_DO_6",
+    "label": "In federal politics, do you usually think of yourself as a: - Display Order Anot",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_party_id_DO_7",
+    "label": "In federal politics, do you usually think of yourself as a: - Display Order No p",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_pid_strength",
+    "label": "How strongly [QID125244175-ChoiceGroup-SelectedChoicesTextEntry] do you feel?",
+    "value_labels": {
+      "1": "Very strongly",
+      "2": "Fairly strongly",
+      "3": "Not very strongly"
+    },
+    "n_unique": 4,
+    "n_missing": 1304
+  },
+  {
+    "id": "dc21_participate_pro_1",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_pro_2",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_pro_3",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_pro_DO_1",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_pro_DO_2",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_pro_DO_3",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_ins_1",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times"
+    },
+    "n_unique": 5,
+    "n_missing": 5080
+  },
+  {
+    "id": "dc21_participate_ins_2",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times"
+    },
+    "n_unique": 5,
+    "n_missing": 2869
+  },
+  {
+    "id": "dc21_participate_ins_3",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_ins_4",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_ins_DO_1",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 5080
+  },
+  {
+    "id": "dc21_participate_ins_DO_2",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 2869
+  },
+  {
+    "id": "dc21_participate_ins_DO_3",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_ins_DO_4",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_civ_1",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_civ_2",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_civ_3",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_civ_DO_1",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_civ_DO_2",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_participate_civ_DO_3",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_turnout_2019",
+    "label": "Did you happen to vote in the last federal election in 2019?",
+    "value_labels": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Not eligible to vote in last election"
+    },
+    "n_unique": 3,
+    "n_missing": 339
+  },
+  {
+    "id": "dc21_vote_2019",
+    "label": "Which party did you vote for in the federal election in 2019? - Selected Choice",
+    "value_labels": {
+      "1": "Liberal Party",
+      "2": "Conservative Party",
+      "3": "New Democratic Party",
+      "4": "Bloc Qu\u00e9b\u00e9cois",
+      "5": "Green Party",
+      "6": "Another party (please specify)"
+    },
+    "n_unique": 7,
+    "n_missing": 1191
+  },
+  {
+    "id": "dc21_vote_2019_6_TEXT",
+    "label": "Which party did you vote for in the federal election in 2019? - Another party (p",
+    "value_labels": {},
+    "n_unique": 131,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vote_2019_DO_1",
+    "label": "Which party did you vote for in the federal election in 2019? - Display Order Li",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 1191
+  },
+  {
+    "id": "dc21_vote_2019_DO_2",
+    "label": "Which party did you vote for in the federal election in 2019? - Display Order Co",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 1191
+  },
+  {
+    "id": "dc21_vote_2019_DO_3",
+    "label": "Which party did you vote for in the federal election in 2019? - Display Order Ne",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 1191
+  },
+  {
+    "id": "dc21_vote_2019_DO_4",
+    "label": "Which party did you vote for in the federal election in 2019? - Display Order Bl",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 6178
+  },
+  {
+    "id": "dc21_vote_2019_DO_5",
+    "label": "Which party did you vote for in the federal election in 2019? - Display Order Gr",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 1191
+  },
+  {
+    "id": "dc21_vote_2019_DO_6",
+    "label": "Which party did you vote for in the federal election in 2019? - Display Order An",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 1191
+  },
+  {
+    "id": "dc21_trust2",
+    "label": "Generally speaking would you say that most people can be trusted, or, that you n",
+    "value_labels": {
+      "1": "Most people can be trusted",
+      "2": "You need to be very careful when dealing with people"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_trust2_DO_1",
+    "label": "Generally speaking would you say that most people can be trusted, or, that you n",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_trust2_DO_2",
+    "label": "Generally speaking would you say that most people can be trusted, or, that you n",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_democratic_satB",
+    "label": "On the whole, how satisfied are you with\nthe way democracy works in Canada?",
+    "value_labels": {
+      "1": "Very satisfied",
+      "2": "Fairly satisfied",
+      "3": "Not very satisfied",
+      "4": "Not at all satisfied"
+    },
+    "n_unique": 4,
+    "n_missing": 5993
+  },
+  {
+    "id": "dc21_language_1",
+    "label": "What is the very first language you learned and still understand? - Selected Cho",
+    "value_labels": {
+      "1": "English"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_language_2",
+    "label": "What is the very first language you learned and still understand? - Selected Cho",
+    "value_labels": {
+      "1": "French"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_language_3",
+    "label": "What is the very first language you learned and still understand? - Selected Cho",
+    "value_labels": {
+      "1": "Other (please specify)"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_language_3_TEXT",
+    "label": "What is the very first language you learned and still understand? - Other (pleas",
+    "value_labels": {},
+    "n_unique": 186,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_canada_born",
+    "label": "Were you born in Canada?",
+    "value_labels": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_country_born",
+    "label": "What country were you born in?",
+    "value_labels": {
+      "1": "afghanistan",
+      "2": "\u00c5LAND ISLANDS",
+      "3": "albania",
+      "4": "algeria",
+      "5": "AMERICAN SAMOA",
+      "6": "andorra",
+      "7": "angola",
+      "8": "anguilla",
+      "9": "antarctica",
+      "10": "ANTIGUA AND BARBUDA",
+      "11": "argentina",
+      "12": "armenia",
+      "13": "aruba",
+      "14": "australia",
+      "15": "austria",
+      "16": "azerbaijan",
+      "17": "bahamas",
+      "18": "bahrain",
+      "19": "bangladesh",
+      "20": "barbados",
+      "21": "belarus",
+      "22": "belgium",
+      "23": "belize",
+      "24": "benin",
+      "25": "bermuda",
+      "26": "bhutan",
+      "27": "BOLIVIA, PLURINATIONAL STATE OF",
+      "28": "BONAIRE, SINT EUSTATIUS AND SABA",
+      "29": "BOSNIA AND HERZEGOVINA",
+      "30": "botswana",
+      "31": "BOUVET ISLAND",
+      "32": "brazil",
+      "33": "BRITISH INDIAN OCEAN TERRITORY",
+      "34": "BRUNEI DARUSSALAM",
+      "35": "bulgaria",
+      "36": "BURKINA FASO",
+      "37": "burundi",
+      "38": "cambodia",
+      "39": "cameroon",
+      "40": "CAPE VERDE",
+      "41": "CAYMAN ISLANDS",
+      "42": "CENTRAL AFRICAN REPUBLIC",
+      "43": "chad",
+      "44": "chile",
+      "45": "china",
+      "46": "CHRISTMAS ISLAND",
+      "47": "COCOS (KEELING) ISLANDS",
+      "48": "colombia",
+      "49": "comoros",
+      "50": "congo",
+      "51": "CONGO, THE DEMOCRATIC REPUBLIC OF THE",
+      "52": "COOK ISLANDS",
+      "53": "COSTA RICA",
+      "54": "C\u00d4TE D'IVOIRE",
+      "55": "croatia",
+      "56": "cuba",
+      "57": "cura\u00c7ao",
+      "58": "cyprus",
+      "59": "CZECH REPUBLIC",
+      "60": "denmark",
+      "61": "djibouti",
+      "62": "dominica",
+      "63": "DOMINICAN REPUBLIC",
+      "64": "ecuador",
+      "65": "egypt",
+      "66": "EL SALVADOR",
+      "67": "EQUATORIAL GUINEA",
+      "68": "eritrea",
+      "69": "estonia",
+      "70": "ethiopia",
+      "71": "FALKLAND ISLANDS (MALVINAS)",
+      "72": "FAROE ISLANDS",
+      "73": "fiji",
+      "74": "finland",
+      "75": "france",
+      "76": "FRENCH GUIANA",
+      "77": "FRENCH POLYNESIA",
+      "78": "FRENCH SOUTHERN TERRITORIES",
+      "79": "gabon",
+      "80": "gambia",
+      "81": "georgia",
+      "82": "germany",
+      "83": "ghana",
+      "84": "gibraltar",
+      "85": "greece",
+      "86": "greenland",
+      "87": "grenada",
+      "88": "guadeloupe",
+      "89": "guam",
+      "90": "guatemala",
+      "91": "guernsey",
+      "92": "guinea",
+      "93": "GUINEA-BISSAU",
+      "94": "guyana",
+      "95": "haiti",
+      "96": "HEARD ISLAND AND MCDONALD ISLANDS",
+      "97": "HOLY SEE (VATICAN CITY STATE)",
+      "98": "honduras",
+      "99": "HONG KONG",
+      "100": "hungary",
+      "101": "iceland",
+      "102": "india",
+      "103": "indonesia",
+      "104": "IRAN, ISLAMIC REPUBLIC OF",
+      "105": "iraq",
+      "106": "ireland",
+      "107": "ISLE OF MAN",
+      "108": "israel",
+      "109": "italy",
+      "110": "jamaica",
+      "111": "japan",
+      "112": "jersey",
+      "113": "jordan",
+      "114": "kazakhstan",
+      "115": "kenya",
+      "116": "kiribati",
+      "117": "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF",
+      "118": "KOREA, REPUBLIC OF",
+      "119": "kuwait",
+      "120": "kyrgyzstan",
+      "121": "LAO PEOPLE'S DEMOCRATIC REPUBLIC",
+      "122": "latvia",
+      "123": "lebanon",
+      "124": "lesotho",
+      "125": "liberia",
+      "126": "libya",
+      "127": "liechtenstein",
+      "128": "lithuania",
+      "129": "luxembourg",
+      "130": "macao",
+      "131": "MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF",
+      "132": "madagascar",
+      "133": "malawi",
+      "134": "malaysia",
+      "135": "maldives",
+      "136": "mali",
+      "137": "malta",
+      "138": "MARSHALL ISLANDS",
+      "139": "martinique",
+      "140": "mauritania",
+      "141": "mauritius",
+      "142": "mayotte",
+      "143": "mexico",
+      "144": "MICRONESIA, FEDERATED STATES OF",
+      "145": "MOLDOVA, REPUBLIC OF",
+      "146": "monaco",
+      "147": "mongolia",
+      "148": "montenegro",
+      "149": "montserrat",
+      "150": "morocco",
+      "151": "mozambique",
+      "152": "myanmar",
+      "153": "namibia",
+      "154": "nauru",
+      "155": "nepal",
+      "156": "netherlands",
+      "157": "NEW CALEDONIA",
+      "158": "NEW ZEALAND",
+      "159": "nicaragua",
+      "160": "niger",
+      "161": "nigeria",
+      "162": "niue",
+      "163": "NORFOLK ISLAND",
+      "164": "NORTHERN MARIANA ISLANDS",
+      "165": "norway",
+      "166": "oman",
+      "167": "pakistan",
+      "168": "palau",
+      "169": "PALESTINIAN TERRITORY, OCCUPIED",
+      "170": "panama",
+      "171": "PAPUA NEW GUINEA",
+      "172": "paraguay",
+      "173": "peru",
+      "174": "philippines",
+      "175": "pitcairn",
+      "176": "poland",
+      "177": "portugal",
+      "178": "PUERTO RICO",
+      "179": "qatar",
+      "180": "r\u00c9union",
+      "181": "romania",
+      "182": "RUSSIAN FEDERATION",
+      "183": "rwanda",
+      "184": "SAINT BARTH\u00c9LEMY",
+      "185": "SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA",
+      "186": "SAINT KITTS AND NEVIS",
+      "187": "SAINT LUCIA",
+      "188": "SAINT MARTIN (FRENCH PART)",
+      "189": "SAINT PIERRE AND MIQUELON",
+      "190": "SAINT VINCENT AND THE GRENADINES",
+      "191": "samoa",
+      "192": "SAN MARINO",
+      "193": "SAO TOME AND PRINCIPE",
+      "194": "SAUDI ARABIA",
+      "195": "senegal",
+      "196": "serbia",
+      "197": "seychelles",
+      "198": "SIERRA LEONE",
+      "199": "singapore",
+      "200": "SINT MAARTEN (DUTCH PART)",
+      "201": "slovakia",
+      "202": "slovenia",
+      "203": "SOLOMON ISLANDS",
+      "204": "somalia",
+      "205": "SOUTH AFRICA",
+      "206": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS",
+      "207": "SOUTH SUDAN",
+      "208": "spain",
+      "209": "SRI LANKA",
+      "210": "sudan",
+      "211": "suriname",
+      "212": "SVALBARD AND JAN MAYEN",
+      "213": "swaziland",
+      "214": "sweden",
+      "215": "switzerland",
+      "216": "SYRIAN ARAB REPUBLIC",
+      "217": "TAIWAN, PROVINCE OF CHINA",
+      "218": "tajikistan",
+      "219": "TANZANIA, UNITED REPUBLIC OF",
+      "220": "thailand",
+      "221": "TIMOR-LESTE",
+      "222": "togo",
+      "223": "tokelau",
+      "224": "tonga",
+      "225": "TRINIDAD AND TOBAGO",
+      "226": "tunisia",
+      "227": "turkey",
+      "228": "turkmenistan",
+      "229": "TURKS AND CAICOS ISLANDS",
+      "230": "tuvalu",
+      "231": "uganda",
+      "232": "ukraine",
+      "233": "UNITED ARAB EMIRATES",
+      "234": "UNITED KINGDOM",
+      "235": "UNITED STATES",
+      "236": "UNITED STATES MINOR OUTLYING ISLANDS",
+      "237": "uruguay",
+      "238": "uzbekistan",
+      "239": "vanuatu",
+      "240": "VENEZUELA, BOLIVARIAN REPUBLIC OF",
+      "241": "vietnam",
+      "242": "VIRGIN ISLANDS, BRITISH",
+      "243": "VIRGIN ISLANDS, U.S.",
+      "244": "WALLIS AND FUTUNA",
+      "245": "WESTERN SAHARA",
+      "246": "yemen",
+      "247": "zambia",
+      "248": "zimbabwe",
+      "249": "Don't know/ Prefer not to answer"
+    },
+    "n_unique": 142,
+    "n_missing": 6525
+  },
+  {
+    "id": "dc21_immig_year",
+    "label": "In what year did you come to live in Canada?",
+    "value_labels": {
+      "1": "1920",
+      "2": "1921",
+      "3": "1922",
+      "4": "1923",
+      "5": "1924",
+      "6": "1925",
+      "7": "1926",
+      "8": "1927",
+      "9": "1928",
+      "10": "1929",
+      "11": "1930",
+      "12": "1931",
+      "13": "1932",
+      "14": "1933",
+      "15": "1934",
+      "16": "1935",
+      "17": "1936",
+      "18": "1937",
+      "19": "1938",
+      "20": "1939",
+      "21": "1940",
+      "22": "1941",
+      "23": "1942",
+      "24": "1943",
+      "25": "1944",
+      "26": "1945",
+      "27": "1946",
+      "28": "1947",
+      "29": "1948",
+      "30": "1949",
+      "31": "1950",
+      "32": "1951",
+      "33": "1952",
+      "34": "1953",
+      "35": "1954",
+      "36": "1955",
+      "37": "1956",
+      "38": "1957",
+      "39": "1958",
+      "40": "1959",
+      "41": "1960",
+      "42": "1961",
+      "43": "1962",
+      "44": "1963",
+      "45": "1964",
+      "46": "1965",
+      "47": "1966",
+      "48": "1967",
+      "49": "1968",
+      "50": "1969",
+      "51": "1970",
+      "52": "1971",
+      "53": "1972",
+      "54": "1973",
+      "55": "1974",
+      "56": "1975",
+      "57": "1976",
+      "58": "1977",
+      "59": "1978",
+      "60": "1979",
+      "61": "1980",
+      "62": "1981",
+      "63": "1982",
+      "64": "1983",
+      "65": "1984",
+      "66": "1985",
+      "67": "1986",
+      "68": "1987",
+      "69": "1988",
+      "70": "1989",
+      "71": "1990",
+      "72": "1991",
+      "73": "1992",
+      "74": "1993",
+      "75": "1994",
+      "76": "1995",
+      "77": "1996",
+      "78": "1997",
+      "79": "1998",
+      "80": "1999",
+      "81": "2000",
+      "82": "2001",
+      "83": "2002",
+      "84": "2003",
+      "85": "2004",
+      "86": "2005",
+      "87": "2006",
+      "88": "2007",
+      "89": "2008",
+      "90": "2009",
+      "91": "2010",
+      "92": "2011",
+      "93": "2012",
+      "94": "2013",
+      "95": "2014",
+      "96": "2015",
+      "97": "2016",
+      "98": "2017",
+      "99": "2018",
+      "100": "2019",
+      "101": "2020",
+      "102": "Don't know/ Prefer not to answer"
+    },
+    "n_unique": 85,
+    "n_missing": 6525
+  },
+  {
+    "id": "dc21_immig_status",
+    "label": "Under which immigration category did you enter Canada or become a permanent resi",
+    "value_labels": {
+      "1": "Skilled worker or professional \u2013 principal applicant",
+      "2": "Skilled worker or professional \u2013 dependent",
+      "3": "Family class",
+      "4": "Provincial nominee \u2013 principal applicant",
+      "5": "Provincial nominee \u2013 dependent",
+      "6": "Refugee or protected person",
+      "7": "Business class \u2013 principal applicant",
+      "8": "Business class \u2013 dependent",
+      "9": "Canadian experience class \u2013 principal applicant",
+      "10": "Canadian experience class \u2013 dependent",
+      "11": "Caregiver",
+      "12": "Other (please specify)"
+    },
+    "n_unique": 13,
+    "n_missing": 6525
+  },
+  {
+    "id": "dc21_immig_status_12_TEXT",
+    "label": "Under which immigration category did you enter Canada or become a permanent resi",
+    "value_labels": {},
+    "n_unique": 115,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_parent_born",
+    "label": "Were your parents born in Canada?",
+    "value_labels": {
+      "1": "Both parents born in Canada",
+      "2": "One parent born in Canada",
+      "3": "Neither parent born in Canada"
+    },
+    "n_unique": 3,
+    "n_missing": 1425
+  },
+  {
+    "id": "dc21_parent_born_one",
+    "label": "For the parent born outside of Canada, in which county was this parent born?",
+    "value_labels": {
+      "1": "afghanistan",
+      "2": "\u00c5LAND ISLANDS",
+      "3": "albania",
+      "4": "algeria",
+      "5": "AMERICAN SAMOA",
+      "6": "andorra",
+      "7": "angola",
+      "8": "anguilla",
+      "9": "antarctica",
+      "10": "ANTIGUA AND BARBUDA",
+      "11": "argentina",
+      "12": "armenia",
+      "13": "aruba",
+      "14": "australia",
+      "15": "austria",
+      "16": "azerbaijan",
+      "17": "bahamas",
+      "18": "bahrain",
+      "19": "bangladesh",
+      "20": "barbados",
+      "21": "belarus",
+      "22": "belgium",
+      "23": "belize",
+      "24": "benin",
+      "25": "bermuda",
+      "26": "bhutan",
+      "27": "BOLIVIA, PLURINATIONAL STATE OF",
+      "28": "BONAIRE, SINT EUSTATIUS AND SABA",
+      "29": "BOSNIA AND HERZEGOVINA",
+      "30": "botswana",
+      "31": "BOUVET ISLAND",
+      "32": "brazil",
+      "33": "BRITISH INDIAN OCEAN TERRITORY",
+      "34": "BRUNEI DARUSSALAM",
+      "35": "bulgaria",
+      "36": "BURKINA FASO",
+      "37": "burundi",
+      "38": "cambodia",
+      "39": "cameroon",
+      "40": "CAPE VERDE",
+      "41": "CAYMAN ISLANDS",
+      "42": "CENTRAL AFRICAN REPUBLIC",
+      "43": "chad",
+      "44": "chile",
+      "45": "china",
+      "46": "CHRISTMAS ISLAND",
+      "47": "COCOS (KEELING) ISLANDS",
+      "48": "colombia",
+      "49": "comoros",
+      "50": "congo",
+      "51": "CONGO, THE DEMOCRATIC REPUBLIC OF THE",
+      "52": "COOK ISLANDS",
+      "53": "COSTA RICA",
+      "54": "C\u00d4TE D'IVOIRE",
+      "55": "croatia",
+      "56": "cuba",
+      "57": "cura\u00c7ao",
+      "58": "cyprus",
+      "59": "CZECH REPUBLIC",
+      "60": "denmark",
+      "61": "djibouti",
+      "62": "dominica",
+      "63": "DOMINICAN REPUBLIC",
+      "64": "ecuador",
+      "65": "egypt",
+      "66": "EL SALVADOR",
+      "67": "EQUATORIAL GUINEA",
+      "68": "eritrea",
+      "69": "estonia",
+      "70": "ethiopia",
+      "71": "FALKLAND ISLANDS (MALVINAS)",
+      "72": "FAROE ISLANDS",
+      "73": "fiji",
+      "74": "finland",
+      "75": "france",
+      "76": "FRENCH GUIANA",
+      "77": "FRENCH POLYNESIA",
+      "78": "FRENCH SOUTHERN TERRITORIES",
+      "79": "gabon",
+      "80": "gambia",
+      "81": "georgia",
+      "82": "germany",
+      "83": "ghana",
+      "84": "gibraltar",
+      "85": "greece",
+      "86": "greenland",
+      "87": "grenada",
+      "88": "guadeloupe",
+      "89": "guam",
+      "90": "guatemala",
+      "91": "guernsey",
+      "92": "guinea",
+      "93": "GUINEA-BISSAU",
+      "94": "guyana",
+      "95": "haiti",
+      "96": "HEARD ISLAND AND MCDONALD ISLANDS",
+      "97": "HOLY SEE (VATICAN CITY STATE)",
+      "98": "honduras",
+      "99": "HONG KONG",
+      "100": "hungary",
+      "101": "iceland",
+      "102": "india",
+      "103": "indonesia",
+      "104": "IRAN, ISLAMIC REPUBLIC OF",
+      "105": "iraq",
+      "106": "ireland",
+      "107": "ISLE OF MAN",
+      "108": "israel",
+      "109": "italy",
+      "110": "jamaica",
+      "111": "japan",
+      "112": "jersey",
+      "113": "jordan",
+      "114": "kazakhstan",
+      "115": "kenya",
+      "116": "kiribati",
+      "117": "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF",
+      "118": "KOREA, REPUBLIC OF",
+      "119": "kuwait",
+      "120": "kyrgyzstan",
+      "121": "LAO PEOPLE'S DEMOCRATIC REPUBLIC",
+      "122": "latvia",
+      "123": "lebanon",
+      "124": "lesotho",
+      "125": "liberia",
+      "126": "libya",
+      "127": "liechtenstein",
+      "128": "lithuania",
+      "129": "luxembourg",
+      "130": "macao",
+      "131": "MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF",
+      "132": "madagascar",
+      "133": "malawi",
+      "134": "malaysia",
+      "135": "maldives",
+      "136": "mali",
+      "137": "malta",
+      "138": "MARSHALL ISLANDS",
+      "139": "martinique",
+      "140": "mauritania",
+      "141": "mauritius",
+      "142": "mayotte",
+      "143": "mexico",
+      "144": "MICRONESIA, FEDERATED STATES OF",
+      "145": "MOLDOVA, REPUBLIC OF",
+      "146": "monaco",
+      "147": "mongolia",
+      "148": "montenegro",
+      "149": "montserrat",
+      "150": "morocco",
+      "151": "mozambique",
+      "152": "myanmar",
+      "153": "namibia",
+      "154": "nauru",
+      "155": "nepal",
+      "156": "netherlands",
+      "157": "NEW CALEDONIA",
+      "158": "NEW ZEALAND",
+      "159": "nicaragua",
+      "160": "niger",
+      "161": "nigeria",
+      "162": "niue",
+      "163": "NORFOLK ISLAND",
+      "164": "NORTHERN MARIANA ISLANDS",
+      "165": "norway",
+      "166": "oman",
+      "167": "pakistan",
+      "168": "palau",
+      "169": "PALESTINIAN TERRITORY, OCCUPIED",
+      "170": "panama",
+      "171": "PAPUA NEW GUINEA",
+      "172": "paraguay",
+      "173": "peru",
+      "174": "philippines",
+      "175": "pitcairn",
+      "176": "poland",
+      "177": "portugal",
+      "178": "PUERTO RICO",
+      "179": "qatar",
+      "180": "r\u00c9union",
+      "181": "romania",
+      "182": "RUSSIAN FEDERATION",
+      "183": "rwanda",
+      "184": "SAINT BARTH\u00c9LEMY",
+      "185": "SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA",
+      "186": "SAINT KITTS AND NEVIS",
+      "187": "SAINT LUCIA",
+      "188": "SAINT MARTIN (FRENCH PART)",
+      "189": "SAINT PIERRE AND MIQUELON",
+      "190": "SAINT VINCENT AND THE GRENADINES",
+      "191": "samoa",
+      "192": "SAN MARINO",
+      "193": "SAO TOME AND PRINCIPE",
+      "194": "SAUDI ARABIA",
+      "195": "senegal",
+      "196": "serbia",
+      "197": "seychelles",
+      "198": "SIERRA LEONE",
+      "199": "singapore",
+      "200": "SINT MAARTEN (DUTCH PART)",
+      "201": "slovakia",
+      "202": "slovenia",
+      "203": "SOLOMON ISLANDS",
+      "204": "somalia",
+      "205": "SOUTH AFRICA",
+      "206": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS",
+      "207": "SOUTH SUDAN",
+      "208": "spain",
+      "209": "SRI LANKA",
+      "210": "sudan",
+      "211": "suriname",
+      "212": "SVALBARD AND JAN MAYEN",
+      "213": "swaziland",
+      "214": "sweden",
+      "215": "switzerland",
+      "216": "SYRIAN ARAB REPUBLIC",
+      "217": "TAIWAN, PROVINCE OF CHINA",
+      "218": "tajikistan",
+      "219": "TANZANIA, UNITED REPUBLIC OF",
+      "220": "thailand",
+      "221": "TIMOR-LESTE",
+      "222": "togo",
+      "223": "tokelau",
+      "224": "tonga",
+      "225": "TRINIDAD AND TOBAGO",
+      "226": "tunisia",
+      "227": "turkey",
+      "228": "turkmenistan",
+      "229": "TURKS AND CAICOS ISLANDS",
+      "230": "tuvalu",
+      "231": "uganda",
+      "232": "ukraine",
+      "233": "UNITED ARAB EMIRATES",
+      "234": "UNITED KINGDOM",
+      "235": "UNITED STATES",
+      "236": "UNITED STATES MINOR OUTLYING ISLANDS",
+      "237": "uruguay",
+      "238": "uzbekistan",
+      "239": "vanuatu",
+      "240": "VENEZUELA, BOLIVARIAN REPUBLIC OF",
+      "241": "vietnam",
+      "242": "VIRGIN ISLANDS, BRITISH",
+      "243": "VIRGIN ISLANDS, U.S.",
+      "244": "WALLIS AND FUTUNA",
+      "245": "WESTERN SAHARA",
+      "246": "yemen",
+      "247": "zambia",
+      "248": "zimbabwe",
+      "249": "Don't know/ Prefer not to answer"
+    },
+    "n_unique": 83,
+    "n_missing": 7248
+  },
+  {
+    "id": "dc21_parent_born_m",
+    "label": "What country was your mother born in?",
+    "value_labels": {
+      "1": "afghanistan",
+      "2": "\u00c5LAND ISLANDS",
+      "3": "albania",
+      "4": "algeria",
+      "5": "AMERICAN SAMOA",
+      "6": "andorra",
+      "7": "angola",
+      "8": "anguilla",
+      "9": "antarctica",
+      "10": "ANTIGUA AND BARBUDA",
+      "11": "argentina",
+      "12": "armenia",
+      "13": "aruba",
+      "14": "australia",
+      "15": "austria",
+      "16": "azerbaijan",
+      "17": "bahamas",
+      "18": "bahrain",
+      "19": "bangladesh",
+      "20": "barbados",
+      "21": "belarus",
+      "22": "belgium",
+      "23": "belize",
+      "24": "benin",
+      "25": "bermuda",
+      "26": "bhutan",
+      "27": "BOLIVIA, PLURINATIONAL STATE OF",
+      "28": "BONAIRE, SINT EUSTATIUS AND SABA",
+      "29": "BOSNIA AND HERZEGOVINA",
+      "30": "botswana",
+      "31": "BOUVET ISLAND",
+      "32": "brazil",
+      "33": "BRITISH INDIAN OCEAN TERRITORY",
+      "34": "BRUNEI DARUSSALAM",
+      "35": "bulgaria",
+      "36": "BURKINA FASO",
+      "37": "burundi",
+      "38": "cambodia",
+      "39": "cameroon",
+      "40": "CAPE VERDE",
+      "41": "CAYMAN ISLANDS",
+      "42": "CENTRAL AFRICAN REPUBLIC",
+      "43": "chad",
+      "44": "chile",
+      "45": "china",
+      "46": "CHRISTMAS ISLAND",
+      "47": "COCOS (KEELING) ISLANDS",
+      "48": "colombia",
+      "49": "comoros",
+      "50": "congo",
+      "51": "CONGO, THE DEMOCRATIC REPUBLIC OF THE",
+      "52": "COOK ISLANDS",
+      "53": "COSTA RICA",
+      "54": "C\u00d4TE D'IVOIRE",
+      "55": "croatia",
+      "56": "cuba",
+      "57": "cura\u00c7ao",
+      "58": "cyprus",
+      "59": "CZECH REPUBLIC",
+      "60": "denmark",
+      "61": "djibouti",
+      "62": "dominica",
+      "63": "DOMINICAN REPUBLIC",
+      "64": "ecuador",
+      "65": "egypt",
+      "66": "EL SALVADOR",
+      "67": "EQUATORIAL GUINEA",
+      "68": "eritrea",
+      "69": "estonia",
+      "70": "ethiopia",
+      "71": "FALKLAND ISLANDS (MALVINAS)",
+      "72": "FAROE ISLANDS",
+      "73": "fiji",
+      "74": "finland",
+      "75": "france",
+      "76": "FRENCH GUIANA",
+      "77": "FRENCH POLYNESIA",
+      "78": "FRENCH SOUTHERN TERRITORIES",
+      "79": "gabon",
+      "80": "gambia",
+      "81": "georgia",
+      "82": "germany",
+      "83": "ghana",
+      "84": "gibraltar",
+      "85": "greece",
+      "86": "greenland",
+      "87": "grenada",
+      "88": "guadeloupe",
+      "89": "guam",
+      "90": "guatemala",
+      "91": "guernsey",
+      "92": "guinea",
+      "93": "GUINEA-BISSAU",
+      "94": "guyana",
+      "95": "haiti",
+      "96": "HEARD ISLAND AND MCDONALD ISLANDS",
+      "97": "HOLY SEE (VATICAN CITY STATE)",
+      "98": "honduras",
+      "99": "HONG KONG",
+      "100": "hungary",
+      "101": "iceland",
+      "102": "india",
+      "103": "indonesia",
+      "104": "IRAN, ISLAMIC REPUBLIC OF",
+      "105": "iraq",
+      "106": "ireland",
+      "107": "ISLE OF MAN",
+      "108": "israel",
+      "109": "italy",
+      "110": "jamaica",
+      "111": "japan",
+      "112": "jersey",
+      "113": "jordan",
+      "114": "kazakhstan",
+      "115": "kenya",
+      "116": "kiribati",
+      "117": "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF",
+      "118": "KOREA, REPUBLIC OF",
+      "119": "kuwait",
+      "120": "kyrgyzstan",
+      "121": "LAO PEOPLE'S DEMOCRATIC REPUBLIC",
+      "122": "latvia",
+      "123": "lebanon",
+      "124": "lesotho",
+      "125": "liberia",
+      "126": "libya",
+      "127": "liechtenstein",
+      "128": "lithuania",
+      "129": "luxembourg",
+      "130": "macao",
+      "131": "MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF",
+      "132": "madagascar",
+      "133": "malawi",
+      "134": "malaysia",
+      "135": "maldives",
+      "136": "mali",
+      "137": "malta",
+      "138": "MARSHALL ISLANDS",
+      "139": "martinique",
+      "140": "mauritania",
+      "141": "mauritius",
+      "142": "mayotte",
+      "143": "mexico",
+      "144": "MICRONESIA, FEDERATED STATES OF",
+      "145": "MOLDOVA, REPUBLIC OF",
+      "146": "monaco",
+      "147": "mongolia",
+      "148": "montenegro",
+      "149": "montserrat",
+      "150": "morocco",
+      "151": "mozambique",
+      "152": "myanmar",
+      "153": "namibia",
+      "154": "nauru",
+      "155": "nepal",
+      "156": "netherlands",
+      "157": "NEW CALEDONIA",
+      "158": "NEW ZEALAND",
+      "159": "nicaragua",
+      "160": "niger",
+      "161": "nigeria",
+      "162": "niue",
+      "163": "NORFOLK ISLAND",
+      "164": "NORTHERN MARIANA ISLANDS",
+      "165": "norway",
+      "166": "oman",
+      "167": "pakistan",
+      "168": "palau",
+      "169": "PALESTINIAN TERRITORY, OCCUPIED",
+      "170": "panama",
+      "171": "PAPUA NEW GUINEA",
+      "172": "paraguay",
+      "173": "peru",
+      "174": "philippines",
+      "175": "pitcairn",
+      "176": "poland",
+      "177": "portugal",
+      "178": "PUERTO RICO",
+      "179": "qatar",
+      "180": "r\u00c9union",
+      "181": "romania",
+      "182": "RUSSIAN FEDERATION",
+      "183": "rwanda",
+      "184": "SAINT BARTH\u00c9LEMY",
+      "185": "SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA",
+      "186": "SAINT KITTS AND NEVIS",
+      "187": "SAINT LUCIA",
+      "188": "SAINT MARTIN (FRENCH PART)",
+      "189": "SAINT PIERRE AND MIQUELON",
+      "190": "SAINT VINCENT AND THE GRENADINES",
+      "191": "samoa",
+      "192": "SAN MARINO",
+      "193": "SAO TOME AND PRINCIPE",
+      "194": "SAUDI ARABIA",
+      "195": "senegal",
+      "196": "serbia",
+      "197": "seychelles",
+      "198": "SIERRA LEONE",
+      "199": "singapore",
+      "200": "SINT MAARTEN (DUTCH PART)",
+      "201": "slovakia",
+      "202": "slovenia",
+      "203": "SOLOMON ISLANDS",
+      "204": "somalia",
+      "205": "SOUTH AFRICA",
+      "206": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS",
+      "207": "SOUTH SUDAN",
+      "208": "spain",
+      "209": "SRI LANKA",
+      "210": "sudan",
+      "211": "suriname",
+      "212": "SVALBARD AND JAN MAYEN",
+      "213": "swaziland",
+      "214": "sweden",
+      "215": "switzerland",
+      "216": "SYRIAN ARAB REPUBLIC",
+      "217": "TAIWAN, PROVINCE OF CHINA",
+      "218": "tajikistan",
+      "219": "TANZANIA, UNITED REPUBLIC OF",
+      "220": "thailand",
+      "221": "TIMOR-LESTE",
+      "222": "togo",
+      "223": "tokelau",
+      "224": "tonga",
+      "225": "TRINIDAD AND TOBAGO",
+      "226": "tunisia",
+      "227": "turkey",
+      "228": "turkmenistan",
+      "229": "TURKS AND CAICOS ISLANDS",
+      "230": "tuvalu",
+      "231": "uganda",
+      "232": "ukraine",
+      "233": "UNITED ARAB EMIRATES",
+      "234": "UNITED KINGDOM",
+      "235": "UNITED STATES",
+      "236": "UNITED STATES MINOR OUTLYING ISLANDS",
+      "237": "uruguay",
+      "238": "uzbekistan",
+      "239": "vanuatu",
+      "240": "VENEZUELA, BOLIVARIAN REPUBLIC OF",
+      "241": "vietnam",
+      "242": "VIRGIN ISLANDS, BRITISH",
+      "243": "VIRGIN ISLANDS, U.S.",
+      "244": "WALLIS AND FUTUNA",
+      "245": "WESTERN SAHARA",
+      "246": "yemen",
+      "247": "zambia",
+      "248": "zimbabwe",
+      "249": "Don't know/ Prefer not to answer"
+    },
+    "n_unique": 110,
+    "n_missing": 7059
+  },
+  {
+    "id": "dc21_parent_born_f",
+    "label": "What country was your father born in?",
+    "value_labels": {
+      "1": "afghanistan",
+      "2": "\u00c5LAND ISLANDS",
+      "3": "albania",
+      "4": "algeria",
+      "5": "AMERICAN SAMOA",
+      "6": "andorra",
+      "7": "angola",
+      "8": "anguilla",
+      "9": "antarctica",
+      "10": "ANTIGUA AND BARBUDA",
+      "11": "argentina",
+      "12": "armenia",
+      "13": "aruba",
+      "14": "australia",
+      "15": "austria",
+      "16": "azerbaijan",
+      "17": "bahamas",
+      "18": "bahrain",
+      "19": "bangladesh",
+      "20": "barbados",
+      "21": "belarus",
+      "22": "belgium",
+      "23": "belize",
+      "24": "benin",
+      "25": "bermuda",
+      "26": "bhutan",
+      "27": "BOLIVIA, PLURINATIONAL STATE OF",
+      "28": "BONAIRE, SINT EUSTATIUS AND SABA",
+      "29": "BOSNIA AND HERZEGOVINA",
+      "30": "botswana",
+      "31": "BOUVET ISLAND",
+      "32": "brazil",
+      "33": "BRITISH INDIAN OCEAN TERRITORY",
+      "34": "BRUNEI DARUSSALAM",
+      "35": "bulgaria",
+      "36": "BURKINA FASO",
+      "37": "burundi",
+      "38": "cambodia",
+      "39": "cameroon",
+      "40": "CAPE VERDE",
+      "41": "CAYMAN ISLANDS",
+      "42": "CENTRAL AFRICAN REPUBLIC",
+      "43": "chad",
+      "44": "chile",
+      "45": "china",
+      "46": "CHRISTMAS ISLAND",
+      "47": "COCOS (KEELING) ISLANDS",
+      "48": "colombia",
+      "49": "comoros",
+      "50": "congo",
+      "51": "CONGO, THE DEMOCRATIC REPUBLIC OF THE",
+      "52": "COOK ISLANDS",
+      "53": "COSTA RICA",
+      "54": "C\u00d4TE D'IVOIRE",
+      "55": "croatia",
+      "56": "cuba",
+      "57": "cura\u00c7ao",
+      "58": "cyprus",
+      "59": "CZECH REPUBLIC",
+      "60": "denmark",
+      "61": "djibouti",
+      "62": "dominica",
+      "63": "DOMINICAN REPUBLIC",
+      "64": "ecuador",
+      "65": "egypt",
+      "66": "EL SALVADOR",
+      "67": "EQUATORIAL GUINEA",
+      "68": "eritrea",
+      "69": "estonia",
+      "70": "ethiopia",
+      "71": "FALKLAND ISLANDS (MALVINAS)",
+      "72": "FAROE ISLANDS",
+      "73": "fiji",
+      "74": "finland",
+      "75": "france",
+      "76": "FRENCH GUIANA",
+      "77": "FRENCH POLYNESIA",
+      "78": "FRENCH SOUTHERN TERRITORIES",
+      "79": "gabon",
+      "80": "gambia",
+      "81": "georgia",
+      "82": "germany",
+      "83": "ghana",
+      "84": "gibraltar",
+      "85": "greece",
+      "86": "greenland",
+      "87": "grenada",
+      "88": "guadeloupe",
+      "89": "guam",
+      "90": "guatemala",
+      "91": "guernsey",
+      "92": "guinea",
+      "93": "GUINEA-BISSAU",
+      "94": "guyana",
+      "95": "haiti",
+      "96": "HEARD ISLAND AND MCDONALD ISLANDS",
+      "97": "HOLY SEE (VATICAN CITY STATE)",
+      "98": "honduras",
+      "99": "HONG KONG",
+      "100": "hungary",
+      "101": "iceland",
+      "102": "india",
+      "103": "indonesia",
+      "104": "IRAN, ISLAMIC REPUBLIC OF",
+      "105": "iraq",
+      "106": "ireland",
+      "107": "ISLE OF MAN",
+      "108": "israel",
+      "109": "italy",
+      "110": "jamaica",
+      "111": "japan",
+      "112": "jersey",
+      "113": "jordan",
+      "114": "kazakhstan",
+      "115": "kenya",
+      "116": "kiribati",
+      "117": "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF",
+      "118": "KOREA, REPUBLIC OF",
+      "119": "kuwait",
+      "120": "kyrgyzstan",
+      "121": "LAO PEOPLE'S DEMOCRATIC REPUBLIC",
+      "122": "latvia",
+      "123": "lebanon",
+      "124": "lesotho",
+      "125": "liberia",
+      "126": "libya",
+      "127": "liechtenstein",
+      "128": "lithuania",
+      "129": "luxembourg",
+      "130": "macao",
+      "131": "MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF",
+      "132": "madagascar",
+      "133": "malawi",
+      "134": "malaysia",
+      "135": "maldives",
+      "136": "mali",
+      "137": "malta",
+      "138": "MARSHALL ISLANDS",
+      "139": "martinique",
+      "140": "mauritania",
+      "141": "mauritius",
+      "142": "mayotte",
+      "143": "mexico",
+      "144": "MICRONESIA, FEDERATED STATES OF",
+      "145": "MOLDOVA, REPUBLIC OF",
+      "146": "monaco",
+      "147": "mongolia",
+      "148": "montenegro",
+      "149": "montserrat",
+      "150": "morocco",
+      "151": "mozambique",
+      "152": "myanmar",
+      "153": "namibia",
+      "154": "nauru",
+      "155": "nepal",
+      "156": "netherlands",
+      "157": "NEW CALEDONIA",
+      "158": "NEW ZEALAND",
+      "159": "nicaragua",
+      "160": "niger",
+      "161": "nigeria",
+      "162": "niue",
+      "163": "NORFOLK ISLAND",
+      "164": "NORTHERN MARIANA ISLANDS",
+      "165": "norway",
+      "166": "oman",
+      "167": "pakistan",
+      "168": "palau",
+      "169": "PALESTINIAN TERRITORY, OCCUPIED",
+      "170": "panama",
+      "171": "PAPUA NEW GUINEA",
+      "172": "paraguay",
+      "173": "peru",
+      "174": "philippines",
+      "175": "pitcairn",
+      "176": "poland",
+      "177": "portugal",
+      "178": "PUERTO RICO",
+      "179": "qatar",
+      "180": "r\u00c9union",
+      "181": "romania",
+      "182": "RUSSIAN FEDERATION",
+      "183": "rwanda",
+      "184": "SAINT BARTH\u00c9LEMY",
+      "185": "SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA",
+      "186": "SAINT KITTS AND NEVIS",
+      "187": "SAINT LUCIA",
+      "188": "SAINT MARTIN (FRENCH PART)",
+      "189": "SAINT PIERRE AND MIQUELON",
+      "190": "SAINT VINCENT AND THE GRENADINES",
+      "191": "samoa",
+      "192": "SAN MARINO",
+      "193": "SAO TOME AND PRINCIPE",
+      "194": "SAUDI ARABIA",
+      "195": "senegal",
+      "196": "serbia",
+      "197": "seychelles",
+      "198": "SIERRA LEONE",
+      "199": "singapore",
+      "200": "SINT MAARTEN (DUTCH PART)",
+      "201": "slovakia",
+      "202": "slovenia",
+      "203": "SOLOMON ISLANDS",
+      "204": "somalia",
+      "205": "SOUTH AFRICA",
+      "206": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS",
+      "207": "SOUTH SUDAN",
+      "208": "spain",
+      "209": "SRI LANKA",
+      "210": "sudan",
+      "211": "suriname",
+      "212": "SVALBARD AND JAN MAYEN",
+      "213": "swaziland",
+      "214": "sweden",
+      "215": "switzerland",
+      "216": "SYRIAN ARAB REPUBLIC",
+      "217": "TAIWAN, PROVINCE OF CHINA",
+      "218": "tajikistan",
+      "219": "TANZANIA, UNITED REPUBLIC OF",
+      "220": "thailand",
+      "221": "TIMOR-LESTE",
+      "222": "togo",
+      "223": "tokelau",
+      "224": "tonga",
+      "225": "TRINIDAD AND TOBAGO",
+      "226": "tunisia",
+      "227": "turkey",
+      "228": "turkmenistan",
+      "229": "TURKS AND CAICOS ISLANDS",
+      "230": "tuvalu",
+      "231": "uganda",
+      "232": "ukraine",
+      "233": "UNITED ARAB EMIRATES",
+      "234": "UNITED KINGDOM",
+      "235": "UNITED STATES",
+      "236": "UNITED STATES MINOR OUTLYING ISLANDS",
+      "237": "uruguay",
+      "238": "uzbekistan",
+      "239": "vanuatu",
+      "240": "VENEZUELA, BOLIVARIAN REPUBLIC OF",
+      "241": "vietnam",
+      "242": "VIRGIN ISLANDS, BRITISH",
+      "243": "VIRGIN ISLANDS, U.S.",
+      "244": "WALLIS AND FUTUNA",
+      "245": "WESTERN SAHARA",
+      "246": "yemen",
+      "247": "zambia",
+      "248": "zimbabwe",
+      "249": "Don't know/ Prefer not to answer"
+    },
+    "n_unique": 110,
+    "n_missing": 7059
+  },
+  {
+    "id": "dc21_sex",
+    "label": "What sex were you assigned at birth, on your original birth certificate?",
+    "value_labels": {
+      "1": "Male",
+      "2": "Female"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vismin_1",
+    "label": "Are you (Please select all that apply): - Selected Choice White",
+    "value_labels": {
+      "1": "White"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vismin_2",
+    "label": "Are you (Please select all that apply): - Selected Choice Indigenous (e.g. First",
+    "value_labels": {
+      "1": "Indigenous (e.g. First Nations, M\u00e9tis, Inuit, etc.)"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vismin_3",
+    "label": "Are you (Please select all that apply): - Selected Choice South Asian (e.g., Eas",
+    "value_labels": {
+      "1": "South Asian (e.g., East Indian, Pakistani, Sri Lankan, etc.)"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vismin_4",
+    "label": "Are you (Please select all that apply): - Selected Choice Chinese",
+    "value_labels": {
+      "1": "Chinese"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vismin_5",
+    "label": "Are you (Please select all that apply): - Selected Choice Black",
+    "value_labels": {
+      "1": "Black"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vismin_6",
+    "label": "Are you (Please select all that apply): - Selected Choice Filipino",
+    "value_labels": {
+      "1": "Filipino"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vismin_7",
+    "label": "Are you (Please select all that apply): - Selected Choice Latin American",
+    "value_labels": {
+      "1": "Latin American"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vismin_8",
+    "label": "Are you (Please select all that apply): - Selected Choice Arab",
+    "value_labels": {
+      "1": "Arab"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vismin_9",
+    "label": "Are you (Please select all that apply): - Selected Choice Southeast Asian (e.g.,",
+    "value_labels": {
+      "1": "Southeast Asian (e.g., Vietnamese, Cambodian, Laotian, Thai, etc.)"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vismin_10",
+    "label": "Are you (Please select all that apply): - Selected Choice West Asian (e.g., Iran",
+    "value_labels": {
+      "1": "West Asian (e.g., Iranian, Afghan, etc.)"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vismin_11",
+    "label": "Are you (Please select all that apply): - Selected Choice Korean",
+    "value_labels": {
+      "1": "Korean"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vismin_12",
+    "label": "Are you (Please select all that apply): - Selected Choice Japanese",
+    "value_labels": {
+      "1": "Japanese"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vismin_13",
+    "label": "Are you (Please select all that apply): - Selected Choice Other (please specify)",
+    "value_labels": {
+      "1": "Other (please specify)"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_vismin_13_TEXT",
+    "label": "Are you (Please select all that apply): - Other (please specify) - Text",
+    "value_labels": {},
+    "n_unique": 164,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_origin_1",
+    "label": "What are the ethnic or cultural origins of your ancestors? Please indicate up to",
+    "value_labels": {},
+    "n_unique": 919,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_origin_2",
+    "label": "What are the ethnic or cultural origins of your ancestors? Please indicate up to",
+    "value_labels": {},
+    "n_unique": 745,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_origin_3",
+    "label": "What are the ethnic or cultural origins of your ancestors? Please indicate up to",
+    "value_labels": {},
+    "n_unique": 604,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_origin_4",
+    "label": "What are the ethnic or cultural origins of your ancestors? Please indicate up to",
+    "value_labels": {},
+    "n_unique": 530,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_origin_5",
+    "label": "What are the ethnic or cultural origins of your ancestors? Please indicate up to",
+    "value_labels": {},
+    "n_unique": 526,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_health",
+    "label": "Compared to other people your age, how would you describe your health?",
+    "value_labels": {
+      "1": "Excellent",
+      "2": "Very good",
+      "3": "Fair",
+      "4": "Poor"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_employment",
+    "label": "What is your employment status? Are you currently\u2026 - Selected Choice",
+    "value_labels": {
+      "1": "Working for pay full-time",
+      "2": "Working for pay part-time",
+      "3": "Self employed (with or without employees)",
+      "4": "Retired",
+      "5": "Unemployed/ looking for work",
+      "6": "Student",
+      "7": "Caring for a family",
+      "8": "Disabled",
+      "9": "Student and working for pay",
+      "10": "Caring for family and working for pay",
+      "11": "Retired and working for pay",
+      "12": "Other (please specify)"
+    },
+    "n_unique": 13,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_employment_12_TEXT",
+    "label": "What is your employment status? Are you currently\u2026 - Other (please specify) - Te",
+    "value_labels": {},
+    "n_unique": 126,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_unemployment1",
+    "label": "How long have you been unemployed?",
+    "value_labels": {
+      "1": "2 weeks or less",
+      "2": "3-4 weeks",
+      "3": "5-6 weeks",
+      "4": "6 weeks to 12 weeks",
+      "5": "12 weeks or more"
+    },
+    "n_unique": 6,
+    "n_missing": 7556
+  },
+  {
+    "id": "dc21_covidemploy",
+    "label": "Since the start of the pandemic in 2020, which of the following have been true f",
+    "value_labels": {
+      "1": "I lost my job",
+      "2": "My hours were reduced",
+      "3": "I\u2019ve had to work from home at least part of the time",
+      "4": "I quit my job due to family responsibilities"
+    },
+    "n_unique": 5,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_income_category",
+    "label": "What was your total household income, before taxes, for the year 2020? Be sure t",
+    "value_labels": {
+      "1": "No income",
+      "2": "$1 to $30,000",
+      "3": "$30,001 to $60,000",
+      "4": "$60,001 to $90,000",
+      "5": "$90,001 to $110,000",
+      "6": "$110,001 to $150,000",
+      "7": "$150,001 to $200,000",
+      "8": "More than $200,000"
+    },
+    "n_unique": 9,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_marital_status",
+    "label": "Are you presently married, living with a partner, divorced, separated, widowed,",
+    "value_labels": {
+      "1": "Married",
+      "2": "Living with a partner",
+      "3": "Divorced",
+      "4": "Separated",
+      "5": "Widowed",
+      "6": "Never Married"
+    },
+    "n_unique": 7,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_disability",
+    "label": "Are you a person with a disability?",
+    "value_labels": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_disabilitytype",
+    "label": "What is your disability? - Selected Choice",
+    "value_labels": {
+      "1": "Blind or visual impairment",
+      "2": "Co-ordination or dexterity",
+      "3": "Deaf or hard of hearing",
+      "4": "Mobility",
+      "5": "Speech impairment",
+      "6": "Other (please specify)"
+    },
+    "n_unique": 7,
+    "n_missing": 7075
+  },
+  {
+    "id": "dc21_disabilitytype_6_TEXT",
+    "label": "What is your disability? - Other (please specify) - Text",
+    "value_labels": {},
+    "n_unique": 250,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_children1",
+    "label": "How many, if any, children do you have?",
+    "value_labels": {
+      "0": "0",
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "More than 5"
+    },
+    "n_unique": 8,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_property_1",
+    "label": "Do you or a member of your household... (Please check all that apply). Own a res",
+    "value_labels": {
+      "1": "Own a residence"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_property_2",
+    "label": "Do you or a member of your household... (Please check all that apply). Own a bus",
+    "value_labels": {
+      "1": "Own a business, a piece of property, a farm or livestock"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_property_3",
+    "label": "Do you or a member of your household... (Please check all that apply). Own stock",
+    "value_labels": {
+      "1": "Own stocks or bonds"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_property_4",
+    "label": "Do you or a member of your household... (Please check all that apply). Have any",
+    "value_labels": {
+      "1": "Have any savings"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_property_5",
+    "label": "Do you or a member of your household... (Please check all that apply). None of t",
+    "value_labels": {
+      "1": "None of these"
+    },
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_occupation_text",
+    "label": "What is your main occupation? If you are retired, please enter your former occup",
+    "value_labels": {},
+    "n_unique": 4157,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_religion",
+    "label": "Please tell me what is your religion, if you have one? - Selected Choice",
+    "value_labels": {
+      "1": "None/ Don't have one/ Atheist",
+      "2": "Agnostic",
+      "3": "Buddhist/ Buddhism",
+      "4": "Hindu",
+      "5": "Jewish/ Judaism/ Jewish Orthodox",
+      "6": "Muslim/ Islam",
+      "7": "Sikh/ Sikhism",
+      "8": "Anglican/ Church of England",
+      "9": "Baptist",
+      "10": "Catholic/ Roman Catholic/ RC",
+      "11": "Greek Orthodox/ Ukrainian Orthodox/ Russian Orthodox/ Eastern Orthodox",
+      "12": "Jehovah's Witness",
+      "13": "Lutheran",
+      "14": "Mormon/ Church of Jesus Christ of the Latter Day Saints",
+      "15": "Pentecostal/ Fundamentalist/ Born Again/ Evangelical",
+      "16": "Presbyterian",
+      "17": "Protestant",
+      "18": "United Church of Canada",
+      "19": "Christian Reform",
+      "20": "Salvation Army",
+      "21": "Mennonite",
+      "22": "Other (please specify)"
+    },
+    "n_unique": 23,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_religion_22_TEXT",
+    "label": "Please tell me what is your religion, if you have one? - Other (please specify)",
+    "value_labels": {},
+    "n_unique": 196,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_denomination",
+    "label": "Which specific [Field-religion_en] denomination are you a member of?",
+    "value_labels": {},
+    "n_unique": 255,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_religion_import",
+    "label": "In your life, you would say religion is:",
+    "value_labels": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not very important",
+      "4": "Not important at all"
+    },
+    "n_unique": 5,
+    "n_missing": 2674
+  },
+  {
+    "id": "Q_Language",
+    "label": "Q_Language",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "religon_fr",
+    "label": "religon_fr",
+    "value_labels": {},
+    "n_unique": 1,
+    "n_missing": 0
+  },
+  {
+    "id": "attitudes_split",
+    "label": "attitudes_split",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "govt_programs_word",
+    "label": "govt_programs_word",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "govt_programs_word_fr",
+    "label": "govt_programs_word_fr",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "Province",
+    "label": "Province",
+    "value_labels": {},
+    "n_unique": 13,
+    "n_missing": 0
+  },
+  {
+    "id": "Premier",
+    "label": "Premier",
+    "value_labels": {},
+    "n_unique": 10,
+    "n_missing": 0
+  },
+  {
+    "id": "EMB_fr",
+    "label": "EMB_fr",
+    "value_labels": {},
+    "n_unique": 10,
+    "n_missing": 0
+  },
+  {
+    "id": "emb",
+    "label": "emb",
+    "value_labels": {},
+    "n_unique": 10,
+    "n_missing": 0
+  },
+  {
+    "id": "pid_fr",
+    "label": "pid_fr",
+    "value_labels": {},
+    "n_unique": 6,
+    "n_missing": 0
+  },
+  {
+    "id": "religion_en",
+    "label": "religion_en",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 0
+  },
+  {
+    "id": "religion_fr",
+    "label": "religion_fr",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_36_DO_Attitudes1_equalrights1",
+    "label": "FL_36 - Block Randomizer - Display Order Attitudes1-equalrights1",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 2214
+  },
+  {
+    "id": "FL_36_DO_Attitudes1_womenhome",
+    "label": "FL_36 - Block Randomizer - Display Order Attitudes1-womenhome",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 2252
+  },
+  {
+    "id": "FL_36_DO_Attitudes1_womeninpolit",
+    "label": "FL_36 - Block Randomizer - Display Order Attitudes1-womeninpolitics",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 2236
+  },
+  {
+    "id": "FL_36_DO_Attitudes1_anti_elite",
+    "label": "FL_36 - Block Randomizer - Display Order Attitudes1-anti-elite",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 2285
+  },
+  {
+    "id": "FL_36_DO_Attitudes1_politicianat",
+    "label": "FL_36 - Block Randomizer - Display Order Attitudes1-politicianattitudes",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 2327
+  },
+  {
+    "id": "FL_36_DO_Attitudes1_careerpoliti",
+    "label": "FL_36 - Block Randomizer - Display Order Attitudes1-careerpoliticians",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 2286
+  },
+  {
+    "id": "FL_36_DO_Attitudes_environment",
+    "label": "FL_36 - Block Randomizer - Display Order Attitudes-environment",
+    "value_labels": {},
+    "n_unique": 5,
+    "n_missing": 2298
+  },
+  {
+    "id": "FL_38_DO_Attitudes3_Identity1",
+    "label": "FL_38 - Block Randomizer - Display Order Attitudes3-Identity1",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_38_DO_Attitudes3_Identity3",
+    "label": "FL_38 - Block Randomizer - Display Order Attitudes3-Identity3",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_39_DO_Attitudes3_immigration1",
+    "label": "FL_39 - Block Randomizer - Display Order Attitudes3-immigration1",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_39_DO_Attitudes3_immigration2",
+    "label": "FL_39 - Block Randomizer - Display Order Attitudes3-immigration2",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_39_DO_Attitudes3_immigration3",
+    "label": "FL_39 - Block Randomizer - Display Order Attitudes3-immigration3",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_160_DO_Attitudes2_Indigenousd",
+    "label": "FL_160 - Block Randomizer - Display Order Attitudes2-Indigenousdeserve",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 3994
+  },
+  {
+    "id": "FL_160_DO_Attitudes2_Colonialism",
+    "label": "FL_160 - Block Randomizer - Display Order Attitudes2-Colonialism",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 3994
+  },
+  {
+    "id": "FL_160_DO_Attitudes2_bilingualis",
+    "label": "FL_160 - Block Randomizer - Display Order Attitudes2-bilingualism",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 3994
+  },
+  {
+    "id": "FL_160_DO_Attitudes2_religioussy",
+    "label": "FL_160 - Block Randomizer - Display Order Attitudes2-religioussymbols",
+    "value_labels": {},
+    "n_unique": 4,
+    "n_missing": 3994
+  },
+  {
+    "id": "FL_155_DO_Attitudes2_govtprogram",
+    "label": "FL_155 - Block Randomizer - Display Order Attitudes2-govtprograms",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 3955
+  },
+  {
+    "id": "FL_155_DO_Attitudes2_govteffecti",
+    "label": "FL_155 - Block Randomizer - Display Order Attitudes2-govteffectiveness",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 3955
+  },
+  {
+    "id": "FL_155_DO_Attitudes2_nodifferenc",
+    "label": "FL_155 - Block Randomizer - Display Order Attitudes2-nodifference",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 3955
+  },
+  {
+    "id": "FL_46_DO_Immigration",
+    "label": "FL_46 - Block Randomizer - Display Order Immigration",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_46_DO_Refugees",
+    "label": "FL_46 - Block Randomizer - Display Order Refugees",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_51_DO_Attitudes4_Externaleffi",
+    "label": "FL_51 - Block Randomizer - Display Order Attitudes4-Externalefficacy-governmentc",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_51_DO_Attitudes4_Externaleff0",
+    "label": "FL_51 - Block Randomizer - Display Order Attitudes4-Externalefficacy-governmentc",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_51_DO_Attitudes4_Externaleff1",
+    "label": "FL_51 - Block Randomizer - Display Order Attitudes4-Externalefficacy-governments",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_52_DO_Attitudes4_Socialconser",
+    "label": "FL_52 - Block Randomizer - Display Order Attitudes4-Socialconservatism1",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_52_DO_Attitudes4_Socialconse0",
+    "label": "FL_52 - Block Randomizer - Display Order Attitudes4-Socialconservatism2",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_54_DO_TieswithUS",
+    "label": "FL_54 - Block Randomizer - Display Order TieswithUS",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_54_DO_TieswithChina",
+    "label": "FL_54 - Block Randomizer - Display Order TieswithChina",
+    "value_labels": {},
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_56_DO_Participation1",
+    "label": "FL_56 - Block Randomizer - Display Order Participation1",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_56_DO_Participation2",
+    "label": "FL_56 - Block Randomizer - Display Order Participation2",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "FL_56_DO_Participation3",
+    "label": "FL_56 - Block Randomizer - Display Order Participation3",
+    "value_labels": {},
+    "n_unique": 3,
+    "n_missing": 0
+  },
+  {
+    "id": "Attitudes1_politicianattitudes_D",
+    "label": "Attitudes 1 - politician attitudes - Display Order dc21_pos_lose_touch",
+    "value_labels": {},
+    "n_unique": 1,
+    "n_missing": 5138
+  },
+  {
+    "id": "Attitudes1_politicianattitudes_0",
+    "label": "Attitudes 1 - politician attitudes - Display Order dc21_pos_pol_lie",
+    "value_labels": {},
+    "n_unique": 1,
+    "n_missing": 5138
+  },
+  {
+    "id": "time",
+    "label": "Time in minutes",
+    "value_labels": {},
+    "n_unique": 2652,
+    "n_missing": 0
+  },
+  {
+    "id": "feduid",
+    "label": "FEDuid",
+    "value_labels": {},
+    "n_unique": 344,
+    "n_missing": 0
+  },
+  {
+    "id": "fedname",
+    "label": "FEDname",
+    "value_labels": {},
+    "n_unique": 336,
+    "n_missing": 0
+  },
+  {
+    "id": "pccf_problem",
+    "label": "Postal codes flagged due to errors",
+    "value_labels": {
+      "0": "Not flagged",
+      "1": "Flagged with Error"
+    },
+    "n_unique": 2,
+    "n_missing": 0
+  },
+  {
+    "id": "dc21_quota_weight",
+    "label": "Entire sample weight enforcing province (with language in Quebec), age, and gend",
+    "value_labels": {},
+    "n_unique": 150,
+    "n_missing": 0
+  }
+]

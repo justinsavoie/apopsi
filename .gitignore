@@ -1,0 +1,27 @@
+# API keys
+to-key.txt
+
+# Data files
+data/
+
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Output parquet/data files (keep .qmd and .html reports)
+*/clean_data.parquet
+*/raw_data.parquet
+*/comparison/synthetic_*.parquet
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.quarto_ipynb

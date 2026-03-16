@@ -1,0 +1,27 @@
+{
+  "survey": "CES19",
+  "model": "Qwen/Qwen2.5-7B-Instruct-Turbo",
+  "timestamp": "2026-03-14T21:52:14.196845",
+  "generators": {
+    "irt": {
+      "n_personas": 1000,
+      "overall_score": 0.48615918791102875,
+      "duration_seconds": 0.08957695960998535
+    },
+    "llm_qwen": {
+      "n_personas": 100,
+      "overall_score": 0.5860289227919364,
+      "duration_seconds": 1593.3043730258942
+    },
+    "agent_simulation": {
+      "n_personas": 500,
+      "overall_score": 0.48509020896341215,
+      "duration_seconds": 2.958305835723877
+    }
+  },
+  "ranking": [
+    "llm_qwen",
+    "irt",
+    "agent_simulation"
+  ]
+}

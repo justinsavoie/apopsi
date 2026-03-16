@@ -1,0 +1,252 @@
+{
+  "survey_name": "CES21",
+  "questions": [
+    {
+      "id": "cps21_demsat",
+      "text": "On the whole, how satisfied are you with the way democracy works in Canada?",
+      "type": "likert",
+      "options": [
+        "Very satisfied",
+        "Fairly satisfied",
+        "Not very satisfied",
+        "Not at all satisfied"
+      ]
+    },
+    {
+      "id": "cps21_govt_confusing",
+      "text": "Sometimes, politics and government seem so complicated that a person like me cannot really understand what is going on.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "cps21_govt_say",
+      "text": "People like me don't have any say about what the government does.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "cps21_econ_retro",
+      "text": "Over the past year, has Canada's economy got better, stayed about the same, or got worse?",
+      "type": "categorical",
+      "options": [
+        "got better",
+        "stayed about the same",
+        "got worse"
+      ]
+    },
+    {
+      "id": "cps21_econ_fed_bette",
+      "text": "Have the policies of the federal government made Canada's economy better, worse, or not made much difference?",
+      "type": "categorical",
+      "options": [
+        "Better",
+        "Worse",
+        "Not made much difference"
+      ]
+    },
+    {
+      "id": "pes21_govtcare",
+      "text": "The government does not care much about what people like me think.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes21_populism_3",
+      "text": "Most politicians do not care about the people.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes21_populism_7",
+      "text": "The people, and not politicians, should make our most important policy decisions.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes21_populism_8",
+      "text": "Most politicians care only about the interests of the rich and powerful.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes21_conf_inst1_1",
+      "text": "Please indicate how much confidence you have in the following: The federal government",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "pes21_conf_inst1_2",
+      "text": "Please indicate how much confidence you have in the following: Your provincial government",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "pes21_conf_inst1_3",
+      "text": "Please indicate how much confidence you have in the following: The media/news",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "pes21_conf_inst1_4",
+      "text": "Please indicate how much confidence you have in the following: Elected officials generally",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "pes21_fitin",
+      "text": "Too many recent immigrants just don't want to fit in to Canadian society.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes21_immigjobs",
+      "text": "Immigrants take jobs away from other Canadians.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes21_famvalues",
+      "text": "This country would have many fewer problems if there was more emphasis on traditional family values.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes21_equalrights",
+      "text": "We have gone too far in pushing equal rights in this country.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes21_newerlife",
+      "text": "Newer lifestyles are contributing to the breakdown of our society.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes21_inequal",
+      "text": "Is income inequality a big problem in Canada?",
+      "type": "categorical",
+      "options": [
+        "Definitely yes",
+        "Probably yes",
+        "Not sure",
+        "Probably not",
+        "Definitely not"
+      ]
+    },
+    {
+      "id": "pes21_pidtrad",
+      "text": "In federal politics, do you usually think of yourself as a Liberal, Conservative, NDP, Bloc Qu\u00e9b\u00e9cois, Green, or People's Party supporter?",
+      "type": "categorical",
+      "options": [
+        "Liberal",
+        "Conservative",
+        "ndp",
+        "Bloc Qu\u00e9b\u00e9cois",
+        "Green",
+        "People's Party",
+        "Another party (please specify)",
+        "None of these"
+      ]
+    },
+    {
+      "id": "pes21_votechoice2021",
+      "text": "Which party did you vote for in the September 20, 2021 federal election?",
+      "type": "categorical",
+      "options": [
+        "Liberal Party",
+        "Conservative Party",
+        "ndp",
+        "Bloc Qu\u00e9b\u00e9cois",
+        "Green Party",
+        "People's Party",
+        "Another party (specify)",
+        "I spoiled my vote"
+      ]
+    }
+  ]
+}

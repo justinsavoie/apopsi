@@ -3,7 +3,11 @@
     "allow": [
       "Bash(mkdir -p synthetic-opinion-lab/{survey,personas,generators/{irt,llm,agents},llm_providers,evaluation,pipelines,experiments/{configs,results}})",
       "Bash(touch synthetic-opinion-lab/__init__.py)",
-      "Bash(find synthetic-opinion-lab -type d -exec touch {}/__init__.py ;)"
+      "Bash(find synthetic-opinion-lab -type d -exec touch {}/__init__.py ;)",
+      "Bash(source venv/bin/activate && python3 -c \"\nimport pyreadstat\ndf, meta = pyreadstat.read_dta\\('data/DC 2021 v1.dta'\\)\nprint\\('Shape:', df.shape\\)\nprint\\('\\\\nColumn names:'\\)\nfor col in df.columns:\n    label = meta.column_names_to_labels.get\\(col, ''\\)\n    vals = meta.variable_value_labels.get\\(col, {}\\)\n    print\\(f'  {col}: {label[:80]}'\\)\n    if vals:\n        print\\(f'    options: {dict\\(list\\(vals.items\\(\\)\\)[:5]\\)}'\\)\n\")",
+      "Bash(source venv/bin/activate && python ingest_dc21.py 2>&1 | tail -60)",
+      "Bash(cd /Users/justinsavoie/Documents/personal_repos/apopsi/dc21_output && source ../venv/bin/activate && quarto render report.qmd 2>&1)",
+      "Bash(source ../venv/bin/activate && quarto render report.qmd 2>&1)"
     ],
     "deny": [],
     "ask": []

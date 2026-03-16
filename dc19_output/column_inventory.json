@@ -1,0 +1,2592 @@
+[
+  {
+    "id": "StartDate",
+    "label": "Start Date",
+    "value_labels": {}
+  },
+  {
+    "id": "EndDate",
+    "label": "End Date",
+    "value_labels": {}
+  },
+  {
+    "id": "Duration__in_seconds_",
+    "label": "Duration (in seconds)",
+    "value_labels": {}
+  },
+  {
+    "id": "UserAgent",
+    "label": "UserAgent",
+    "value_labels": {}
+  },
+  {
+    "id": "Q_Language",
+    "label": "Q_Language",
+    "value_labels": {}
+  },
+  {
+    "id": "survey_minutes",
+    "label": "Duration (in minutes)",
+    "value_labels": {}
+  },
+  {
+    "id": "wave",
+    "label": "Democracy Checkup survey wave",
+    "value_labels": {
+      "1": "May 2019",
+      "2": "June 2019",
+      "3": "July 2019",
+      "4": "August 2019"
+    }
+  },
+  {
+    "id": "RecordedDate",
+    "label": "Recorded Date",
+    "value_labels": {}
+  },
+  {
+    "id": "ResponseId",
+    "label": "Response ID",
+    "value_labels": {}
+  },
+  {
+    "id": "consent",
+    "label": "Letter of Information and Consent\n \n\nProject Title: Democracy in Canada\n\nPrincip",
+    "value_labels": {
+      "1": "I consent to participate in this study. I have read all of the information about the study.",
+      "2": "I do not consent to participate."
+    }
+  },
+  {
+    "id": "yob",
+    "label": "To make sure we are talking to a cross section of\n  Canadians, we need to get a",
+    "value_labels": {
+      "1": "1920",
+      "2": "1921",
+      "3": "1922",
+      "4": "1923",
+      "5": "1924",
+      "6": "1925",
+      "7": "1926",
+      "8": "1927",
+      "9": "1928",
+      "10": "1929",
+      "11": "1930",
+      "12": "1931",
+      "13": "1932",
+      "14": "1933",
+      "15": "1934",
+      "16": "1935",
+      "17": "1936",
+      "18": "1937",
+      "19": "1938",
+      "20": "1939",
+      "21": "1940",
+      "22": "1941",
+      "23": "1942",
+      "24": "1943",
+      "25": "1944",
+      "26": "1945",
+      "27": "1946",
+      "28": "1947",
+      "29": "1948",
+      "30": "1949",
+      "31": "1950",
+      "32": "1951",
+      "33": "1952",
+      "34": "1953",
+      "35": "1954",
+      "36": "1955",
+      "37": "1956",
+      "38": "1957",
+      "39": "1958",
+      "40": "1959",
+      "41": "1960",
+      "42": "1961",
+      "43": "1962",
+      "44": "1963",
+      "45": "1964",
+      "46": "1965",
+      "47": "1966",
+      "48": "1967",
+      "49": "1968",
+      "50": "1969",
+      "51": "1970",
+      "52": "1971",
+      "53": "1972",
+      "54": "1973",
+      "55": "1974",
+      "56": "1975",
+      "57": "1976",
+      "58": "1977",
+      "59": "1978",
+      "60": "1979",
+      "61": "1980",
+      "62": "1981",
+      "63": "1982",
+      "64": "1983",
+      "65": "1984",
+      "66": "1985",
+      "67": "1986",
+      "68": "1987",
+      "69": "1988",
+      "70": "1989",
+      "71": "1990",
+      "72": "1991",
+      "73": "1992",
+      "74": "1993",
+      "75": "1994",
+      "76": "1995",
+      "77": "1996",
+      "78": "1997",
+      "79": "1998",
+      "80": "1999",
+      "81": "2000",
+      "82": "2001",
+      "83": "2002",
+      "84": "2003",
+      "85": "2004",
+      "86": "2005",
+      "87": "2006",
+      "88": "2007",
+      "89": "2008",
+      "90": "2009",
+      "91": "2010"
+    }
+  },
+  {
+    "id": "yob_2001_age",
+    "label": "How old are you?",
+    "value_labels": {
+      "1": "17",
+      "2": "18"
+    }
+  },
+  {
+    "id": "age_in_years",
+    "label": "Age in years",
+    "value_labels": {}
+  },
+  {
+    "id": "age_cat",
+    "label": "Age in years categorized",
+    "value_labels": {}
+  },
+  {
+    "id": "citizenship",
+    "label": "Are you a...",
+    "value_labels": {
+      "4": "Canadian citizen",
+      "5": "Permanent resident",
+      "6": "Other"
+    }
+  },
+  {
+    "id": "gender",
+    "label": "Are you...",
+    "value_labels": {
+      "1": "A man",
+      "2": "A woman",
+      "3": "Other (eg. Trans, non-binary, two-spirit, gender-queer)"
+    }
+  },
+  {
+    "id": "province",
+    "label": "Which province or territory are you currently living in?",
+    "value_labels": {
+      "14": "Alberta",
+      "15": "British Columbia",
+      "16": "Manitoba",
+      "17": "New Brunswick",
+      "18": "Newfoundland and Labrador",
+      "19": "Northwest Territories",
+      "20": "Nova Scotia",
+      "21": "Nunavut",
+      "22": "Ontario",
+      "23": "Prince Edward Island",
+      "24": "Quebec",
+      "25": "Saskatchewan",
+      "26": "Yukon Territories"
+    }
+  },
+  {
+    "id": "education",
+    "label": "What is the highest level of education that you have completed?",
+    "value_labels": {
+      "1": "No schooling",
+      "2": "Some elementary school",
+      "3": "Completed elementary school",
+      "4": "Some secondary/ high school",
+      "5": "Completed secondary/ high school",
+      "6": "Some technical, community college, CEGEP, College Classique",
+      "7": "Completed technical, community college, CEGEP, College Classique",
+      "8": "Some university",
+      "9": "Bachelor's degree",
+      "10": "Master's degree",
+      "11": "Professional degree or doctorate",
+      "12": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "democratic_sat",
+    "label": "On the whole, how satisfied are you with\nthe way democracy works in Canada?",
+    "value_labels": {
+      "1": "Very satisfied",
+      "2": "Fairly satisfied",
+      "3": "Not very satisfied",
+      "4": "Not at all satisfied",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "vote_intention",
+    "label": "Which party do you intend to vote for in the federal election in October? - Sele",
+    "value_labels": {
+      "1": "Liberal Party",
+      "2": "Conservative Party",
+      "3": "New Democratic Party",
+      "4": "Bloc Qu\u00e9b\u00e9cois",
+      "5": "Green Party",
+      "6": "People's Party",
+      "7": "Another party (please specify)",
+      "10": "I am not eligible to vote",
+      "8": "I do not intend to vote",
+      "9": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "vote_intention_7_TEXT",
+    "label": "Which party do you intend to vote for in the federal election in October? - Anot",
+    "value_labels": {}
+  },
+  {
+    "id": "political_interest_1",
+    "label": "How interested are you in politics GENERALLY? Set the slider to a number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "news_time_spent",
+    "label": "On average, how much time do you usually spend watching, reading, and listening",
+    "value_labels": {
+      "1": "None",
+      "2": "1-10 minutes",
+      "3": "11-30 minutes",
+      "4": "31-60 minutes",
+      "5": "Between 1 and 2 hours",
+      "6": "More than 2 hours",
+      "7": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "social_media_freq",
+    "label": "How often do use social media like Facebook or Twitter?",
+    "value_labels": {
+      "77": "Multiple times a day",
+      "78": "Daily",
+      "79": "More than once a week",
+      "80": "Weekly",
+      "81": "More than once a month",
+      "82": "Once a month or less",
+      "83": "Never",
+      "84": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "discuss_pol_freq",
+    "label": "How often do you discuss politics with family and friends?",
+    "value_labels": {
+      "1": "Daily",
+      "2": "More than once a week",
+      "3": "Weekly",
+      "4": "More than once a month",
+      "5": "Monthly",
+      "6": "Rarely",
+      "7": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "discuss_pol_disagree",
+    "label": "During the last month, have you discussed politics with someone who disagreed wi",
+    "value_labels": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "discuss_pol_dis_freq",
+    "label": "How many times in the last month did you discuss politics with someone who disag",
+    "value_labels": {
+      "23": "Once",
+      "24": "A few times",
+      "25": "Weekly",
+      "26": "More than once a week",
+      "27": "Daily",
+      "28": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "party_id",
+    "label": "In federal politics, do you usually think of yourself as a: - Selected Choice",
+    "value_labels": {
+      "1": "Liberal",
+      "2": "Conservative",
+      "3": "NDP",
+      "4": "Bloc Qu\u00e9b\u00e9cois",
+      "5": "Green",
+      "6": "Another party (please specify)",
+      "7": "No party",
+      "8": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pid_6_TEXT",
+    "label": "In federal politics, do you usually think of yourself as a: - Another party (ple",
+    "value_labels": {}
+  },
+  {
+    "id": "pid_strength",
+    "label": "How strongly [QID13-ChoiceGroup-SelectedChoicesTextEntry] do you feel?",
+    "value_labels": {
+      "1": "Very strongly",
+      "2": "Fairly strongly",
+      "3": "Not very strongly",
+      "4": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pid_connection",
+    "label": "When you meet someone who supports your party, do you feel a kind of instant con",
+    "value_labels": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pid_insult",
+    "label": "If someone you know criticizes your party, do you feel personally insulted?",
+    "value_labels": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "party_group_assoc_1",
+    "label": "Which party do you most closely associate with each of the following groups? By",
+    "value_labels": {
+      "53": "Liberal Party",
+      "54": "Conservative Party",
+      "55": "New Democratic Party",
+      "56": "Bloc Qu\u00e9b\u00e9cois",
+      "57": "Green Party",
+      "59": "No party",
+      "60": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "party_group_assoc_2",
+    "label": "Which party do you most closely associate with each of the following groups? By",
+    "value_labels": {
+      "53": "Liberal Party",
+      "54": "Conservative Party",
+      "55": "New Democratic Party",
+      "56": "Bloc Qu\u00e9b\u00e9cois",
+      "57": "Green Party",
+      "59": "No party",
+      "60": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "party_group_assoc_3",
+    "label": "Which party do you most closely associate with each of the following groups? By",
+    "value_labels": {
+      "53": "Liberal Party",
+      "54": "Conservative Party",
+      "55": "New Democratic Party",
+      "56": "Bloc Qu\u00e9b\u00e9cois",
+      "57": "Green Party",
+      "59": "No party",
+      "60": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "party_group_assoc_4",
+    "label": "Which party do you most closely associate with each of the following groups? By",
+    "value_labels": {
+      "53": "Liberal Party",
+      "54": "Conservative Party",
+      "55": "New Democratic Party",
+      "56": "Bloc Qu\u00e9b\u00e9cois",
+      "57": "Green Party",
+      "59": "No party",
+      "60": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "party_group_assoc_5",
+    "label": "Which party do you most closely associate with each of the following groups? By",
+    "value_labels": {
+      "53": "Liberal Party",
+      "54": "Conservative Party",
+      "55": "New Democratic Party",
+      "56": "Bloc Qu\u00e9b\u00e9cois",
+      "57": "Green Party",
+      "59": "No party",
+      "60": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "party_group_assoc_6",
+    "label": "Which party do you most closely associate with each of the following groups? By",
+    "value_labels": {
+      "53": "Liberal Party",
+      "54": "Conservative Party",
+      "55": "New Democratic Party",
+      "56": "Bloc Qu\u00e9b\u00e9cois",
+      "57": "Green Party",
+      "59": "No party",
+      "60": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "party_group_assoc_7",
+    "label": "Which party do you most closely associate with each of the following groups? By",
+    "value_labels": {
+      "53": "Liberal Party",
+      "54": "Conservative Party",
+      "55": "New Democratic Party",
+      "56": "Bloc Qu\u00e9b\u00e9cois",
+      "57": "Green Party",
+      "59": "No party",
+      "60": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "party_ratings_23",
+    "label": "How do you feel about the federal political parties below? Set the slider to a n",
+    "value_labels": {}
+  },
+  {
+    "id": "party_ratings_24",
+    "label": "How do you feel about the federal political parties below? Set the slider to a n",
+    "value_labels": {}
+  },
+  {
+    "id": "party_ratings_25",
+    "label": "How do you feel about the federal political parties below? Set the slider to a n",
+    "value_labels": {}
+  },
+  {
+    "id": "party_ratings_26",
+    "label": "How do you feel about the federal political parties below? Set the slider to a n",
+    "value_labels": {}
+  },
+  {
+    "id": "party_ratings_27",
+    "label": "How do you feel about the federal political parties below? Set the slider to a n",
+    "value_labels": {}
+  },
+  {
+    "id": "party_ratings_28",
+    "label": "How do you feel about the federal political parties below? Set the slider to a n",
+    "value_labels": {}
+  },
+  {
+    "id": "leader_imp_int_74",
+    "label": "Which party leader(s) below do you think is/are intelligent? (Select all that ap",
+    "value_labels": {
+      "1": "Justin Trudeau"
+    }
+  },
+  {
+    "id": "leader_imp_int_75",
+    "label": "Which party leader(s) below do you think is/are intelligent? (Select all that ap",
+    "value_labels": {
+      "1": "Andrew Scheer"
+    }
+  },
+  {
+    "id": "leader_imp_int_76",
+    "label": "Which party leader(s) below do you think is/are intelligent? (Select all that ap",
+    "value_labels": {
+      "1": "Jagmeet Singh"
+    }
+  },
+  {
+    "id": "leader_imp_int_77",
+    "label": "Which party leader(s) below do you think is/are intelligent? (Select all that ap",
+    "value_labels": {
+      "1": "Yves-Fran\u00e7ois Blanchet"
+    }
+  },
+  {
+    "id": "leader_imp_int_78",
+    "label": "Which party leader(s) below do you think is/are intelligent? (Select all that ap",
+    "value_labels": {
+      "1": "Elizabeth May"
+    }
+  },
+  {
+    "id": "leader_imp_int_79",
+    "label": "Which party leader(s) below do you think is/are intelligent? (Select all that ap",
+    "value_labels": {
+      "1": "None of these"
+    }
+  },
+  {
+    "id": "leader_imp_int_80",
+    "label": "Which party leader(s) below do you think is/are intelligent? (Select all that ap",
+    "value_labels": {
+      "1": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "leader_imp_strong_74",
+    "label": "Which party leader(s) below do you think provide(s) strong leadership? (Select a",
+    "value_labels": {
+      "1": "Justin Trudeau"
+    }
+  },
+  {
+    "id": "leader_imp_strong_75",
+    "label": "Which party leader(s) below do you think provide(s) strong leadership? (Select a",
+    "value_labels": {
+      "1": "Andrew Scheer"
+    }
+  },
+  {
+    "id": "leader_imp_strong_76",
+    "label": "Which party leader(s) below do you think provide(s) strong leadership? (Select a",
+    "value_labels": {
+      "1": "Jagmeet Singh"
+    }
+  },
+  {
+    "id": "leader_imp_strong_77",
+    "label": "Which party leader(s) below do you think provide(s) strong leadership? (Select a",
+    "value_labels": {
+      "1": "Yves-Fran\u00e7ois Blanchet"
+    }
+  },
+  {
+    "id": "leader_imp_strong_78",
+    "label": "Which party leader(s) below do you think provide(s) strong leadership? (Select a",
+    "value_labels": {
+      "1": "Elizabeth May"
+    }
+  },
+  {
+    "id": "leader_imp_strong_79",
+    "label": "Which party leader(s) below do you think provide(s) strong leadership? (Select a",
+    "value_labels": {
+      "1": "None of these"
+    }
+  },
+  {
+    "id": "leader_imp_strong_80",
+    "label": "Which party leader(s) below do you think provide(s) strong leadership? (Select a",
+    "value_labels": {
+      "1": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "leader_imp_trust_74",
+    "label": "Which party leader(s) below do you think is/are trustworthy? (Select all that ap",
+    "value_labels": {
+      "1": "Justin Trudeau"
+    }
+  },
+  {
+    "id": "leader_imp_trust_75",
+    "label": "Which party leader(s) below do you think is/are trustworthy? (Select all that ap",
+    "value_labels": {
+      "1": "Andrew Scheer"
+    }
+  },
+  {
+    "id": "leader_imp_trust_76",
+    "label": "Which party leader(s) below do you think is/are trustworthy? (Select all that ap",
+    "value_labels": {
+      "1": "Jagmeet Singh"
+    }
+  },
+  {
+    "id": "leader_imp_trust_77",
+    "label": "Which party leader(s) below do you think is/are trustworthy? (Select all that ap",
+    "value_labels": {
+      "1": "Yves-Fran\u00e7ois Blanchet"
+    }
+  },
+  {
+    "id": "leader_imp_trust_78",
+    "label": "Which party leader(s) below do you think is/are trustworthy? (Select all that ap",
+    "value_labels": {
+      "1": "Elizabeth May"
+    }
+  },
+  {
+    "id": "leader_imp_trust_79",
+    "label": "Which party leader(s) below do you think is/are trustworthy? (Select all that ap",
+    "value_labels": {
+      "1": "None of these"
+    }
+  },
+  {
+    "id": "leader_imp_trust_80",
+    "label": "Which party leader(s) below do you think is/are trustworthy? (Select all that ap",
+    "value_labels": {
+      "1": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "leader_imp_cares_74",
+    "label": "Which party leader(s) below do you think really care(s) about people like me? (S",
+    "value_labels": {
+      "1": "Justin Trudeau"
+    }
+  },
+  {
+    "id": "leader_imp_cares_75",
+    "label": "Which party leader(s) below do you think really care(s) about people like me? (S",
+    "value_labels": {
+      "1": "Andrew Scheer"
+    }
+  },
+  {
+    "id": "leader_imp_cares_76",
+    "label": "Which party leader(s) below do you think really care(s) about people like me? (S",
+    "value_labels": {
+      "1": "Jagmeet Singh"
+    }
+  },
+  {
+    "id": "leader_imp_cares_77",
+    "label": "Which party leader(s) below do you think really care(s) about people like me? (S",
+    "value_labels": {
+      "1": "Yves-Fran\u00e7ois Blanchet"
+    }
+  },
+  {
+    "id": "leader_imp_cares_78",
+    "label": "Which party leader(s) below do you think really care(s) about people like me? (S",
+    "value_labels": {
+      "1": "Elizabeth May"
+    }
+  },
+  {
+    "id": "leader_imp_cares_79",
+    "label": "Which party leader(s) below do you think really care(s) about people like me? (S",
+    "value_labels": {
+      "1": "None of these"
+    }
+  },
+  {
+    "id": "leader_imp_cares_80",
+    "label": "Which party leader(s) below do you think really care(s) about people like me? (S",
+    "value_labels": {
+      "1": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_representation",
+    "label": "How much do you agree or disagree with the following statement?\n\nElecting people",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_no_difference",
+    "label": "How much do you agree or disagree with the following statement?\n\nElections make",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_equal_rights",
+    "label": "How much do you agree or disagree with the following statement?\n\nWe have gone to",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_women_home",
+    "label": "How much do you agree or disagree with the following statement?\n\nSociety would b",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_hate_speech",
+    "label": "How much do you agree or disagree with the following statement?\n\nIt should be il",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_experts",
+    "label": "How much do you agree or disagree with the following statement?\n\nI\u2019d rather pu",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_lose_touch",
+    "label": "How much do you agree or disagree with the following statement?\n\nThose elected t",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_politicians_lie",
+    "label": "How much do you agree or disagree with the following statement?\n\nPoliticians are",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_career_pol",
+    "label": "How much do you agree or disagree with the following statement?\n\nOrdinary people",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_protest_laws",
+    "label": "How much do you agree or disagree with the following statement?\n\n\n\nCanadians hav",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_limit_protests",
+    "label": "How much do you agree or disagree with the following statement?\n\nPolitical prote",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "confidence_inst_1",
+    "label": "Please indicate how much confidence you have in the following: - The courts",
+    "value_labels": {
+      "1": "A great deal",
+      "2": "Quite a lot",
+      "3": "Not very much",
+      "4": "None at all",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "confidence_inst_2",
+    "label": "Please indicate how much confidence you have in the following: - The federal gov",
+    "value_labels": {
+      "1": "A great deal",
+      "2": "Quite a lot",
+      "3": "Not very much",
+      "4": "None at all",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "confidence_inst_3",
+    "label": "Please indicate how much confidence you have in the following: - The media",
+    "value_labels": {
+      "1": "A great deal",
+      "2": "Quite a lot",
+      "3": "Not very much",
+      "4": "None at all",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "confidence_inst_4",
+    "label": "Please indicate how much confidence you have in the following: - Your provincial",
+    "value_labels": {
+      "1": "A great deal",
+      "2": "Quite a lot",
+      "3": "Not very much",
+      "4": "None at all",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "confidence_elections",
+    "label": "How [Field-confidence_institutions_word] are you that our elections are safe fro",
+    "value_labels": {
+      "1": "Very ${e://Field/confidence_institutions_word}",
+      "2": "Somewhat ${e://Field/confidence_institutions_word}",
+      "3": "Not very ${e://Field/confidence_institutions_word}",
+      "4": "Not at all ${e://Field/confidence_institutions_word}",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "fed_gov_satisfaction",
+    "label": "[Field-fed_gov_sat_preamble] satisfied are you with the performance of the feder",
+    "value_labels": {
+      "1": "Very satisfied",
+      "2": "Fairly satisfied",
+      "3": "Not very satisfied",
+      "4": "Not at all satisfied",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_imm_lang",
+    "label": "How much do you agree or disagree with the following statement?\n\nSpeaking Englis",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_ab_favours",
+    "label": "How much do you agree or disagree with the following statement?\n\n\n\nIrish, Italia",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_ab_deserve",
+    "label": "How much do you agree or disagree with the following statement?\n\nOver the past f",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_ab_try",
+    "label": "How much do you agree or disagree with the following statement?\n\nIt's really a m",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_ab_colonialism",
+    "label": "How much do you agree or disagree with the following statement?\n\nGenerations of",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_bilingualism",
+    "label": "How much do you agree or disagree with the following statement?\n\nWe have gone to",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_group_id",
+    "label": "How much do you agree or disagree with the following statement?\n\nMy ethnicity an",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_assimilation",
+    "label": "How much do you agree or disagree with the following statement?\n\nToo many recent",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_take_jobs",
+    "label": "How much do you agree or disagree with the following statement?\n\nImmigrants take",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_look_after",
+    "label": "How much do you agree or disagree with the following statement?\n\nWe should look",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "social_network_size",
+    "label": "Thinking about people who are NOT family members or relatives, how many close fr",
+    "value_labels": {
+      "1": "None",
+      "2": "1",
+      "3": "2-5",
+      "4": "More than 5",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "social_network_types_1",
+    "label": "How many of your close friends \u2026 - Belong to a visibly different ethnicity tha",
+    "value_labels": {
+      "1": "None",
+      "2": "1",
+      "3": "2-5",
+      "4": "More than 5",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "social_network_types_2",
+    "label": "How many of your close friends \u2026 - Tend to disagree with you about politics?",
+    "value_labels": {
+      "1": "None",
+      "2": "1",
+      "3": "2-5",
+      "4": "More than 5",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "social_network_types_3",
+    "label": "How many of your close friends \u2026 - Have a graduate or professional degree?",
+    "value_labels": {
+      "1": "None",
+      "2": "1",
+      "3": "2-5",
+      "4": "More than 5",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "social_network_freq",
+    "label": "In an average month, how often do you get together in person with your close fri",
+    "value_labels": {
+      "1": "Daily",
+      "2": "More than once a week",
+      "3": "Weekly",
+      "4": "More than once a month",
+      "5": "Once a month",
+      "6": "Less than once a month",
+      "7": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "least_liked_group",
+    "label": "Thinking about the groups listed below, which would you say that you disagree wi",
+    "value_labels": {
+      "1": "Muslim fundamentalists",
+      "2": "Feminists",
+      "3": "Neo-Nazis",
+      "4": "Gay rights activists",
+      "5": "Christian fundamentalists",
+      "6": "Extreme-right activists",
+      "7": "Extreme-left activists",
+      "8": "Other (please specify)",
+      "9": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "least_liked_group_8_TEXT",
+    "label": "Thinking about the groups listed below, which would you say that you disagree wi",
+    "value_labels": {}
+  },
+  {
+    "id": "least_liked_teacher",
+    "label": "Should [Field-least_liked_lowercase][QID47-ChoiceTextEntryValue-8] be allowed to",
+    "value_labels": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "least_liked_protest",
+    "label": "Should [Field-least_liked_lowercase][QID47-ChoiceTextEntryValue-8] be allowed to",
+    "value_labels": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "inequality_gap",
+    "label": "How much do you think should be done to reduce the gap between the rich and the",
+    "value_labels": {
+      "1": "Much more",
+      "2": "Somewhat more",
+      "3": "About the same as now",
+      "4": "Somewhat less",
+      "5": "Much less",
+      "6": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "abortion",
+    "label": "Should abortion be banned?",
+    "value_labels": {
+      "47": "Yes",
+      "48": "In some circumstances",
+      "49": "No",
+      "50": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "immigration_level",
+    "label": "Do you think Canada should admit: more immigrants, fewer immigrants, or about th",
+    "value_labels": {
+      "1": "More",
+      "2": "Fewer",
+      "3": "About the same as now",
+      "4": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "groups_termometer_1_14",
+    "label": "How do you feel about the following groups? Set the slider to any number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "groups_termometer_1_15",
+    "label": "How do you feel about the following groups? Set the slider to any number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "groups_termometer_1_16",
+    "label": "How do you feel about the following groups? Set the slider to any number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "groups_termometer_1_17",
+    "label": "How do you feel about the following groups? Set the slider to any number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "groups_termometer_1_18",
+    "label": "How do you feel about the following groups? Set the slider to any number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "groups_termometer_2_18",
+    "label": "How do you feel about the following groups? Set the slider to any number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "groups_termometer_2_19",
+    "label": "How do you feel about the following groups? Set the slider to any number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "groups_termometer_2_20",
+    "label": "How do you feel about the following groups? Set the slider to any number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "groups_termometer_2_21",
+    "label": "How do you feel about the following groups? Set the slider to any number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "groups_termometer_2_22",
+    "label": "How do you feel about the following groups? Set the slider to any number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "countries_termometer_35",
+    "label": "How do you feel about the following places? Set the slider to any number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "countries_termometer_36",
+    "label": "How do you feel about the following places? Set the slider to any number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "countries_termometer_37",
+    "label": "How do you feel about the following places? Set the slider to any number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "countries_termometer_38",
+    "label": "How do you feel about the following places? Set the slider to any number from 0",
+    "value_labels": {}
+  },
+  {
+    "id": "ladder_current_1",
+    "label": "Where would you place your current financial situation on the scale below, where",
+    "value_labels": {}
+  },
+  {
+    "id": "ladder_future_1",
+    "label": "Where would you place your expected financial situation in 5 years on the scale",
+    "value_labels": {}
+  },
+  {
+    "id": "pos_govt_care",
+    "label": "How much do you agree or disagree with the following statement?\n\nThe government",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_govt_complicated",
+    "label": "How much do you agree or disagree with the following statement?\n\nSometimes, poli",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_govt_say",
+    "label": "How much do you agree or disagree with the following statement?\n\nPeople like me",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_offensive_speech",
+    "label": "How much do you agree or disagree with the following statement?\n\nPeople should b",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_govt_programs",
+    "label": "How much do you agree or disagree with the following statement?\n\nGovernment can",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_govt_effective",
+    "label": "How much do you agree or disagree with the following statement?\n\nGovernments use",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_family_values",
+    "label": "How much do you agree or disagree with the following statement?\n\nThis country wo",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "pos_govt_jobs",
+    "label": "How much do you agree or disagree with the following statement?\n\nThe government",
+    "value_labels": {
+      "1": "Strongly agree",
+      "2": "Somewhat agree",
+      "3": "Somewhat disagree",
+      "4": "Strongly disagree",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "ties_us",
+    "label": "Do you think Canada's ties with the United States should be much closer, somewha",
+    "value_labels": {
+      "1": "Much closer",
+      "2": "Somewhat closer",
+      "3": "About the same as now",
+      "4": "Somewhat more distant",
+      "5": "Much more distant",
+      "6": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "ties_china",
+    "label": "Do you think Canada's ties with China should be much closer, somewhat closer, ab",
+    "value_labels": {
+      "1": "Much closer",
+      "2": "Somewhat closer",
+      "3": "About the same as now",
+      "4": "Somewhat more distant",
+      "5": "Much more distant",
+      "6": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "internet_voting",
+    "label": "Which statement comes closest to your own view?",
+    "value_labels": {
+      "1": " Voting on the Internet is risky",
+      "2": "Voting on the Internet is safe",
+      "3": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "turnout_2015",
+    "label": "Did you happen to vote in the last Federal election in 2015?",
+    "value_labels": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Not eligible to vote in last election",
+      "4": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "vote_2015",
+    "label": "Which party did you vote for in the Federal election in 2015? - Selected Choice",
+    "value_labels": {
+      "1": "Liberal Party",
+      "2": "Conservative Party",
+      "3": "New Democratic Party",
+      "4": "Bloc Qu\u00e9b\u00e9cois",
+      "5": "Green Party",
+      "6": "Another party (please specify)",
+      "7": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "vote_2015_6_TEXT",
+    "label": "Which party did you vote for in the Federal election in 2015? - Another party (p",
+    "value_labels": {}
+  },
+  {
+    "id": "active_associations_112",
+    "label": "Please indicate whether you have been active in any of the following voluntary a",
+    "value_labels": {
+      "1": "Community service group"
+    }
+  },
+  {
+    "id": "active_associations_113",
+    "label": "Please indicate whether you have been active in any of the following voluntary a",
+    "value_labels": {
+      "1": "Business association"
+    }
+  },
+  {
+    "id": "active_associations_114",
+    "label": "Please indicate whether you have been active in any of the following voluntary a",
+    "value_labels": {
+      "1": "Professional association"
+    }
+  },
+  {
+    "id": "active_associations_115",
+    "label": "Please indicate whether you have been active in any of the following voluntary a",
+    "value_labels": {
+      "1": "Environmental group"
+    }
+  },
+  {
+    "id": "active_associations_116",
+    "label": "Please indicate whether you have been active in any of the following voluntary a",
+    "value_labels": {
+      "1": "Women's group"
+    }
+  },
+  {
+    "id": "active_associations_117",
+    "label": "Please indicate whether you have been active in any of the following voluntary a",
+    "value_labels": {
+      "1": "Labour union"
+    }
+  },
+  {
+    "id": "active_associations_118",
+    "label": "Please indicate whether you have been active in any of the following voluntary a",
+    "value_labels": {
+      "1": "Ethnic association"
+    }
+  },
+  {
+    "id": "active_associations_119",
+    "label": "Please indicate whether you have been active in any of the following voluntary a",
+    "value_labels": {
+      "1": "Sports association"
+    }
+  },
+  {
+    "id": "active_associations_120",
+    "label": "Please indicate whether you have been active in any of the following voluntary a",
+    "value_labels": {
+      "1": "Religious organization"
+    }
+  },
+  {
+    "id": "active_associations_121",
+    "label": "Please indicate whether you have been active in any of the following voluntary a",
+    "value_labels": {
+      "1": "Parents' groups"
+    }
+  },
+  {
+    "id": "active_associations_122",
+    "label": "Please indicate whether you have been active in any of the following voluntary a",
+    "value_labels": {
+      "1": "Farmers' association"
+    }
+  },
+  {
+    "id": "active_associations_124",
+    "label": "Please indicate whether you have been active in any of the following voluntary a",
+    "value_labels": {
+      "1": "Not active in any of these associations"
+    }
+  },
+  {
+    "id": "active_associations_125",
+    "label": "Please indicate whether you have been active in any of the following voluntary a",
+    "value_labels": {
+      "1": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_protest_1",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_protest_2",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_protest_3",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_inst_1",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_inst_2",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_inst_3",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_inst_4",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_inst_5",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_inst_6",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_civic_1",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_civic_2",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_civic_3",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_civic_4",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_civic_5",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "participate_civic_6",
+    "label": "Here are some things people can do to participate in politics. Please indicate h",
+    "value_labels": {
+      "1": "Never",
+      "2": "Just once",
+      "3": "A few times",
+      "4": "More than five times",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "trust1",
+    "label": "When dealing with other people, which statement comes closest to your own views?",
+    "value_labels": {
+      "1": "Most people would take advantage of you if they got the chance",
+      "2": "Most people would try to be fair",
+      "3": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "trust2",
+    "label": "Generally speaking would you say that most people can be trusted, or, that you n",
+    "value_labels": {
+      "15": "Most people can be trusted",
+      "16": "You need to be very careful when dealing with people",
+      "17": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "residence_length",
+    "label": "For how many years have you lived in your current city or community?",
+    "value_labels": {
+      "1": "Less than 1 year",
+      "2": "1-3 years",
+      "3": "3-10 years",
+      "4": "More than 10 years",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "canada_born",
+    "label": "Were you born in Canada?",
+    "value_labels": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Don\u2019t know/ Prefer not to say"
+    }
+  },
+  {
+    "id": "country_born",
+    "label": "What country were you born in?",
+    "value_labels": {
+      "2243": "AFGHANISTAN",
+      "2244": "\u00c5LAND ISLANDS",
+      "2245": "ALBANIA",
+      "2246": "ALGERIA",
+      "2247": "AMERICAN SAMOA",
+      "2248": "ANDORRA",
+      "2249": "ANGOLA",
+      "2250": "ANGUILLA",
+      "2251": "ANTARCTICA",
+      "2252": "ANTIGUA AND BARBUDA",
+      "2253": "ARGENTINA",
+      "2254": "ARMENIA",
+      "2255": "ARUBA",
+      "2256": "AUSTRALIA",
+      "2257": "AUSTRIA",
+      "2258": "AZERBAIJAN",
+      "2259": "BAHAMAS",
+      "2260": "BAHRAIN",
+      "2261": "BANGLADESH",
+      "2262": "BARBADOS",
+      "2263": "BELARUS",
+      "2264": "BELGIUM",
+      "2265": "BELIZE",
+      "2266": "BENIN",
+      "2267": "BERMUDA",
+      "2268": "BHUTAN",
+      "2269": "BOLIVIA, PLURINATIONAL STATE OF",
+      "2270": "BONAIRE, SINT EUSTATIUS AND SABA",
+      "2271": "BOSNIA AND HERZEGOVINA",
+      "2272": "BOTSWANA",
+      "2273": "BOUVET ISLAND",
+      "2274": "BRAZIL",
+      "2275": "BRITISH INDIAN OCEAN TERRITORY",
+      "2276": "BRUNEI DARUSSALAM",
+      "2277": "BULGARIA",
+      "2278": "BURKINA FASO",
+      "2279": "BURUNDI",
+      "2280": "CAMBODIA",
+      "2281": "CAMEROON",
+      "2282": "CAPE VERDE",
+      "2283": "CAYMAN ISLANDS",
+      "2284": "CENTRAL AFRICAN REPUBLIC",
+      "2285": "CHAD",
+      "2286": "CHILE",
+      "2287": "CHINA",
+      "2288": "CHRISTMAS ISLAND",
+      "2289": "COCOS (KEELING) ISLANDS",
+      "2290": "COLOMBIA",
+      "2291": "COMOROS",
+      "2292": "CONGO",
+      "2293": "CONGO, THE DEMOCRATIC REPUBLIC OF THE",
+      "2294": "COOK ISLANDS",
+      "2295": "COSTA RICA",
+      "2296": "C\u00d4TE D'IVOIRE",
+      "2297": "CROATIA",
+      "2298": "CUBA",
+      "2299": "CURA\u00c7AO",
+      "2300": "CYPRUS",
+      "2301": "CZECH REPUBLIC",
+      "2302": "DENMARK",
+      "2303": "DJIBOUTI",
+      "2304": "DOMINICA",
+      "2305": "DOMINICAN REPUBLIC",
+      "2306": "ECUADOR",
+      "2307": "EGYPT",
+      "2308": "EL SALVADOR",
+      "2309": "EQUATORIAL GUINEA",
+      "2310": "ERITREA",
+      "2311": "ESTONIA",
+      "2312": "ETHIOPIA",
+      "2313": "FALKLAND ISLANDS (MALVINAS)",
+      "2314": "FAROE ISLANDS",
+      "2315": "FIJI",
+      "2316": "FINLAND",
+      "2317": "FRANCE",
+      "2318": "FRENCH GUIANA",
+      "2319": "FRENCH POLYNESIA",
+      "2320": "FRENCH SOUTHERN TERRITORIES",
+      "2321": "GABON",
+      "2322": "GAMBIA",
+      "2323": "GEORGIA",
+      "2324": "GERMANY",
+      "2325": "GHANA",
+      "2326": "GIBRALTAR",
+      "2327": "GREECE",
+      "2328": "GREENLAND",
+      "2329": "GRENADA",
+      "2330": "GUADELOUPE",
+      "2331": "GUAM",
+      "2332": "GUATEMALA",
+      "2333": "GUERNSEY",
+      "2334": "GUINEA",
+      "2335": "GUINEA-BISSAU",
+      "2336": "GUYANA",
+      "2337": "HAITI",
+      "2338": "HEARD ISLAND AND MCDONALD ISLANDS",
+      "2339": "HOLY SEE (VATICAN CITY STATE)",
+      "2340": "HONDURAS",
+      "2341": "HONG KONG",
+      "2342": "HUNGARY",
+      "2343": "ICELAND",
+      "2344": "INDIA",
+      "2345": "INDONESIA",
+      "2346": "IRAN, ISLAMIC REPUBLIC OF",
+      "2347": "IRAQ",
+      "2348": "IRELAND",
+      "2349": "ISLE OF MAN",
+      "2350": "ISRAEL",
+      "2351": "ITALY",
+      "2352": "JAMAICA",
+      "2353": "JAPAN",
+      "2354": "JERSEY",
+      "2355": "JORDAN",
+      "2356": "KAZAKHSTAN",
+      "2357": "KENYA",
+      "2358": "KIRIBATI",
+      "2359": "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF",
+      "2360": "KOREA, REPUBLIC OF",
+      "2361": "KUWAIT",
+      "2362": "KYRGYZSTAN",
+      "2363": "LAO PEOPLE'S DEMOCRATIC REPUBLIC",
+      "2364": "LATVIA",
+      "2365": "LEBANON",
+      "2366": "LESOTHO",
+      "2367": "LIBERIA",
+      "2368": "LIBYA",
+      "2369": "LIECHTENSTEIN",
+      "2370": "LITHUANIA",
+      "2371": "LUXEMBOURG",
+      "2372": "MACAO",
+      "2373": "MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF",
+      "2374": "MADAGASCAR",
+      "2375": "MALAWI",
+      "2376": "MALAYSIA",
+      "2377": "MALDIVES",
+      "2378": "MALI",
+      "2379": "MALTA",
+      "2380": "MARSHALL ISLANDS",
+      "2381": "MARTINIQUE",
+      "2382": "MAURITANIA",
+      "2383": "MAURITIUS",
+      "2384": "MAYOTTE",
+      "2385": "MEXICO",
+      "2386": "MICRONESIA, FEDERATED STATES OF",
+      "2387": "MOLDOVA, REPUBLIC OF",
+      "2388": "MONACO",
+      "2389": "MONGOLIA",
+      "2390": "MONTENEGRO",
+      "2391": "MONTSERRAT",
+      "2392": "MOROCCO",
+      "2393": "MOZAMBIQUE",
+      "2394": "MYANMAR",
+      "2395": "NAMIBIA",
+      "2396": "NAURU",
+      "2397": "NEPAL",
+      "2398": "NETHERLANDS",
+      "2399": "NEW CALEDONIA",
+      "2400": "NEW ZEALAND",
+      "2401": "NICARAGUA",
+      "2402": "NIGER",
+      "2403": "NIGERIA",
+      "2404": "NIUE",
+      "2405": "NORFOLK ISLAND",
+      "2406": "NORTHERN MARIANA ISLANDS",
+      "2407": "NORWAY",
+      "2408": "OMAN",
+      "2409": "PAKISTAN",
+      "2410": "PALAU",
+      "2411": "PALESTINIAN TERRITORY, OCCUPIED",
+      "2412": "PANAMA",
+      "2413": "PAPUA NEW GUINEA",
+      "2414": "PARAGUAY",
+      "2415": "PERU",
+      "2416": "PHILIPPINES",
+      "2417": "PITCAIRN",
+      "2418": "POLAND",
+      "2419": "PORTUGAL",
+      "2420": "PUERTO RICO",
+      "2421": "QATAR",
+      "2422": "R\u00c9UNION",
+      "2423": "ROMANIA",
+      "2424": "RUSSIAN FEDERATION",
+      "2425": "RWANDA",
+      "2426": "SAINT BARTH\u00c9LEMY",
+      "2427": "SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA",
+      "2428": "SAINT KITTS AND NEVIS",
+      "2429": "SAINT LUCIA",
+      "2430": "SAINT MARTIN (FRENCH PART)",
+      "2431": "SAINT PIERRE AND MIQUELON",
+      "2432": "SAINT VINCENT AND THE GRENADINES",
+      "2433": "SAMOA",
+      "2434": "SAN MARINO",
+      "2435": "SAO TOME AND PRINCIPE",
+      "2436": "SAUDI ARABIA",
+      "2437": "SENEGAL",
+      "2438": "SERBIA",
+      "2439": "SEYCHELLES",
+      "2440": "SIERRA LEONE",
+      "2441": "SINGAPORE",
+      "2442": "SINT MAARTEN (DUTCH PART)",
+      "2443": "SLOVAKIA",
+      "2444": "SLOVENIA",
+      "2445": "SOLOMON ISLANDS",
+      "2446": "SOMALIA",
+      "2447": "SOUTH AFRICA",
+      "2448": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS",
+      "2449": "SOUTH SUDAN",
+      "2450": "SPAIN",
+      "2451": "SRI LANKA",
+      "2452": "SUDAN",
+      "2453": "SURINAME",
+      "2454": "SVALBARD AND JAN MAYEN",
+      "2455": "SWAZILAND",
+      "2456": "SWEDEN",
+      "2457": "SWITZERLAND",
+      "2458": "SYRIAN ARAB REPUBLIC",
+      "2459": "TAIWAN, PROVINCE OF CHINA",
+      "2460": "TAJIKISTAN",
+      "2461": "TANZANIA, UNITED REPUBLIC OF",
+      "2462": "THAILAND",
+      "2463": "TIMOR-LESTE",
+      "2464": "TOGO",
+      "2465": "TOKELAU",
+      "2466": "TONGA",
+      "2467": "TRINIDAD AND TOBAGO",
+      "2468": "TUNISIA",
+      "2469": "TURKEY",
+      "2470": "TURKMENISTAN",
+      "2471": "TURKS AND CAICOS ISLANDS",
+      "2472": "TUVALU",
+      "2473": "UGANDA",
+      "2474": "UKRAINE",
+      "2475": "UNITED ARAB EMIRATES",
+      "2476": "UNITED KINGDOM",
+      "2477": "UNITED STATES",
+      "2478": "UNITED STATES MINOR OUTLYING ISLANDS",
+      "2479": "URUGUAY",
+      "2480": "UZBEKISTAN",
+      "2481": "VANUATU",
+      "2482": "VENEZUELA, BOLIVARIAN REPUBLIC OF",
+      "2483": "VIETNAM",
+      "2484": "VIRGIN ISLANDS, BRITISH",
+      "2485": "VIRGIN ISLANDS, U.S.",
+      "2486": "WALLIS AND FUTUNA",
+      "2487": "WESTERN SAHARA",
+      "2488": "YEMEN",
+      "2489": "ZAMBIA",
+      "2490": "ZIMBABWE",
+      "2491": "Don't know/ Prefer not to say"
+    }
+  },
+  {
+    "id": "immigration_year",
+    "label": "In what year did you come to live in Canada?",
+    "value_labels": {
+      "306": "1920",
+      "307": "1921",
+      "308": "1922",
+      "309": "1923",
+      "310": "1924",
+      "311": "1925",
+      "312": "1926",
+      "313": "1927",
+      "314": "1928",
+      "315": "1929",
+      "316": "1930",
+      "317": "1931",
+      "318": "1932",
+      "319": "1933",
+      "320": "1934",
+      "321": "1935",
+      "322": "1936",
+      "323": "1937",
+      "324": "1938",
+      "325": "1939",
+      "326": "1940",
+      "327": "1941",
+      "328": "1942",
+      "329": "1943",
+      "330": "1944",
+      "331": "1945",
+      "332": "1946",
+      "333": "1947",
+      "334": "1948",
+      "335": "1949",
+      "336": "1950",
+      "337": "1951",
+      "338": "1952",
+      "339": "1953",
+      "340": "1954",
+      "341": "1955",
+      "342": "1956",
+      "343": "1957",
+      "344": "1958",
+      "345": "1959",
+      "346": "1960",
+      "347": "1961",
+      "348": "1962",
+      "349": "1963",
+      "350": "1964",
+      "351": "1965",
+      "352": "1966",
+      "353": "1967",
+      "354": "1968",
+      "355": "1969",
+      "356": "1970",
+      "357": "1971",
+      "358": "1972",
+      "359": "1973",
+      "360": "1974",
+      "361": "1975",
+      "362": "1976",
+      "363": "1977",
+      "364": "1978",
+      "365": "1979",
+      "366": "1980",
+      "367": "1981",
+      "368": "1982",
+      "369": "1983",
+      "370": "1984",
+      "371": "1985",
+      "372": "1986",
+      "373": "1987",
+      "374": "1988",
+      "375": "1989",
+      "376": "1990",
+      "377": "1991",
+      "378": "1992",
+      "379": "1993",
+      "380": "1994",
+      "381": "1995",
+      "382": "1996",
+      "383": "1997",
+      "384": "1998",
+      "385": "1999",
+      "386": "2000",
+      "387": "2001",
+      "388": "2002",
+      "389": "2003",
+      "390": "2004",
+      "391": "2005",
+      "392": "2006",
+      "393": "2007",
+      "394": "2008",
+      "395": "2009",
+      "396": "2010",
+      "397": "2011",
+      "398": "2012",
+      "399": "2013",
+      "400": "2014",
+      "401": "2015",
+      "402": "2016",
+      "403": "2017",
+      "404": "2018",
+      "405": "2019",
+      "406": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "language",
+    "label": "What is the very first language you learned and still understand? - Selected Cho",
+    "value_labels": {
+      "68": "English",
+      "69": "French",
+      "70": "Aboriginal language (please specify)",
+      "71": "Arabic",
+      "72": "Chinese, Cantonese, Mandarin",
+      "73": "Filipino / Tagalog",
+      "74": "German",
+      "75": "Indian, Hindi, Gujarati",
+      "76": "Italian",
+      "77": "Korean",
+      "78": "Pakistani, Punjabi, Urdu",
+      "79": "Persian, Farsi",
+      "80": "Russian",
+      "81": "Spanish",
+      "82": "Tamil",
+      "83": "Vietnamese",
+      "84": "Other (please specify)",
+      "85": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "language_70_TEXT",
+    "label": "What is the very first language you learned and still understand? - Aboriginal l",
+    "value_labels": {}
+  },
+  {
+    "id": "language_84_TEXT",
+    "label": "What is the very first language you learned and still understand? - Other (pleas",
+    "value_labels": {}
+  },
+  {
+    "id": "ethnicity_23",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Aboriginal (First Nations, M\u00e9tis, or Inuk/Inuit)"
+    }
+  },
+  {
+    "id": "ethnicity_24",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "British"
+    }
+  },
+  {
+    "id": "ethnicity_25",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Chinese"
+    }
+  },
+  {
+    "id": "ethnicity_26",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Dutch"
+    }
+  },
+  {
+    "id": "ethnicity_27",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "English"
+    }
+  },
+  {
+    "id": "ethnicity_28",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "French"
+    }
+  },
+  {
+    "id": "ethnicity_29",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "French Canadian"
+    }
+  },
+  {
+    "id": "ethnicity_30",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "German"
+    }
+  },
+  {
+    "id": "ethnicity_31",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Hispanic"
+    }
+  },
+  {
+    "id": "ethnicity_32",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Indian"
+    }
+  },
+  {
+    "id": "ethnicity_33",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Inuit"
+    }
+  },
+  {
+    "id": "ethnicity_34",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Irish"
+    }
+  },
+  {
+    "id": "ethnicity_35",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Italian"
+    }
+  },
+  {
+    "id": "ethnicity_36",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Metis"
+    }
+  },
+  {
+    "id": "ethnicity_37",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Polish"
+    }
+  },
+  {
+    "id": "ethnicity_38",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Qu\u00e9b\u00e9cois"
+    }
+  },
+  {
+    "id": "ethnicity_39",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Scottish"
+    }
+  },
+  {
+    "id": "ethnicity_40",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Ukrainian"
+    }
+  },
+  {
+    "id": "ethnicity_41",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Other 1 (please specify)"
+    }
+  },
+  {
+    "id": "ethnicity_42",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Other 2 (please specify)"
+    }
+  },
+  {
+    "id": "ethnicity_43",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {
+      "1": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "ethnicity_41_TEXT",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {}
+  },
+  {
+    "id": "ethnicity_42_TEXT",
+    "label": "[Field-ethnicity_intro] Please select all that apply.\n\n\n\nPlease click the forwar",
+    "value_labels": {}
+  },
+  {
+    "id": "health",
+    "label": "Compared to other people your age, how would you describe your health?",
+    "value_labels": {
+      "1": "Excellent",
+      "2": "Very good",
+      "3": "Fair",
+      "4": "Poor",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "employment",
+    "label": "What is your employment status? Are you currently\u2026 - Selected Choice",
+    "value_labels": {
+      "1": "Working for pay full-time",
+      "2": "Working for pay part-time",
+      "3": "Self employed (with or without employees)",
+      "4": "Retired",
+      "5": "Unemployed/ looking for work",
+      "6": "Student",
+      "7": "Caring for a family",
+      "8": "Disabled",
+      "9": "Student and working for pay",
+      "10": "Caring for family and working for pay",
+      "11": "Retired and working for pay",
+      "12": "Other (please specify)",
+      "13": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "employment_12_TEXT",
+    "label": "What is your employment status? Are you currently\u2026 - Other (please specify) -",
+    "value_labels": {}
+  },
+  {
+    "id": "income_number",
+    "label": "What was your total household income, before taxes, for the year 2018? Be sure t",
+    "value_labels": {}
+  },
+  {
+    "id": "income_category_may_wave",
+    "label": "We don't need the exact amount...[Wave 1]",
+    "value_labels": {
+      "1": "Less than $30,000",
+      "2": "$30,000 to $60,000",
+      "3": "$60,001 to $90,000",
+      "4": "$90,001 to $110,000",
+      "5": "More than $110,000",
+      "6": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "income_category_june_wave",
+    "label": "We don't need the exact amount...[Wave 2]",
+    "value_labels": {
+      "1": "No income",
+      "2": "$1 to $30,000",
+      "3": "$30,000 to $60,000",
+      "4": "$60,001 to $90,000",
+      "5": "$90,001 to $110,000",
+      "6": "More than $110,000",
+      "7": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "income_category_july_aug_wave",
+    "label": "We don't need the exact amount...[Wave 3 & 4]",
+    "value_labels": {
+      "1": "No income",
+      "2": "$1 to $30,000",
+      "3": "$30,000 to $60,000",
+      "4": "$60,001 to $90,000",
+      "5": "$90,001 to $110,000",
+      "6": "$110,001 to $150,000",
+      "7": "$150,001 to $200,000",
+      "8": "More than $200,000",
+      "9": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "marital_status",
+    "label": "Are you presently married, living with a partner, divorced, separated, widowed,",
+    "value_labels": {
+      "1": "Married",
+      "2": "Living with a partner",
+      "3": "Divorced",
+      "4": "Separated",
+      "5": "Widowed",
+      "6": "Never Married",
+      "7": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "child_tax_benefit",
+    "label": "Do you receive the Child Tax Benefit?",
+    "value_labels": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "property_1",
+    "label": "Do you or a member of your household own a residence (for example, a home or an",
+    "value_labels": {
+      "1": "Own a residence"
+    }
+  },
+  {
+    "id": "property_2",
+    "label": "Do you or a member of your household own a residence (for example, a home or an",
+    "value_labels": {
+      "1": "Own a business, a piece of property, a farm or livestock"
+    }
+  },
+  {
+    "id": "property_3",
+    "label": "Do you or a member of your household own a residence (for example, a home or an",
+    "value_labels": {
+      "1": "Own stocks or bonds"
+    }
+  },
+  {
+    "id": "property_4",
+    "label": "Do you or a member of your household own a residence (for example, a home or an",
+    "value_labels": {
+      "1": "Have any savings"
+    }
+  },
+  {
+    "id": "property_5",
+    "label": "Do you or a member of your household own a residence (for example, a home or an",
+    "value_labels": {
+      "1": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "property_6",
+    "label": "Do you or a member of your household own a residence (for example, a home or an",
+    "value_labels": {
+      "1": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "religion",
+    "label": "Please tell me what is your religion, if you have one? - Selected Choice",
+    "value_labels": {
+      "1": "None/ Don't have one/ Atheist",
+      "2": "Agnostic",
+      "3": "Buddhist/ Buddhism",
+      "4": "Hindu",
+      "5": "Jewish/ Judaism/ Jewish Orthodox",
+      "6": "Muslim/ Islam",
+      "7": "Sikh/ Sikhism",
+      "8": "Anglican/ Church of England",
+      "9": "Baptist",
+      "10": "Catholic/ Roman Catholic/ RC",
+      "11": "Greek Orthodox/ Ukrainian Orthodox/ Russian Orthodox/ Eastern Orthodox",
+      "12": "Jehovah's Witness",
+      "13": "Lutheran",
+      "14": "Mormon/ Church of Jesus Christ of the Latter Day Saints",
+      "15": "Pentecostal/ Fundamentalist/ Born Again/ Evangelical",
+      "16": "Presbyterian",
+      "17": "Protestant",
+      "18": "United Church of Canada",
+      "19": "Christian Reform",
+      "20": "Salvation Army",
+      "21": "Mennonite",
+      "22": "Other (please specify)",
+      "23": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "religion_22_TEXT",
+    "label": "Please tell me what is your religion, if you have one? - Other (please specify)",
+    "value_labels": {}
+  },
+  {
+    "id": "religion_import",
+    "label": "In your life, you would say religion is:",
+    "value_labels": {
+      "1": "Very important",
+      "2": "Somewhat important",
+      "3": "Not very important",
+      "4": "Not important at all",
+      "5": "Don't know/ Prefer not to answer"
+    }
+  },
+  {
+    "id": "occupation_text",
+    "label": "What is your main occupation?\nIf you do not know, or prefer not to answer, pleas",
+    "value_labels": {}
+  },
+  {
+    "id": "Survey_Firm_Identifier_PID",
+    "label": "Survey firm identifier (PID)",
+    "value_labels": {}
+  },
+  {
+    "id": "Survey_Firm_Identifier_PSID",
+    "label": "Survey firm identifier (psid)",
+    "value_labels": {}
+  },
+  {
+    "id": "confidence_institutions_word",
+    "label": "confidence_institutions_word",
+    "value_labels": {}
+  },
+  {
+    "id": "confidence_institutions_word_fr",
+    "label": "confidence_institutions_word_fr",
+    "value_labels": {}
+  },
+  {
+    "id": "fed_gov_sat_preamble",
+    "label": "fed_gov_sat_preamble",
+    "value_labels": {}
+  },
+  {
+    "id": "fed_gov_sat_preamble_fr",
+    "label": "fed_gov_sat_preamble_fr",
+    "value_labels": {}
+  },
+  {
+    "id": "govt_programs_word",
+    "label": "govt_programs_word",
+    "value_labels": {}
+  },
+  {
+    "id": "govt_programs_word_fr",
+    "label": "govt_programs_word_fr",
+    "value_labels": {}
+  },
+  {
+    "id": "protest_unjust_word",
+    "label": "protest_unjust_word",
+    "value_labels": {}
+  },
+  {
+    "id": "protest_unjust_word_fr",
+    "label": "protest_unjust_word_fr",
+    "value_labels": {}
+  },
+  {
+    "id": "aboriginals_indigenous_people",
+    "label": "aboriginals_indigenous_people",
+    "value_labels": {}
+  },
+  {
+    "id": "aboriginals_indigenous_people_fr",
+    "label": "aboriginals_indigenous_people_fr",
+    "value_labels": {}
+  },
+  {
+    "id": "pid_fr",
+    "label": "pid_fr",
+    "value_labels": {}
+  },
+  {
+    "id": "least_liked_lowercase",
+    "label": "least_liked_lowercase",
+    "value_labels": {}
+  },
+  {
+    "id": "least_liked_lowercase_fr",
+    "label": "least_liked_lowercase_fr",
+    "value_labels": {}
+  },
+  {
+    "id": "ethnicity_intro",
+    "label": "ethnicity_intro",
+    "value_labels": {}
+  },
+  {
+    "id": "ethnicity_intro_fr",
+    "label": "ethnicity_intro_fr",
+    "value_labels": {}
+  },
+  {
+    "id": "quota_weight",
+    "label": "Raked weights",
+    "value_labels": {}
+  },
+  {
+    "id": "consent_t_First_Click",
+    "label": "Timing - First Click",
+    "value_labels": {}
+  },
+  {
+    "id": "consent_t_Last_Click",
+    "label": "Timing - Last Click",
+    "value_labels": {}
+  },
+  {
+    "id": "consent_t_Page_Submit",
+    "label": "Timing - Page Submit",
+    "value_labels": {}
+  },
+  {
+    "id": "consent_t_Click_Count",
+    "label": "Timing - Click Count",
+    "value_labels": {}
+  },
+  {
+    "id": "party_id_6_TEXT",
+    "label": "In federal politics, do you usually think of yourself as a: - Another party (ple",
+    "value_labels": {}
+  },
+  {
+    "id": "knowledge_premier_t_First_Click",
+    "label": "Timing - First Click",
+    "value_labels": {}
+  },
+  {
+    "id": "knowledge_premier_t_Last_Click",
+    "label": "Timing - Last Click",
+    "value_labels": {}
+  },
+  {
+    "id": "knowledge_premier_t_Page_Submit",
+    "label": "Timing - Page Submit",
+    "value_labels": {}
+  },
+  {
+    "id": "knowledge_premier_t_Click_Count",
+    "label": "Timing - Click Count",
+    "value_labels": {}
+  },
+  {
+    "id": "knowledge_premier",
+    "label": "We would like to see how widely known some political figures are. Please answer",
+    "value_labels": {}
+  },
+  {
+    "id": "knowledge_fin_min_t_First_Click",
+    "label": "Timing - First Click",
+    "value_labels": {}
+  },
+  {
+    "id": "knowledge_fin_min_t_Last_Click",
+    "label": "Timing - Last Click",
+    "value_labels": {}
+  },
+  {
+    "id": "knowledge_fin_min_t_Page_Submit",
+    "label": "Timing - Page Submit",
+    "value_labels": {}
+  },
+  {
+    "id": "knowledge_fin_min_t_Click_Count",
+    "label": "Timing - Click Count",
+    "value_labels": {}
+  },
+  {
+    "id": "knowledge_fin_min",
+    "label": "And the name of the federal Minister of Finance?\n\n\n\nIf you do not know, or prefe",
+    "value_labels": {}
+  },
+  {
+    "id": "ISCO08_broad",
+    "label": "Which of the following broad categories best describes your occupation? If you d",
+    "value_labels": {
+      "18": "Manager",
+      "19": "Professional",
+      "20": "Technician or associate professional",
+      "21": "Clerical support worker",
+      "22": "Service or sales worker",
+      "23": "Skilled agricultural, forestry or fishery worker",
+      "24": "Craft or related trades worker",
+      "25": "Plant operator, machine operator, or assembler",
+      "26": "Cleaner, laborer, or assistant",
+      "27": "Armed forces",
+      "28": "Other (please specify)",
+      "29": "Don't Know / Prefer not to answer"
+    }
+  },
+  {
+    "id": "ISCO08_broad_28_TEXT",
+    "label": "Which of the following broad categories best describes your occupation? If you d",
+    "value_labels": {}
+  },
+  {
+    "id": "feduid",
+    "label": "Federal electoral district \u2013 2013",
+    "value_labels": {}
+  },
+  {
+    "id": "fedname",
+    "label": "Federal electoral district name \u2013 2013",
+    "value_labels": {}
+  },
+  {
+    "id": "pccf_problem",
+    "label": "Postal codes PCCF flagged as having errors",
+    "value_labels": {
+      "0": "Valid",
+      "1": "Not valid"
+    }
+  }
+]

@@ -1,0 +1,332 @@
+---
+title: "Synthetic Canadians: Comparing Synthetic Survey Data Generators"
+subtitle: "2019 Democracy Checkup — Political Attitudes Validation Study"
+date: today
+author: "Synthetic Opinion Lab"
+format:
+  html:
+    self-contained: true
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+    code-fold: true
+    fig-width: 10
+    fig-height: 6
+execute:
+  echo: false
+  warning: false
+---
+
+```{python}
+import sys
+sys.path.insert(0, "../")
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.cluster import KMeans
+from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import StandardScaler
+from IPython.display import display
+import json, warnings
+warnings.filterwarnings('ignore')
+
+VARS = [
+    "fed_gov_satisfaction",
+    "confidence_inst_1", "confidence_inst_2", "confidence_inst_3", "confidence_inst_4",
+    "pos_govt_care", "pos_govt_say", "pos_govt_complicated",
+    "pos_assimilation", "pos_take_jobs", "pos_look_after", "immigration_level",
+    "pos_family_values", "pos_equal_rights", "pos_women_home",
+    "inequality_gap", "pos_govt_jobs",
+    "party_id", "vote_intention",
+]
+
+SHORT = {
+    "fed_gov_satisfaction":  "Fed Gov Satisfaction",
+    "confidence_inst_1":     "Confidence: Courts",
+    "confidence_inst_2":     "Confidence: Fed Gov",
+    "confidence_inst_3":     "Confidence: Media",
+    "confidence_inst_4":     "Confidence: Prov Gov",
+    "pos_govt_care":         "Efficacy: Govt Cares",
+    "pos_govt_say":          "Efficacy: Have a Say",
+    "pos_govt_complicated":  "Efficacy: Complexity",
+    "pos_assimilation":      "Imm: Assimilation",
+    "pos_take_jobs":         "Imm: Take Jobs",
+    "pos_look_after":        "Imm: Canada First",
+    "immigration_level":     "Imm: Level Preferred",
+    "pos_family_values":     "SocCons: Family Values",
+    "pos_equal_rights":      "SocCons: Equal Rights",
+    "pos_women_home":        "SocCons: Women Home",
+    "inequality_gap":        "Econ: Reduce Inequality",
+    "pos_govt_jobs":         "Econ: Private Sector Jobs",
+    "party_id":              "Party ID",
+    "vote_intention":        "Vote Intention",
+}
+
+N_OPTS = {
+    "fed_gov_satisfaction": 4, "confidence_inst_1": 4, "confidence_inst_2": 4,
+    "confidence_inst_3": 4, "confidence_inst_4": 4,
+    "pos_govt_care": 4, "pos_govt_say": 4, "pos_govt_complicated": 4,
+    "pos_assimilation": 4, "pos_take_jobs": 4, "pos_look_after": 4,
+    "immigration_level": 3, "pos_family_values": 4, "pos_equal_rights": 4,
+    "pos_women_home": 4, "inequality_gap": 5, "pos_govt_jobs": 4,
+    "party_id": 7, "vote_intention": 9,
+}
+
+PALETTE = {'Real': '#2c7bb6', 'IRT': '#d7191c', 'LLM': '#fdae61', 'Agent': '#1a9641'}
+
+def clean(df):
+    df = df[VARS].copy().apply(pd.to_numeric, errors='coerce')
+    mask = pd.Series([True] * len(df))
+    for col in VARS:
+        mask = mask & df[col].between(1, N_OPTS[col])
+    return df[mask].dropna()
+
+real = clean(pd.read_parquet('../dc19_output/clean_data.parquet'))
+irt  = clean(pd.read_parquet('comparison/synthetic_irt.parquet'))
+llm  = clean(pd.read_parquet('comparison/synthetic_llm_qwen.parquet'))
+agt  = clean(pd.read_parquet('comparison/synthetic_agent_simulation.parquet'))
+
+datasets = {'Real': real, 'IRT': irt, 'LLM': llm, 'Agent': agt}
+ns = {k: len(v) for k, v in datasets.items()}
+
+with open('comparison/comparison_results.json') as f:
+    results = json.load(f)
+
+n_real_str = f"{ns['Real']:,}"
+n_irt_str  = f"{ns['IRT']:,}"
+n_llm_str  = f"{ns['LLM']:,}"
+n_agt_str  = f"{ns['Agent']:,}"
+score_irt  = f"{results['generators']['irt']['overall_score']:.3f}"
+score_llm  = f"{results['generators']['llm_qwen']['overall_score']:.3f}"
+score_agt  = f"{results['generators']['agent_simulation']['overall_score']:.3f}"
+```
+
+## Overview
+
+This report validates three synthetic data generation approaches against the **2019 Democracy Checkup (DC19)**, a national survey of Canadian political attitudes (n = `{python} n_real_str`).
+
+The 19 variables span five substantive domains: **government satisfaction**, **institutional confidence** (4 institutions), **political efficacy**, **immigration attitudes**, **social conservatism**, and **economic positions**, plus **party identification** and **vote intention**.
+
+Three generators are compared:
+
+| Generator | N synthetic | Overall quality score |
+|-----------|-------------|----------------------|
+| **LLM** (Qwen2.5-7B-Instruct) | `{python} n_llm_str` | `{python} score_llm` |
+| **IRT** (Graded Response Model) | `{python} n_irt_str` | `{python} score_irt` |
+| **Agent** (Opinion dynamics) | `{python} n_agt_str` | `{python} score_agt` |
+
+```{python}
+summary = pd.DataFrame({
+    f"{k} (n={ns[k]:,})": [ns[k], round(v[VARS].mean().mean(), 2), round(v[VARS].std().mean(), 2)]
+    for k, v in datasets.items()
+}, index=['N', 'Grand mean', 'Grand SD'])
+display(summary.style.set_caption("Summary statistics across all 19 variables"))
+```
+
+---
+
+## Mean Responses by Variable
+
+```{python}
+means = pd.DataFrame({k: df[VARS].mean() for k, df in datasets.items()})
+means.index = [SHORT[c] for c in means.index]
+means = means.sort_values('Real', ascending=True)
+
+fig, ax = plt.subplots(figsize=(11, 9))
+x = np.arange(len(means))
+width = 0.18
+offsets = [-1.5, -0.5, 0.5, 1.5]
+for i, (col, color) in enumerate(PALETTE.items()):
+    ax.barh(x + offsets[i]*width, means[col], width, label=col, color=color, alpha=0.85)
+ax.set_yticks(x)
+ax.set_yticklabels(means.index, fontsize=9)
+ax.set_xlabel("Mean response")
+ax.legend(loc='lower right')
+ax.set_title("Mean responses by variable and generator")
+plt.tight_layout()
+plt.show()
+```
+
+```{python}
+display(means.round(2).style.background_gradient(cmap='Blues', axis=None)
+        .set_caption("Mean responses by variable and generator"))
+```
+
+---
+
+## Response Distributions
+
+```{python}
+fig, axes = plt.subplots(5, 4, figsize=(16, 17), sharey=False)
+axes = axes.flatten()
+for i, col in enumerate(VARS):
+    ax = axes[i]
+    n = N_OPTS[col]
+    x = np.arange(1, n+1)
+    width = 0.18
+    offsets = [-1.5, -0.5, 0.5, 1.5]
+    for j, (name, df) in enumerate(datasets.items()):
+        counts = df[col].value_counts(normalize=True).reindex(range(1, n+1), fill_value=0)*100
+        ax.bar(x + offsets[j]*width, counts.values, width, label=name,
+               color=list(PALETTE.values())[j], alpha=0.85)
+    ax.set_title(SHORT[col], fontsize=9, fontweight='bold')
+    ax.set_xticks(range(1, n+1))
+    ax.set_ylabel("%" if i % 4 == 0 else "")
+    if i == 0:
+        ax.legend(fontsize=8)
+for j in range(len(VARS), len(axes)):
+    axes[j].set_visible(False)
+fig.suptitle("Response distributions by variable and generator", fontsize=13, fontweight='bold', y=1.01)
+plt.tight_layout()
+plt.show()
+```
+
+---
+
+## Standard Deviations
+
+```{python}
+stds = pd.DataFrame({k: df[VARS].std() for k, df in datasets.items()})
+stds.index = [SHORT[c] for c in stds.index]
+fig, ax = plt.subplots(figsize=(12, 5))
+stds.plot(kind='bar', ax=ax, color=list(PALETTE.values()), alpha=0.85)
+ax.set_xticklabels(stds.index, rotation=45, ha='right', fontsize=8)
+ax.set_ylabel("Standard deviation")
+ax.set_title("Within-generator variance per item")
+ax.axhline(1.0, color='grey', linestyle='--', linewidth=0.8, label='SD=1 reference')
+ax.legend()
+plt.tight_layout()
+plt.show()
+```
+
+---
+
+## Correlation Structure
+
+```{python}
+CORR_VARS = [v for v in VARS if v not in ('party_id', 'vote_intention')]
+fig, axes = plt.subplots(1, 4, figsize=(18, 5))
+for ax, (name, df) in zip(axes, datasets.items()):
+    corr = df[CORR_VARS].rename(columns=SHORT).corr()
+    mask = np.zeros_like(corr, dtype=bool)
+    mask[np.triu_indices_from(mask)] = True
+    sns.heatmap(corr, ax=ax, cmap='RdBu_r', vmin=-1, vmax=1,
+                mask=mask, square=True, linewidths=0.2,
+                xticklabels=True, yticklabels=True, cbar=(name=='Agent'))
+    ax.set_title(name, fontweight='bold')
+    ax.tick_params(axis='x', labelsize=5, rotation=45)
+    ax.tick_params(axis='y', labelsize=5)
+fig.suptitle("Inter-item correlation matrices (17 attitude items)", fontsize=12, fontweight='bold')
+plt.tight_layout()
+plt.show()
+```
+
+```{python}
+real_corr = real[CORR_VARS].corr().values
+print("Frobenius distance from real correlation matrix:")
+for name, df in datasets.items():
+    if name == 'Real': continue
+    syn_corr = df[CORR_VARS].corr().values
+    dist = np.linalg.norm(real_corr - syn_corr, 'fro')
+    r = np.corrcoef(real_corr[np.tril_indices_from(real_corr, k=-1)],
+                    syn_corr[np.tril_indices_from(syn_corr, k=-1)])[0,1]
+    print(f"  {name:20s}: Frobenius = {dist:.2f}, r(lower tri) = {r:.3f}")
+```
+
+---
+
+## K-Means Clustering (k=3)
+
+```{python}
+np.random.seed(42)
+short_labels = [SHORT[c] for c in CORR_VARS]
+fig, axes = plt.subplots(1, 4, figsize=(18, 6), sharey=True)
+for ax, (name, df) in zip(axes, datasets.items()):
+    X = df[CORR_VARS].values.astype(float)
+    km = KMeans(n_clusters=3, random_state=42, n_init=10)
+    labels = km.fit_predict(X)
+    centers = pd.DataFrame(km.cluster_centers_, columns=short_labels)
+    sizes = pd.Series(labels).value_counts().sort_index()
+    order = centers.mean(axis=1).argsort().values
+    x = np.arange(len(short_labels))
+    colors_c = ['#4575b4','#74add1','#abd9e9']
+    for rank, idx in enumerate(order):
+        pct = sizes[idx] / len(labels) * 100
+        ax.plot(x, centers.loc[idx].values, marker='o', linewidth=2,
+                color=colors_c[rank], label=f"C{rank+1} ({pct:.0f}%)")
+    ax.set_xticks(x)
+    ax.set_xticklabels(short_labels, rotation=55, ha='right', fontsize=6)
+    ax.set_ylim(0.5, 5.5)
+    ax.set_title(f"{name} (n={ns[name]:,})", fontweight='bold')
+    ax.legend(fontsize=8)
+    ax.grid(axis='y', alpha=0.3)
+axes[0].set_ylabel("Cluster centre (mean response)")
+fig.suptitle("K-means cluster profiles (k=3)", fontsize=12, fontweight='bold')
+plt.tight_layout()
+plt.show()
+```
+
+---
+
+## Regression Replication: Vote Intention Predictors
+
+```{python}
+PRED_VARS = ['confidence_inst_2','pos_assimilation','pos_family_values','inequality_gap','pos_govt_jobs']
+
+def fit_lr(df, pred_vars, outcome, pos_class, neg_class):
+    sub = df[pred_vars + [outcome]].copy()
+    sub = sub[sub[outcome].isin([pos_class, neg_class])].dropna()
+    if len(sub) < 20: return None
+    X = StandardScaler().fit_transform(sub[pred_vars].values)
+    y = (sub[outcome] == pos_class).astype(int).values
+    lr = LogisticRegression(random_state=42, max_iter=500)
+    lr.fit(X, y)
+    return lr.coef_[0]
+
+coef_table = pd.DataFrame({'Real': fit_lr(real, PRED_VARS, 'vote_intention', 2, 1)}, index=PRED_VARS)
+for name, df in [('IRT', irt), ('LLM', llm), ('Agent', agt)]:
+    c = fit_lr(df, PRED_VARS, 'vote_intention', 2, 1)
+    if c is not None: coef_table[name] = c
+coef_table.index = [SHORT[v] for v in PRED_VARS]
+display(coef_table.round(3).style.background_gradient(cmap='RdBu_r', axis=None)
+        .set_caption("Logistic regression coefficients: Conservative vs. Liberal vote intention (standardised)"))
+```
+
+```{python}
+fig, ax = plt.subplots(figsize=(8, 5))
+x = np.arange(len(coef_table))
+width = 0.18; offsets = [-1.5, -0.5, 0.5, 1.5]
+for i, (col, color) in enumerate(PALETTE.items()):
+    if col in coef_table.columns:
+        ax.bar(x + offsets[i]*width, coef_table[col], width, label=col, color=color, alpha=0.85)
+ax.axhline(0, color='black', linewidth=0.8)
+ax.set_xticks(x); ax.set_xticklabels(coef_table.index, rotation=30, ha='right', fontsize=9)
+ax.set_ylabel("Standardised coefficient")
+ax.set_title("Regression coefficients: Conservative vs. Liberal vote intention")
+ax.legend(); plt.tight_layout(); plt.show()
+```
+
+---
+
+## Summary
+
+```{python}
+#| output: asis
+irt_s = results['generators']['irt']['overall_score']
+llm_s = results['generators']['llm_qwen']['overall_score']
+agt_s = results['generators']['agent_simulation']['overall_score']
+print(f"""
+| Dimension | Real | IRT | LLM | Agent |
+|---|---|---|---|---|
+| N respondents | {ns['Real']:,} | {ns['IRT']:,} | {ns['LLM']:,} | {ns['Agent']:,} |
+| Overall quality score | — | {irt_s:.3f} | {llm_s:.3f} | {agt_s:.3f} |
+| Valid response range | ✅ | ✅ | ✅ | ✅ |
+| Mean-level accuracy | — | Partial | Good | Partial |
+| Variance accuracy | — | Good | Moderate | Moderate |
+| Correlation structure | — | Moderate | Best | Weak |
+
+**LLM** achieves the highest fidelity ({llm_s:.3f}). **IRT** ({irt_s:.3f}) produces good variance.
+**Agent** ({agt_s:.3f}) converges to moderate uniform intensity.
+""")
+```

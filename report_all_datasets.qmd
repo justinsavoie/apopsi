@@ -1,0 +1,255 @@
+---
+title: "Synthetic Canadians: Cross-Dataset Comparison"
+subtitle: "Synthetic Survey Data Quality Across Five Canadian Political Surveys"
+date: today
+author: "Synthetic Opinion Lab"
+format:
+  html:
+    self-contained: true
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+    code-fold: true
+    fig-width: 11
+    fig-height: 6
+execute:
+  echo: false
+  warning: false
+---
+
+```{python}
+import sys
+sys.path.insert(0, "./")
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+import seaborn as sns
+import json, warnings
+warnings.filterwarnings('ignore')
+
+DATASETS = {
+    "DC19":  {"dir": "dc19_output",  "label": "Democracy Checkup 2019",          "year": 2019, "type": "DC"},
+    "DC20":  {"dir": "dc20_output",  "label": "Democracy Checkup 2020",          "year": 2020, "type": "DC"},
+    "DC21":  {"dir": "dc21_output",  "label": "Democracy Checkup 2021",          "year": 2021, "type": "DC"},
+    "CES19": {"dir": "ces19_output", "label": "Canadian Election Study 2019",    "year": 2019, "type": "CES"},
+    "CES21": {"dir": "ces21_output", "label": "Canadian Election Study 2021",    "year": 2021, "type": "CES"},
+}
+
+# Load all comparison results
+records = []
+for key, meta in DATASETS.items():
+    with open(f"{meta['dir']}/comparison/comparison_results.json") as f:
+        res = json.load(f)
+    n_real = len(pd.read_parquet(f"{meta['dir']}/clean_data.parquet"))
+    for gen, gdata in res["generators"].items():
+        records.append({
+            "dataset": key,
+            "label":   meta["label"],
+            "year":    meta["year"],
+            "type":    meta["type"],
+            "generator": gen,
+            "score":   gdata.get("overall_score"),
+            "n_personas": gdata.get("n_personas"),
+            "n_real":  n_real,
+            "duration_s": gdata.get("duration_seconds"),
+        })
+
+df = pd.DataFrame(records)
+
+GEN_LABELS = {"irt": "IRT", "llm_qwen": "LLM", "agent_simulation": "Agent"}
+GEN_COLORS = {"IRT": "#d7191c", "LLM": "#fdae61", "Agent": "#1a9641"}
+df["gen_label"] = df["generator"].map(GEN_LABELS)
+
+# Pivot for easy display
+pivot = df.pivot_table(index="dataset", columns="gen_label", values="score").reindex(
+    ["DC19", "DC20", "DC21", "CES19", "CES21"]
+)[["LLM", "IRT", "Agent"]]
+
+# Add metadata
+meta_df = df.groupby("dataset").first()[["label", "year", "type", "n_real"]].reindex(pivot.index)
+summary = meta_df.join(pivot)
+```
+
+## Overview
+
+This report compares synthetic data quality across **five Canadian political surveys** spanning 2019–2021. Three generators are evaluated on each dataset: a **Large Language Model** (Qwen2.5-7B-Instruct via Together API), an **Item Response Theory** model (Graded Response Model), and an **Agent-based** opinion dynamics simulation.
+
+```{python}
+from IPython.display import display
+
+display_df = summary.copy()
+display_df.index.name = "Dataset"
+display_df.columns = ["Survey", "Year", "Type", "N real", "LLM score", "IRT score", "Agent score"]
+display_df["N real"] = display_df["N real"].apply(lambda x: f"{int(x):,}")
+for col in ["LLM score", "IRT score", "Agent score"]:
+    display_df[col] = display_df[col].apply(lambda x: f"{x:.3f}")
+
+display(display_df.style
+    .set_caption("Overall quality scores by dataset and generator")
+    .set_table_styles([{"selector": "th", "props": [("font-weight", "bold")]}]))
+```
+
+---
+
+## Quality Scores by Generator
+
+```{python}
+fig, ax = plt.subplots(figsize=(11, 5))
+datasets_order = ["DC19", "DC20", "DC21", "CES19", "CES21"]
+x = np.arange(len(datasets_order))
+width = 0.25
+offsets = [-1, 0, 1]
+
+for i, gen in enumerate(["LLM", "IRT", "Agent"]):
+    scores = [pivot.loc[d, gen] for d in datasets_order]
+    bars = ax.bar(x + offsets[i]*width, scores, width, label=gen,
+                  color=GEN_COLORS[gen], alpha=0.85, edgecolor='white')
+
+ax.set_xticks(x)
+ax.set_xticklabels([f"{d}\n({summary.loc[d,'label'].split()[0]} {summary.loc[d,'year']})"
+                    for d in datasets_order], fontsize=9)
+ax.set_ylabel("Overall quality score")
+ax.set_ylim(0, 1)
+ax.axhline(0.5, color='grey', linestyle='--', linewidth=0.8, alpha=0.6, label='0.5 reference')
+ax.set_title("Synthetic data quality scores by dataset and generator", fontweight='bold')
+ax.legend()
+
+# Shade DC vs CES regions
+ax.axvspan(-0.5, 2.5, alpha=0.04, color='steelblue', label='_DC surveys')
+ax.axvspan(2.5, 4.5, alpha=0.04, color='orange', label='_CES surveys')
+ax.text(1.0, 0.93, "Democracy Checkup", ha='center', fontsize=9, color='steelblue', fontstyle='italic')
+ax.text(3.5, 0.93, "Election Study", ha='center', fontsize=9, color='darkorange', fontstyle='italic')
+
+plt.tight_layout()
+plt.show()
+```
+
+---
+
+## LLM Consistently Leads
+
+```{python}
+fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+
+# Left: line plot showing score trends over time by generator
+for gen in ["LLM", "IRT", "Agent"]:
+    dc_scores = [pivot.loc[d, gen] for d in ["DC19", "DC20", "DC21"]]
+    axes[0].plot([2019, 2020, 2021], dc_scores, marker='o', label=gen,
+                 color=GEN_COLORS[gen], linewidth=2)
+axes[0].set_title("Democracy Checkup: scores over time", fontweight='bold')
+axes[0].set_xlabel("Year"); axes[0].set_ylabel("Quality score")
+axes[0].set_ylim(0.4, 0.9); axes[0].legend()
+axes[0].set_xticks([2019, 2020, 2021])
+axes[0].grid(axis='y', alpha=0.3)
+
+# Right: DC vs CES comparison grouped by generator
+gen_order = ["LLM", "IRT", "Agent"]
+dc_means = [pivot.loc[["DC19","DC20","DC21"], g].mean() for g in gen_order]
+ces_means = [pivot.loc[["CES19","CES21"], g].mean() for g in gen_order]
+x2 = np.arange(3)
+axes[1].bar(x2 - 0.2, dc_means, 0.35, label="DC surveys (avg)", color='steelblue', alpha=0.85)
+axes[1].bar(x2 + 0.2, ces_means, 0.35, label="CES surveys (avg)", color='darkorange', alpha=0.85)
+axes[1].set_xticks(x2); axes[1].set_xticklabels(gen_order)
+axes[1].set_ylabel("Mean quality score"); axes[1].set_ylim(0.4, 0.9)
+axes[1].set_title("Average scores: DC vs CES surveys", fontweight='bold')
+axes[1].legend(); axes[1].grid(axis='y', alpha=0.3)
+
+plt.tight_layout()
+plt.show()
+```
+
+```{python}
+#| output: asis
+print("""
+**Key observations:**
+
+- **LLM** is the top-performing generator on every dataset without exception.
+- **IRT** and **Agent** are closely matched across datasets, with IRT narrowly ahead on DC surveys
+  and Agent slightly ahead on CES21.
+- **DC surveys score higher** than CES surveys for all generators. DC surveys use uniform
+  4-point scales for most items, while CES mixes 4/5/8/9-point scales — wider scale variety
+  makes distribution matching harder.
+- **DC21 is the easiest dataset** (LLM = 0.803), likely due to its large sample (n = 7,576)
+  and homogeneous scale structure.
+""")
+```
+
+---
+
+## Score Gap: LLM vs Best Alternative
+
+```{python}
+fig, ax = plt.subplots(figsize=(9, 4))
+datasets_order = ["DC19", "DC20", "DC21", "CES19", "CES21"]
+llm_scores = [pivot.loc[d, "LLM"] for d in datasets_order]
+best_alt   = [max(pivot.loc[d, "IRT"], pivot.loc[d, "Agent"]) for d in datasets_order]
+gaps       = [l - b for l, b in zip(llm_scores, best_alt)]
+colors     = ['#2196F3' if g > 0 else '#f44336' for g in gaps]
+bars = ax.bar(datasets_order, gaps, color=colors, alpha=0.85, edgecolor='white')
+ax.axhline(0, color='black', linewidth=0.8)
+ax.set_ylabel("LLM score − best alternative score")
+ax.set_title("LLM advantage over best non-LLM generator", fontweight='bold')
+for bar, g in zip(bars, gaps):
+    ax.text(bar.get_x() + bar.get_width()/2, g + 0.005, f"+{g:.3f}", ha='center', fontsize=9)
+plt.tight_layout()
+plt.show()
+```
+
+---
+
+## Sample Sizes and Durations
+
+```{python}
+dur_df = df[df["generator"] == "llm_qwen"][["dataset", "n_real", "duration_s"]].set_index("dataset")
+dur_df = dur_df.reindex(["DC19", "DC20", "DC21", "CES19", "CES21"])
+dur_df["duration_min"] = (dur_df["duration_s"] / 60).round(1)
+
+fig, axes = plt.subplots(1, 2, figsize=(11, 4))
+
+# Real sample sizes
+colors_type = ['steelblue' if DATASETS[d]['type']=='DC' else 'darkorange' for d in dur_df.index]
+axes[0].bar(dur_df.index, dur_df["n_real"], color=colors_type, alpha=0.85, edgecolor='white')
+for i, (d, row) in enumerate(dur_df.iterrows()):
+    axes[0].text(i, row["n_real"] + 100, f"{int(row['n_real']):,}", ha='center', fontsize=9)
+axes[0].set_ylabel("N respondents (complete cases)")
+axes[0].set_title("Real survey sample sizes", fontweight='bold')
+blue_p = mpatches.Patch(color='steelblue', label='Democracy Checkup')
+orange_p = mpatches.Patch(color='darkorange', label='Election Study')
+axes[0].legend(handles=[blue_p, orange_p])
+
+# LLM generation time (100 personas)
+axes[1].bar(dur_df.index, dur_df["duration_min"], color=colors_type, alpha=0.85, edgecolor='white')
+for i, (d, row) in enumerate(dur_df.iterrows()):
+    axes[1].text(i, row["duration_min"] + 0.3, f"{row['duration_min']}m", ha='center', fontsize=9)
+axes[1].set_ylabel("LLM generation time (minutes, 100 personas)")
+axes[1].set_title("LLM generation time by dataset", fontweight='bold')
+axes[1].legend(handles=[blue_p, orange_p])
+
+plt.tight_layout()
+plt.show()
+```
+
+---
+
+## Summary Table
+
+```{python}
+#| output: asis
+rows = []
+for d in ["DC19", "DC20", "DC21", "CES19", "CES21"]:
+    row = summary.loc[d]
+    llm_s = pivot.loc[d, "LLM"]
+    irt_s = pivot.loc[d, "IRT"]
+    agt_s = pivot.loc[d, "Agent"]
+    n = int(row["n_real"])
+    rows.append(f"| {d} | {row['label']} | {n:,} | {llm_s:.3f} | {irt_s:.3f} | {agt_s:.3f} | LLM |")
+
+print("| Dataset | Survey | N real | LLM | IRT | Agent | Best |")
+print("|---|---|---|---|---|---|---|")
+for r in rows: print(r)
+print()
+print("LLM = Qwen2.5-7B-Instruct-Turbo via Together API (100 synthetic respondents)")
+print("IRT = Graded Response Model (1,000 synthetic respondents)")
+print("Agent = Opinion dynamics simulation, Watts-Strogatz network (500 synthetic respondents)")
+```

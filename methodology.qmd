@@ -1,0 +1,356 @@
+---
+title: "Synthetic Public Opinion Data: Methodology"
+subtitle: "Three Approaches to Generating Survey Responses from Synthetic Personas"
+date: today
+format:
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1.3
+    include-in-header:
+      text: |
+        \usepackage{amsmath}
+        \usepackage{booktabs}
+        \usepackage{xcolor}
+        \definecolor{codeblue}{RGB}{30,100,180}
+execute:
+  echo: false
+  warning: false
+---
+
+# Overview
+
+This document describes the technical methodology behind three approaches to generating synthetic public opinion survey data: **Item Response Theory (IRT)**, **Large Language Model (LLM)-based generation**, and **Agent-Based Simulation**. All three share a common foundation: they operate on *personas* --- synthetic respondents constructed before any response generation occurs.
+
+The framework follows a strict pipeline:
+
+$$
+\text{Real Survey} \;\to\; \text{Ingestion \& Schema} \;\to\; \text{Persona Generation} \;\to\; \text{Response Generator} \;\to\; \text{Synthetic Dataset} \;\to\; \text{Evaluation}
+$$
+
+Generators never operate directly on survey questions without persona inputs. Personas are the universal interface.
+
+---
+
+# Personas
+
+## Structure
+
+Each synthetic persona has three layers:
+
+**Demographics** --- drawn from census distributions (Canada or US): age, gender, education, income, region, and urban/rural status.
+
+**Latent traits** --- five continuous scores sampled from a correlated multivariate normal distribution, clipped to $[-2, +2]$:
+
+| Trait | Interpretation |
+|---|---|
+| `ideology` | Conservative ($-2$) to liberal ($+2$) |
+| `authoritarianism` | Libertarian ($-2$) to authoritarian ($+2$) |
+| `trust_in_government` | Low ($-2$) to high ($+2$) trust |
+| `populism` | Low ($-2$) to high ($+2$) populism |
+| `cosmopolitanism` | Nationalist ($-2$) to cosmopolitan ($+2$) |
+
+**Narrative** --- a short paragraph written from the trait and demographic values, e.g.: *"She is a 20-year-old female from urban Quebec. She has a college education and is middle-income. She is conservative, skeptical of government, distrusts political elites, nationally focused."*
+
+## Trait Covariance
+
+Traits are sampled jointly using:
+
+$$
+\boldsymbol{\theta} \sim \mathcal{N}(\boldsymbol{\mu}, \boldsymbol{\Sigma})
+$$
+
+where $\boldsymbol{\Sigma}$ encodes empirically plausible correlations --- for example, ideology and cosmopolitanism are positively correlated, while authoritarianism and trust in government are negatively correlated with populism.
+
+---
+
+# IRT Generator
+
+## Conceptual Foundation
+
+Item Response Theory models the probability of a survey response as a function of a respondent's latent trait $\theta$ and item-level parameters. Rather than assigning responses directly, the IRT generator treats each persona's trait score as a point on a latent continuum and draws responses probabilistically from that position.
+
+## Latent Trait Mapping
+
+For each question, a $\theta$ value is extracted from the persona's trait vector using a keyword-based heuristic on the question text:
+
+$$
+\theta = \begin{cases}
+0.7 \cdot \text{ideology} + 0.3 \cdot \text{trust\_in\_government} & \text{if "government" or "policy" in text} \\
+\text{cosmopolitanism} & \text{if "immigration" or "trade" in text} \\
+\text{authoritarianism} & \text{if "authority" or "law" in text} \\
+\text{populism} & \text{if "elite" or "establishment" in text} \\
+\text{ideology} & \text{otherwise (default)}
+\end{cases}
+$$
+
+This mapping is intentionally simple. Questions that do not match any keyword fall back to ideology, which means ideologically neutral items (e.g., media consumption questions) receive the same $\theta$ as political attitude items --- a limitation addressed separately.
+
+## Binary Items: Two-Parameter Logistic Model (2PL)
+
+For binary questions, the 2PL model gives the probability of endorsing the item:
+
+$$
+P(X = 1 \mid \theta) = \sigma\bigl(\alpha(\theta - \beta)\bigr) = \frac{1}{1 + e^{-\alpha(\theta - \beta)}}
+$$
+
+where:
+
+- $\alpha > 0$ is the **discrimination** parameter --- steeper curves mean the item better separates low-$\theta$ from high-$\theta$ respondents
+- $\beta$ is the **difficulty** parameter --- the $\theta$ value at which $P(X=1) = 0.5$
+- $\sigma(\cdot)$ is the logistic (sigmoid) function
+
+A response $x \in \{0, 1\}$ is then sampled: $x \sim \text{Bernoulli}(P(X=1 \mid \theta))$.
+
+## Ordinal Items: Graded Response Model (GRM)
+
+For Likert-scale and ordered categorical questions with $K$ response categories, the GRM defines $K-1$ ordered thresholds $\beta_1 < \beta_2 < \cdots < \beta_{K-1}$.
+
+The *cumulative* probability of responding in category $k$ or higher is:
+
+$$
+P^*(X \geq k \mid \theta) = \sigma\bigl(\alpha(\theta - \beta_k)\bigr)
+$$
+
+The probability of responding in exactly category $k$ is:
+
+$$
+P(X = k \mid \theta) = P^*(X \geq k \mid \theta) - P^*(X \geq k+1 \mid \theta)
+$$
+
+with boundary conditions $P^*(X \geq 1) = 1$ and $P^*(X \geq K+1) = 0$.
+
+A response is sampled by drawing $u \sim \text{Uniform}(0, 1)$ and finding the category $k$ whose cumulative mass covers $u$.
+
+## Item Parameter Generation
+
+When no empirically calibrated parameters are provided, the generator draws item parameters at random:
+
+- **Discrimination**: $\alpha \sim \text{Uniform}(0.5,\; 2.5)$
+- **Difficulty/centre**: $\beta_{\text{centre}} \sim \text{Uniform}(-2.0,\; 2.0)$
+- **Thresholds** (GRM): spaced at intervals of 1.5 around $\beta_{\text{centre}}$, then sorted to enforce ordering
+
+The spacing of 1.5 on the logit scale corresponds to moderate separation between adjacent categories. With $\alpha \approx 1.5$ and threshold spacing of 1.5, adjacent category probabilities cross at roughly one standard deviation apart on the trait scale.
+
+## Limitations
+
+Because item parameters are generated randomly rather than calibrated from real data, the IRT generator does not reproduce the actual item difficulty or discrimination of specific survey questions. Additionally, the current theta mapping routes all informationally-neutral items (e.g., media source usage) through ideology, producing unrealistic differentiation between items that should reflect different trait dimensions.
+
+---
+
+# LLM Generator
+
+## Conceptual Foundation
+
+The LLM generator replaces the statistical machinery of IRT with a language model that reads a persona description and answers questions as that person would. The key insight is that large language models encode substantial world knowledge about how different kinds of people behave, which can be leveraged for synthetic respondent simulation without any domain-specific parameter calibration.
+
+## Prompt Construction
+
+For each persona--question pair, a prompt is constructed using a Jinja2 template. The **standard template** takes the form:
+
+---
+
+*You are participating in a survey research study. Please respond as the following person would:*
+
+*\{persona narrative\}*
+
+*Question: \{full question text including matrix introduction\}*
+
+*Please choose from the following options by responding with ONLY the option number (1, 2, 3, etc.):*\
+*1. Never*\
+*2. Once or twice*\
+*...*
+
+*Your response (number only):*
+
+---
+
+The persona narrative is the free-text description generated at persona creation time. The question text uses the `extended_text` field from the survey schema, which includes the full matrix introduction (e.g., *"In the past month, how often did you get news or current information from each of the following sources? Family, friends, and/or colleagues"*) rather than just the variable label stub.
+
+Three templates are available: `standard` (narrative only), `personalized` (explicit demographic breakdown + narrative), and `contextual` (adds a survey topic frame). An adaptive strategy selects between standard and personalized based on keyword detection in the question text.
+
+## LLM Provider
+
+Responses are generated via the Together AI chat completions API using `Qwen/Qwen2.5-7B-Instruct-Turbo`. The request sends the prompt as a user message:
+
+```
+POST /v1/chat/completions
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct-Turbo",
+  "messages": [{"role": "user", "content": <prompt>}],
+  "max_tokens": 1024,
+  "temperature": 0.7
+}
+```
+
+The model typically responds with a single digit in under one second per call. The `content` field of the first choice is extracted as the raw response.
+
+## Response Parsing
+
+The raw response is parsed to a valid integer in $\{1, \ldots, K\}$ where $K$ is the number of response options:
+
+1. If the content is a string, extract all digit sequences with a regular expression
+2. Take the first match and convert to integer
+3. If no digit is found, return the middle option $\lfloor (K+1)/2 \rfloor$
+4. Clamp to $[1, K]$ if out of range
+
+**Note on model selection**: `Qwen3.5-9B` (a thinking/reasoning model) was initially used but proved unsuitable. That model routes all generation through extended chain-of-thought reasoning that consumes the full token budget before producing any output, leaving `content` empty. The non-reasoning instruct model `Qwen2.5-7B-Instruct-Turbo` produces clean one-token responses.
+
+## Generation Loop
+
+Responses are generated question-by-question, persona-by-persona:
+
+```
+for each question in survey:
+    for each persona in personas:
+        prompt = template.render(persona, question)
+        raw = llm.generate(prompt)
+        response[persona, question] = parse_integer(raw)
+```
+
+This is embarrassingly parallel but currently runs sequentially with a configurable inter-request delay (default 0.1 s) for rate limiting.
+
+## Limitations
+
+The LLM generator's quality depends entirely on whether the persona narrative contains signals relevant to the question domain. For political attitude questions, narratives including ideology cues (e.g., *"conservative, skeptical of government"*) produce plausible differentiation. For behavioural questions about media consumption, the generic narratives currently generated provide little signal, causing the model to rely on its population-level priors rather than persona-specific variation. Enriching narratives with domain-relevant traits (e.g., media habits, political engagement frequency) would substantially improve fidelity for such items.
+
+---
+
+# Agent-Based Simulation
+
+## Conceptual Foundation
+
+The agent-based generator simulates opinion formation as a social process unfolding over time. Each persona becomes an autonomous agent with an internal opinion state that evolves through interactions with neighbours on a social network and exposure to media signals. Survey responses are elicited from agents at the end of the simulation, after opinions have been shaped by this dynamic process.
+
+## Opinion State Initialisation
+
+Each agent holds, for every survey topic $j$, an opinion $o_{ij} \in [-1, +1]$ and a certainty $c_{ij} \in [0, 1]$.
+
+Initial opinions are computed from persona traits via a keyword-based mapping on the topic name:
+
+| Topic keyword | Formula |
+|---|---|
+| `government`, `gov` | $0.6 \cdot \text{ideology} + 0.4 \cdot \text{trust}$ |
+| `socmed` | $0.5 \cdot \text{cosmo} - 0.3 \cdot \text{auth}$ |
+| `friendfam` | $0.4 \cdot \text{populism} - 0.3 \cdot \text{trust}$ |
+| `sci` | $0.7 \cdot \text{trust} - 0.3 \cdot \text{populism}$ |
+| `cannews` | $0.5 \cdot \text{trust} + 0.3 \cdot \text{ideology}$ |
+| `usnews`, `intlnews` | $\text{cosmopolitanism}$ |
+| `localnews` | $0.4 \cdot \text{auth} - 0.2 \cdot \text{cosmo}$ |
+| `indie` | $0.6 \cdot \text{populism} - 0.4 \cdot \text{trust}$ |
+| `ai` | $0.4 \cdot \text{cosmo} + 0.3 \cdot \text{ideology}$ |
+| *(default)* | $\text{ideology}$ |
+
+All values are clipped to $[-1, +1]$. Initial certainty is drawn uniformly: $c_{ij}^{(0)} \sim \text{Uniform}(0.3, 0.7)$.
+
+## Social Network Construction
+
+Agents are embedded in a social network. The default structure is the **Watts--Strogatz small-world** model:
+
+1. Arrange $N$ agents in a ring
+2. Connect each agent to its $k$ nearest neighbours on each side ($k=6$ by default, giving degree 6)
+3. With probability $p = 0.1$, rewire each edge to a uniformly random target
+
+This produces a network with high local clustering (like real social networks) but short average path lengths (the "small-world" property). Two alternative topologies are available: a **demographic homophily** network (connection probability scales with demographic similarity) and a **preferential attachment** (Barabási--Albert) network.
+
+## Opinion Dynamics
+
+The simulation runs for up to $T$ timesteps (default 25). At each timestep, two influence processes are applied:
+
+### Social Influence
+
+For each agent $i$ and topic $j$, every neighbour $n \in \mathcal{N}(i)$ exerts influence:
+
+$$
+\Delta o_{ij} = s_i \cdot \xi_n \cdot (1 - |o_{ij} - o_{nj}|) \cdot 0.1 \cdot \text{sgn}(o_{nj} - o_{ij})
+$$
+
+where:
+
+- $s_i \in [0.1, 0.9]$ is agent $i$'s **susceptibility**, computed as:
+$$s_i = 0.5 - 0.3 \cdot \text{trust}_i + 0.2 \cdot \text{populism}_i$$
+- $\xi_n \in [0.1, 1.0]$ is neighbour $n$'s **influence strength**, computed from education, income, and age (middle-aged, higher-education, higher-income agents are more influential)
+- The factor $(1 - |o_{ij} - o_{nj}|)$ implements *homophily*: agents with similar opinions exert more influence on each other
+- The $0.1$ coefficient keeps updates small per step
+
+The opinion update incorporates inertia via the certainty level:
+
+$$
+o_{ij}^{(t+1)} = o_{ij}^{(t)} + (1 - 0.7 \cdot c_{ij}^{(t)}) \cdot (\hat{o}_{ij} - o_{ij}^{(t)}) \cdot 0.1
+$$
+
+where $\hat{o}_{ij}$ is the proposed new opinion. Higher certainty (up to 70% resistance) dampens change. Certainty increases by 0.01 after each update.
+
+### Media Influence
+
+A media signal $m_j^{(t)}$ is generated for each topic at each timestep:
+
+$$
+m_j^{(t)} = \bar{m}_j + \epsilon_t + 0.1 \sin(t/10), \quad \epsilon_t \sim \mathcal{N}(0, 0.04)
+$$
+
+where $\bar{m}_j$ is a slight directional lean ($\pm 0.3$) for topics containing "government" or "policy", and zero otherwise. Each agent receives a nudge toward the media signal:
+
+$$
+\Delta o_{ij}^{\text{media}} = s_i \cdot \lambda \cdot 0.05 \cdot (m_j^{(t)} - o_{ij}^{(t)})
+$$
+
+with media influence strength $\lambda = 0.1$ (weaker than social influence).
+
+### Convergence
+
+The simulation halts early if the mean absolute opinion change across all agents and topics falls below a threshold $\epsilon = 0.01$:
+
+$$
+\frac{1}{N \cdot J} \sum_{i,j} |o_{ij}^{(t)} - o_{ij}^{(t-1)}| < 0.01
+$$
+
+In practice, with $N=50$ agents, convergence typically occurs around timestep 11.
+
+## Mapping Opinions to Survey Responses
+
+After simulation, each agent's final opinion $o_{ij} \in [-1, +1]$ is mapped to a survey response in $\{1, \ldots, K\}$:
+
+$$
+r_{ij} = \left\lfloor \frac{o_{ij} + 1}{2} \cdot (K - 1) \right\rfloor + 1
+$$
+
+This maps $-1 \to 1$, $0 \to \lceil K/2 \rceil$, and $+1 \to K$. A noise term is applied with probability $(1 - c_{ij}) \cdot 0.3$, randomly shifting the response by $\pm 1$ category.
+
+## Limitations
+
+The current agent model has two notable limitations. First, because all topics assigned to the same default keyword bucket (e.g., ideology) start with identical initial opinions, the dynamics for those topics are indistinguishable and produce identical responses. The extended keyword mapping for `INFO_USE_*` variables partially addresses this. Second, the opinion dynamics converge very quickly (timestep 11 with 50 agents) because the social influence coefficients are small and homophily accelerates consensus. A larger population, weaker homophily, or more heterogeneous initial conditions would sustain meaningful variance longer.
+
+---
+
+# Comparison of Approaches
+
+| Dimension | IRT | LLM | Agent |
+|---|---|---|---|
+| **Theoretical basis** | Psychometric measurement model | Language model world knowledge | Social influence dynamics |
+| **Persona trait use** | Directly as $\theta$ | Indirectly via narrative text | Directly as initial opinion seed |
+| **Item calibration needed** | Ideally yes; auto-generated otherwise | No | No |
+| **Response mechanism** | Probabilistic sampling from IRT curve | LLM token generation | Deterministic map from converged opinion |
+| **Cross-item correlation** | Independent by default | Independent by default | Correlated via shared network dynamics |
+| **Temporal dynamics** | None | None | Yes (opinion evolution) |
+| **Computational cost** | Very low | High (one API call per cell) | Low |
+| **Variance source** | $\theta$ variation + stochastic sampling | Persona × question × model stochasticity | Initial trait variation + network structure |
+
+---
+
+# Evaluation
+
+Synthetic datasets are evaluated against real survey data on three dimensions:
+
+**Distribution similarity** --- for each item, KL divergence, Jensen--Shannon divergence, and Wasserstein distance between the real and synthetic response distributions.
+
+**Correlation preservation** --- comparison of inter-item Spearman correlation matrices; specifically, whether the sign and approximate magnitude of strong correlations ($|r| > 0.3$) are preserved.
+
+**Regression replication** --- OLS coefficients from a model fit to real data are compared to those from synthetic data. Coefficient sign agreement and relative magnitude are assessed.
+
+A composite quality score aggregates these metrics into a single value in $[0, 1]$.

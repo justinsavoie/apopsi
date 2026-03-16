@@ -1,0 +1,243 @@
+{
+  "survey_name": "CES19",
+  "questions": [
+    {
+      "id": "cps19_demsat",
+      "text": "On the whole, how satisfied are you with the way democracy works in Canada?",
+      "type": "likert",
+      "options": [
+        "Very satisfied",
+        "Fairly satisfied",
+        "Not very satisfied",
+        "Not at all satisfied"
+      ]
+    },
+    {
+      "id": "cps19_govt_confusing",
+      "text": "Sometimes, politics and government seem so complicated that a person like me cannot really understand what is going on.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "cps19_govt_say",
+      "text": "People like me don't have any say about what the government does.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "cps19_fed_gov_sat",
+      "text": "How satisfied are you with the performance of the federal government under Justin Trudeau?",
+      "type": "likert",
+      "options": [
+        "Very satisfied",
+        "Fairly satisfied",
+        "Not very satisfied",
+        "Not at all satisfied"
+      ]
+    },
+    {
+      "id": "pes19_govtcare",
+      "text": "The government does not care much about what people like me think.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes19_populism_3",
+      "text": "Most politicians do not care about the people.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes19_populism_7",
+      "text": "The people, and not politicians, should make our most important policy decisions.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes19_populism_8",
+      "text": "Most politicians care only about the interests of the rich and powerful.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes19_conf_inst1_1",
+      "text": "Please indicate how much confidence you have in the following: The federal government",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "pes19_conf_inst1_2",
+      "text": "Please indicate how much confidence you have in the following: Your provincial government",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "pes19_conf_inst1_3",
+      "text": "Please indicate how much confidence you have in the following: The media/news",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "pes19_conf_inst2_1",
+      "text": "Please indicate how much confidence you have in the following: The courts",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "pes19_fitin",
+      "text": "Too many recent immigrants just don't want to fit in to Canadian society.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes19_immigjobs",
+      "text": "Immigrants take jobs away from other Canadians.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes19_famvalues",
+      "text": "This country would have many fewer problems if there was more emphasis on traditional family values.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes19_equalrights",
+      "text": "We have gone too far in pushing equal rights in this country.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes19_newerlife",
+      "text": "Newer lifestyles are contributing to the breakdown of our society.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ]
+    },
+    {
+      "id": "pes19_inequal",
+      "text": "Is income inequality a big problem in Canada?",
+      "type": "likert",
+      "options": [
+        "Definitely yes",
+        "Probably yes",
+        "Not sure",
+        "Probably not",
+        "Definitely not"
+      ]
+    },
+    {
+      "id": "pes19_pidtrad",
+      "text": "In federal politics, do you usually think of yourself as a Liberal, Conservative, NDP, Bloc Qu\u00e9b\u00e9cois, Green, or People's Party supporter?",
+      "type": "categorical",
+      "options": [
+        "Liberal",
+        "Conservative",
+        "NDP",
+        "Bloc Qu\u00e9b\u00e9cois",
+        "Green",
+        "People's Party",
+        "Another party",
+        "None of these"
+      ]
+    },
+    {
+      "id": "pes19_votechoice2019",
+      "text": "Which party did you vote for in the October 21, 2019 federal election?",
+      "type": "categorical",
+      "options": [
+        "Liberal Party",
+        "Conservative Party",
+        "NDP",
+        "Bloc Qu\u00e9b\u00e9cois",
+        "Green Party",
+        "People's Party",
+        "Another party",
+        "Spoiled ballot"
+      ]
+    }
+  ]
+}

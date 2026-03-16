@@ -1,0 +1,222 @@
+{
+  "survey_name": "DC19",
+  "questions": [
+    {
+      "id": "fed_gov_satisfaction",
+      "text": "How satisfied are you with the performance of the federal government?",
+      "type": "likert",
+      "options": [
+        "Very satisfied",
+        "Fairly satisfied",
+        "Not very satisfied",
+        "Not at all satisfied"
+      ]
+    },
+    {
+      "id": "confidence_inst_1",
+      "text": "Please indicate how much confidence you have in the following: The courts and justice system",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "confidence_inst_2",
+      "text": "Please indicate how much confidence you have in the following: The federal government",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "confidence_inst_3",
+      "text": "Please indicate how much confidence you have in the following: The media/news",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "confidence_inst_4",
+      "text": "Please indicate how much confidence you have in the following: Your provincial government",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "pos_govt_care",
+      "text": "The government does not care much about what people like me think.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "pos_govt_say",
+      "text": "People like me don't have any say about what the government does.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "pos_govt_complicated",
+      "text": "Sometimes, politics and government seem so complicated that a person like me cannot really understand what is going on.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "pos_assimilation",
+      "text": "Too many recent immigrants just don't want to fit in to Canadian society.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "pos_take_jobs",
+      "text": "Immigrants take jobs away from other Canadians.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "pos_look_after",
+      "text": "We should look after Canadians born in this country first and others second.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "immigration_level",
+      "text": "Do you think Canada should admit more immigrants, fewer immigrants, or about the same number as now?",
+      "type": "categorical",
+      "options": [
+        "More",
+        "Fewer",
+        "About the same as now"
+      ]
+    },
+    {
+      "id": "pos_family_values",
+      "text": "This country would have many fewer problems if there was more emphasis on traditional family values.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "pos_equal_rights",
+      "text": "We have gone too far in pushing equal rights in this country.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "pos_women_home",
+      "text": "Society would be better off if fewer women worked outside the home.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "inequality_gap",
+      "text": "How much do you think should be done to reduce the gap between the rich and poor in Canada?",
+      "type": "categorical",
+      "options": [
+        "Much more",
+        "Somewhat more",
+        "About the same as now",
+        "Somewhat less",
+        "Much less"
+      ]
+    },
+    {
+      "id": "pos_govt_jobs",
+      "text": "The government should leave it entirely to the private sector to create jobs.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "party_id",
+      "text": "In federal politics, do you usually think of yourself as a Liberal, Conservative, NDP, Bloc Qu\u00e9b\u00e9cois, or Green supporter?",
+      "type": "categorical",
+      "options": [
+        "Liberal",
+        "Conservative",
+        "NDP",
+        "Bloc Qu\u00e9b\u00e9cois",
+        "Green",
+        "Another party (please specify)",
+        "No party"
+      ]
+    },
+    {
+      "id": "vote_intention",
+      "text": "Which party do you intend to vote for in the federal election?",
+      "type": "categorical",
+      "options": [
+        "Liberal Party",
+        "Conservative Party",
+        "New Democratic Party",
+        "Bloc Qu\u00e9b\u00e9cois",
+        "Green Party",
+        "People's Party",
+        "Another party (please specify)",
+        "I do not intend to vote",
+        "I am not eligible to vote"
+      ]
+    }
+  ]
+}

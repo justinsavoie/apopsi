@@ -1,0 +1,27 @@
+{
+  "survey": "CES21",
+  "model": "Qwen/Qwen2.5-7B-Instruct-Turbo",
+  "timestamp": "2026-03-14T15:41:19.560633",
+  "generators": {
+    "irt": {
+      "n_personas": 1000,
+      "overall_score": 0.4845854176540387,
+      "duration_seconds": 0.0969858169555664
+    },
+    "llm_qwen": {
+      "n_personas": 100,
+      "overall_score": 0.6056258377312684,
+      "duration_seconds": 2013.9783182144165
+    },
+    "agent_simulation": {
+      "n_personas": 500,
+      "overall_score": 0.5587249527224465,
+      "duration_seconds": 3.1251368522644043
+    }
+  },
+  "ranking": [
+    "llm_qwen",
+    "agent_simulation",
+    "irt"
+  ]
+}

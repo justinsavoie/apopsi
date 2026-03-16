@@ -1,0 +1,3131 @@
+{
+  "survey_name": "TIDES_Wave_9",
+  "questions": [
+    {
+      "id": "UniqueID",
+      "text": null,
+      "type": "numeric",
+      "extended_text": ""
+    },
+    {
+      "id": "BIRTH_YEAR",
+      "text": "In what year were you born?",
+      "type": "binary",
+      "options": [
+        "Enter year:",
+        "Prefer not to say"
+      ],
+      "extended_text": "In what year were you born?"
+    },
+    {
+      "id": "ABIRTH_YEAR",
+      "text": "In what year were you born?",
+      "type": "categorical",
+      "options": [
+        "Prefer not to say"
+      ],
+      "extended_text": "In what year were you born?"
+    },
+    {
+      "id": "AGE",
+      "text": "In which of the following age categories do you belong?",
+      "type": "categorical",
+      "options": [
+        "18 to 24",
+        "25 to 34",
+        "35 to 44",
+        "45 to 54",
+        "55 to 64",
+        "65 to 74",
+        "75 and older",
+        "Under 18"
+      ],
+      "extended_text": "In which of the following age categories do you belong?"
+    },
+    {
+      "id": "AGEMERGE",
+      "text": "Calculated Age",
+      "type": "categorical",
+      "options": [
+        "18-24",
+        "25-34",
+        "35-44",
+        "45-54",
+        "55-64",
+        "65-74",
+        "75 years or older",
+        "Unknown"
+      ],
+      "extended_text": "Calculated Age"
+    },
+    {
+      "id": "GENDER",
+      "text": "What is your gender? Gender refers to an individual's personal and social identity as a man, a woman or a person who is not exclusively a man or a woman, for example, non-binary, agender, gender fluid, queer or Two-Spirit.",
+      "type": "categorical",
+      "options": [
+        "Man",
+        "Woman",
+        "Or please specify your gender:",
+        "Prefer not to say"
+      ],
+      "extended_text": "What is your gender? Gender refers to an individual's personal and social identity as a man, a woman or a person who is not exclusively a man or a woman, for example, non-binary, agender, gender fluid, queer or Two-Spirit."
+    },
+    {
+      "id": "REGION",
+      "text": "In which province or territory do you live?",
+      "type": "categorical",
+      "options": [
+        "British Columbia",
+        "Alberta",
+        "Saskatchewan",
+        "Manitoba",
+        "Ontario",
+        "Quebec",
+        "New Brunswick",
+        "Nova Scotia",
+        "Prince Edward Island",
+        "Newfoundland and Labrador",
+        "Yukon",
+        "Northwest Territories",
+        "Nunavut",
+        "I live outside Canada"
+      ],
+      "extended_text": "In which province or territory do you live?"
+    },
+    {
+      "id": "HOUSEHOLD_INCOME",
+      "text": "Which of the following categories best describes your total household income for the year ending December 31, 2024? That is, the total income of all persons in your household combined, before taxes?",
+      "type": "categorical",
+      "options": [
+        "Under $20,000",
+        "$20,000 to just under $40,000",
+        "$40,000 to just under $60,000",
+        "$60,000 to just under $80,000",
+        "$80,000 to just under $100,000",
+        "$100,000 to just under $150,000",
+        "$150,000 to just under $200,000",
+        "$200,000 to just under $250,000",
+        "$250,000 and above",
+        "Prefer not to say"
+      ],
+      "extended_text": "Which of the following categories best describes your total household income for the year ending December 31, 2024? That is, the total income of all persons in your household combined, before taxes?"
+    },
+    {
+      "id": "INDIGENOUS_1",
+      "text": "Are you First Nations, Métis, or Inuit? Note: First Nations includes Status and Non-Status Indians.",
+      "type": "categorical",
+      "options": [
+        "No, not First Nations, Métis, or Inuit",
+        "Yes, First Nations",
+        "Yes, Métis",
+        "Yes, Inuit",
+        "Prefer not to say"
+      ],
+      "extended_text": "Are you First Nations, Métis, or Inuit? Note: First Nations includes Status and Non-Status Indians."
+    },
+    {
+      "id": "INDIGENOUS_2",
+      "text": "Are you First Nations, Métis, or Inuit? Note: First Nations includes Status and Non-Status Indians.",
+      "type": "categorical",
+      "options": [
+        "No, not First Nations, Métis, or Inuit",
+        "Yes, First Nations",
+        "Yes, Métis",
+        "Yes, Inuit",
+        "Prefer not to say"
+      ],
+      "extended_text": "Are you First Nations, Métis, or Inuit? Note: First Nations includes Status and Non-Status Indians."
+    },
+    {
+      "id": "INDIGENOUS_3",
+      "text": "Are you First Nations, Métis, or Inuit? Note: First Nations includes Status and Non-Status Indians.",
+      "type": "categorical",
+      "options": [
+        "No, not First Nations, Métis, or Inuit",
+        "Yes, First Nations",
+        "Yes, Métis",
+        "Yes, Inuit",
+        "Prefer not to say"
+      ],
+      "extended_text": "Are you First Nations, Métis, or Inuit? Note: First Nations includes Status and Non-Status Indians."
+    },
+    {
+      "id": "ETHNICITY_1",
+      "text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>",
+      "type": "categorical",
+      "options": [
+        "Arab",
+        "Black",
+        "Chinese",
+        "Filipino",
+        "Japanese",
+        "Korean",
+        "Latin American",
+        "South Asian (e.g., East Indian, Pakistani, Sri Lankan, etc.)",
+        "Southeast Asian (e.g., Vietnamese, Cambodian, Malaysian, Tha",
+        "West Asian (e.g., Iranian, Afghan, etc.)",
+        "White",
+        "CANADIAN",
+        "EUROPEAN (VARIOUS)",
+        "Other group (Please specify:)",
+        "No, I don't identify with any other racial or cultural group",
+        "Prefer not to say"
+      ],
+      "extended_text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>"
+    },
+    {
+      "id": "ETHNICITY_2",
+      "text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>",
+      "type": "categorical",
+      "options": [
+        "Arab",
+        "Black",
+        "Chinese",
+        "Filipino",
+        "Japanese",
+        "Korean",
+        "Latin American",
+        "South Asian (e.g., East Indian, Pakistani, Sri Lankan, etc.)",
+        "Southeast Asian (e.g., Vietnamese, Cambodian, Malaysian, Tha",
+        "West Asian (e.g., Iranian, Afghan, etc.)",
+        "White",
+        "CANADIAN",
+        "EUROPEAN (VARIOUS)",
+        "Other group (Please specify:)",
+        "No, I don't identify with any other racial or cultural group",
+        "Prefer not to say"
+      ],
+      "extended_text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>"
+    },
+    {
+      "id": "ETHNICITY_3",
+      "text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>",
+      "type": "categorical",
+      "options": [
+        "Arab",
+        "Black",
+        "Chinese",
+        "Filipino",
+        "Japanese",
+        "Korean",
+        "Latin American",
+        "South Asian (e.g., East Indian, Pakistani, Sri Lankan, etc.)",
+        "Southeast Asian (e.g., Vietnamese, Cambodian, Malaysian, Tha",
+        "West Asian (e.g., Iranian, Afghan, etc.)",
+        "White",
+        "CANADIAN",
+        "EUROPEAN (VARIOUS)",
+        "Other group (Please specify:)",
+        "No, I don't identify with any other racial or cultural group",
+        "Prefer not to say"
+      ],
+      "extended_text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>"
+    },
+    {
+      "id": "ETHNICITY_4",
+      "text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>",
+      "type": "categorical",
+      "options": [
+        "Arab",
+        "Black",
+        "Chinese",
+        "Filipino",
+        "Japanese",
+        "Korean",
+        "Latin American",
+        "South Asian (e.g., East Indian, Pakistani, Sri Lankan, etc.)",
+        "Southeast Asian (e.g., Vietnamese, Cambodian, Malaysian, Tha",
+        "West Asian (e.g., Iranian, Afghan, etc.)",
+        "White",
+        "CANADIAN",
+        "EUROPEAN (VARIOUS)",
+        "Other group (Please specify:)",
+        "No, I don't identify with any other racial or cultural group",
+        "Prefer not to say"
+      ],
+      "extended_text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>"
+    },
+    {
+      "id": "ETHNICITY_5",
+      "text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>",
+      "type": "categorical",
+      "options": [
+        "Arab",
+        "Black",
+        "Chinese",
+        "Filipino",
+        "Japanese",
+        "Korean",
+        "Latin American",
+        "South Asian (e.g., East Indian, Pakistani, Sri Lankan, etc.)",
+        "Southeast Asian (e.g., Vietnamese, Cambodian, Malaysian, Tha",
+        "West Asian (e.g., Iranian, Afghan, etc.)",
+        "White",
+        "CANADIAN",
+        "EUROPEAN (VARIOUS)",
+        "Other group (Please specify:)",
+        "No, I don't identify with any other racial or cultural group",
+        "Prefer not to say"
+      ],
+      "extended_text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>"
+    },
+    {
+      "id": "ETHNICITY_6",
+      "text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>",
+      "type": "categorical",
+      "options": [
+        "Arab",
+        "Black",
+        "Chinese",
+        "Filipino",
+        "Japanese",
+        "Korean",
+        "Latin American",
+        "South Asian (e.g., East Indian, Pakistani, Sri Lankan, etc.)",
+        "Southeast Asian (e.g., Vietnamese, Cambodian, Malaysian, Tha",
+        "West Asian (e.g., Iranian, Afghan, etc.)",
+        "White",
+        "CANADIAN",
+        "EUROPEAN (VARIOUS)",
+        "Other group (Please specify:)",
+        "No, I don't identify with any other racial or cultural group",
+        "Prefer not to say"
+      ],
+      "extended_text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>"
+    },
+    {
+      "id": "ETHNICITY_7",
+      "text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>",
+      "type": "categorical",
+      "options": [
+        "Arab",
+        "Black",
+        "Chinese",
+        "Filipino",
+        "Japanese",
+        "Korean",
+        "Latin American",
+        "South Asian (e.g., East Indian, Pakistani, Sri Lankan, etc.)",
+        "Southeast Asian (e.g., Vietnamese, Cambodian, Malaysian, Tha",
+        "West Asian (e.g., Iranian, Afghan, etc.)",
+        "White",
+        "CANADIAN",
+        "EUROPEAN (VARIOUS)",
+        "Other group (Please specify:)",
+        "No, I don't identify with any other racial or cultural group",
+        "Prefer not to say"
+      ],
+      "extended_text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>"
+    },
+    {
+      "id": "ETHNICITY_8",
+      "text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>",
+      "type": "categorical",
+      "options": [
+        "Arab",
+        "Black",
+        "Chinese",
+        "Filipino",
+        "Japanese",
+        "Korean",
+        "Latin American",
+        "South Asian (e.g., East Indian, Pakistani, Sri Lankan, etc.)",
+        "Southeast Asian (e.g., Vietnamese, Cambodian, Malaysian, Tha",
+        "West Asian (e.g., Iranian, Afghan, etc.)",
+        "White",
+        "CANADIAN",
+        "EUROPEAN (VARIOUS)",
+        "Other group (Please specify:)",
+        "No, I don't identify with any other racial or cultural group",
+        "Prefer not to say"
+      ],
+      "extended_text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>"
+    },
+    {
+      "id": "ETHNICITY_9",
+      "text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>",
+      "type": "categorical",
+      "options": [
+        "Arab",
+        "Black",
+        "Chinese",
+        "Filipino",
+        "Japanese",
+        "Korean",
+        "Latin American",
+        "South Asian (e.g., East Indian, Pakistani, Sri Lankan, etc.)",
+        "Southeast Asian (e.g., Vietnamese, Cambodian, Malaysian, Tha",
+        "West Asian (e.g., Iranian, Afghan, etc.)",
+        "White",
+        "CANADIAN",
+        "EUROPEAN (VARIOUS)",
+        "Other group (Please specify:)",
+        "No, I don't identify with any other racial or cultural group",
+        "Prefer not to say"
+      ],
+      "extended_text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>"
+    },
+    {
+      "id": "ETHNICITY_10",
+      "text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>",
+      "type": "categorical",
+      "options": [
+        "Arab",
+        "Black",
+        "Chinese",
+        "Filipino",
+        "Japanese",
+        "Korean",
+        "Latin American",
+        "South Asian (e.g., East Indian, Pakistani, Sri Lankan, etc.)",
+        "Southeast Asian (e.g., Vietnamese, Cambodian, Malaysian, Tha",
+        "West Asian (e.g., Iranian, Afghan, etc.)",
+        "White",
+        "CANADIAN",
+        "EUROPEAN (VARIOUS)",
+        "Other group (Please specify:)",
+        "No, I don't identify with any other racial or cultural group",
+        "Prefer not to say"
+      ],
+      "extended_text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>"
+    },
+    {
+      "id": "ETHNICITY_11",
+      "text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>",
+      "type": "categorical",
+      "options": [
+        "Arab",
+        "Black",
+        "Chinese",
+        "Filipino",
+        "Japanese",
+        "Korean",
+        "Latin American",
+        "South Asian (e.g., East Indian, Pakistani, Sri Lankan, etc.)",
+        "Southeast Asian (e.g., Vietnamese, Cambodian, Malaysian, Tha",
+        "West Asian (e.g., Iranian, Afghan, etc.)",
+        "White",
+        "CANADIAN",
+        "EUROPEAN (VARIOUS)",
+        "Other group (Please specify:)",
+        "No, I don't identify with any other racial or cultural group",
+        "Prefer not to say"
+      ],
+      "extended_text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>"
+    },
+    {
+      "id": "ETHNICITY_12",
+      "text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>",
+      "type": "categorical",
+      "options": [
+        "Arab",
+        "Black",
+        "Chinese",
+        "Filipino",
+        "Japanese",
+        "Korean",
+        "Latin American",
+        "South Asian (e.g., East Indian, Pakistani, Sri Lankan, etc.)",
+        "Southeast Asian (e.g., Vietnamese, Cambodian, Malaysian, Tha",
+        "West Asian (e.g., Iranian, Afghan, etc.)",
+        "White",
+        "CANADIAN",
+        "EUROPEAN (VARIOUS)",
+        "Other group (Please specify:)",
+        "No, I don't identify with any other racial or cultural group",
+        "Prefer not to say"
+      ],
+      "extended_text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>"
+    },
+    {
+      "id": "LANGUAGE",
+      "text": "Which language do you speak most often at home?",
+      "type": "categorical",
+      "options": [
+        "English",
+        "French",
+        "Arabic",
+        "Atikamekw",
+        "Cantonese",
+        "Cree",
+        "Dene",
+        "Dutch",
+        "German",
+        "Greek",
+        "Gujarati",
+        "Hindi",
+        "Inuktitut",
+        "Italian",
+        "Korean",
+        "Mandarin",
+        "Mi'kmaq",
+        "Montagnais (Innu)",
+        "Ojibway",
+        "Oji-Cree",
+        "Persian (Farsi)",
+        "Polish",
+        "Portuguese",
+        "Punjabi",
+        "Romanian",
+        "Russian",
+        "Spanish",
+        "Tagalog (Pilipino, Filipino)",
+        "Tamil",
+        "Ukrainian",
+        "Urdu",
+        "Vietnamese",
+        "Language not listed above (please specify)",
+        "Prefer not to say"
+      ],
+      "extended_text": "Which language do you speak most often at home?"
+    },
+    {
+      "id": "BIRTH_PLACE",
+      "text": "Where were you born?",
+      "type": "categorical",
+      "options": [
+        "In Canada",
+        "Outside of Canada (please specify the country)",
+        "WESTERN EUROPE",
+        "EASTERN/CENTRAL EUROPE",
+        "NORTHERN/SCANDANAVIAN EUROPE",
+        "SOUTH ASIA",
+        "SOUTH EAST ASIAN",
+        "LATIN/CENTRAL/SOUTH AMERICA",
+        "CARIBBEAN/WEST INDIES",
+        "AFRICA/SOUTH AFRICA",
+        "U.S.A",
+        "OCEANIA",
+        "WESTERN ASIA",
+        "Prefer not to say"
+      ],
+      "extended_text": "Where were you born?"
+    },
+    {
+      "id": "IMMIGRATE_YEAR",
+      "text": "In what year did you first come to Canada to live? If exact year is not known, enter best estimate.",
+      "type": "binary",
+      "options": [
+        "Enter year:",
+        "Prefer not to say"
+      ],
+      "extended_text": "In what year did you first come to Canada to live? If exact year is not known, enter best estimate."
+    },
+    {
+      "id": "AIMMIGRATE_YEAR",
+      "text": "In what year did you first come to Canada to live? If exact year is not known, enter best estimate.",
+      "type": "categorical",
+      "options": [
+        "Prefer not to say"
+      ],
+      "extended_text": "In what year did you first come to Canada to live? If exact year is not known, enter best estimate."
+    },
+    {
+      "id": "RESIDENT_STATUS",
+      "text": "Which of the following categories best describes your current resident status in Canada?",
+      "type": "categorical",
+      "options": [
+        "Canadian Citizen",
+        "Permanent Resident of Canada (but not a citizen)",
+        "Temporary Foreign Worker program",
+        "Other Temporary Work Permit",
+        "International Student",
+        "Refugee or Protected Person",
+        "Other (please specify)",
+        "Prefer not to say"
+      ],
+      "extended_text": "Which of the following categories best describes your current resident status in Canada?"
+    },
+    {
+      "id": "LGBTQ2",
+      "text": "Do you identify as a member of the 2SLGBTQI+ community (Two-Spirited, Lesbian, Gay, Bisexual, Transgender, Queer, Intersex, another sexual orientation, or gender identity)?",
+      "type": "categorical",
+      "options": [
+        "Yes",
+        "No",
+        "Prefer not to say"
+      ],
+      "extended_text": "Do you identify as a member of the 2SLGBTQI+ community (Two-Spirited, Lesbian, Gay, Bisexual, Transgender, Queer, Intersex, another sexual orientation, or gender identity)?"
+    },
+    {
+      "id": "PARENT",
+      "text": "Are you a parent?",
+      "type": "categorical",
+      "options": [
+        "Yes",
+        "No",
+        "Prefer not to say"
+      ],
+      "extended_text": "Are you a parent?"
+    },
+    {
+      "id": "TRUST_GOV_CAN",
+      "text": "The federal government",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust"
+      ],
+      "extended_text": "In general, how much do you currently trust or distrust the following levels of government to make good decisions in the best interest of the public?  The federal government"
+    },
+    {
+      "id": "TRUST_GOV_PROVTERR",
+      "text": "Your provincial/territorial government",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust"
+      ],
+      "extended_text": "In general, how much do you currently trust or distrust the following levels of government to make good decisions in the best interest of the public?  Your provincial/territorial government"
+    },
+    {
+      "id": "TRUST_GOV_MUNI",
+      "text": "Your local or municipal government",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust"
+      ],
+      "extended_text": "In general, how much do you currently trust or distrust the following levels of government to make good decisions in the best interest of the public?  Your local or municipal government"
+    },
+    {
+      "id": "TRUST_GOV_CYBER",
+      "text": "Cyber security",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, how much do you trust or distrust the federal government's ability to implement effective policies in each of the following areas?  Cyber security"
+    },
+    {
+      "id": "TRUST_GOV_DEFENCE",
+      "text": "National defence",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, how much do you trust or distrust the federal government's ability to implement effective policies in each of the following areas?  National defence"
+    },
+    {
+      "id": "TRUST_GOV_TRADE",
+      "text": "International trade",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, how much do you trust or distrust the federal government's ability to implement effective policies in each of the following areas?  International trade"
+    },
+    {
+      "id": "TRUST_GOV_FIREARMS",
+      "text": "Regulations related to firearms and other weapons",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, how much do you trust or distrust the federal government's ability to implement effective policies in each of the following areas?  Regulations related to firearms and other weapons"
+    },
+    {
+      "id": "TRUST_GOV_IMM",
+      "text": "Immigration",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, how much do you trust or distrust the federal government's ability to implement effective policies in each of the following areas?  Immigration"
+    },
+    {
+      "id": "TRUST_GOV_HOUSING",
+      "text": "Housing",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, how much do you trust or distrust the federal government's ability to implement effective policies in each of the following areas?  Housing"
+    },
+    {
+      "id": "TRUST_GOV_ECON",
+      "text": "The economy",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, how much do you trust or distrust the federal government's ability to implement effective policies in each of the following areas?  The economy"
+    },
+    {
+      "id": "TRUST_GOV_AI",
+      "text": "Artificial intelligence",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, how much do you trust or distrust the federal government's ability to implement effective policies in each of the following areas?  Artificial intelligence"
+    },
+    {
+      "id": "TRUST_MEDIA",
+      "text": "Large news media organizations in Canada",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, to what extent do you trust or distrust the following groups or entities?  Large news media organizations in Canada"
+    },
+    {
+      "id": "TRUST_POLITICIANS",
+      "text": "Politicians in Canada",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, to what extent do you trust or distrust the following groups or entities?  Politicians in Canada"
+    },
+    {
+      "id": "TRUST_PS2",
+      "text": "Federal public servants (non-political government employees)",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, to what extent do you trust or distrust the following groups or entities?  Federal public servants (non-political government employees)"
+    },
+    {
+      "id": "TRUST_POLICE",
+      "text": "The police in Canada",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, to what extent do you trust or distrust the following groups or entities?  The police in Canada"
+    },
+    {
+      "id": "TRUST_INTELLIGENCE",
+      "text": "Canada's Security and Intelligence Agencies (e.g., Canadian Security Intelligence Service (CSIS), Communications Security Establishment Canada (CSE))",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, to what extent do you trust or distrust the following groups or entities?  Canada's Security and Intelligence Agencies (e.g., Canadian Security Intelligence Service (CSIS), Communications Security Establishment Canada (CSE))"
+    },
+    {
+      "id": "TRUST_CAF",
+      "text": "Canadian Armed Forces (e.g., Army, Navy, Air Force)",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, to what extent do you trust or distrust the following groups or entities?  Canadian Armed Forces (e.g., Army, Navy, Air Force)"
+    },
+    {
+      "id": "TRUST_PS",
+      "text": "Federal public servants (e.g., non-political employees at Service Canada, statisticians working on the census etc.)",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "In general, to what extent do you trust or distrust the following groups or entities?  Federal public servants (e.g., non-political employees at Service Canada, statisticians working on the census etc.)"
+    },
+    {
+      "id": "MIS_F_IMM_4",
+      "text": "Refugees in Canada receive more money from the government per month than the average pensioner.",
+      "type": "likert",
+      "options": [
+        "Very confident this is false",
+        "Somewhat confident this is false",
+        "Unsure / Don't know",
+        "Somewhat confident this is true",
+        "Very confident this is true"
+      ],
+      "extended_text": "To the best of your knowledge, are the claims in each of the following statements about immigration and citizenship in the Canadian context true or false?  Refugees in Canada receive more money from the government per month than the average pensioner."
+    },
+    {
+      "id": "MIS_T_IMM_6",
+      "text": "Refugee claimants must pass a security background and criminal check before receiving permanent resident status.",
+      "type": "likert",
+      "options": [
+        "Very confident this is false",
+        "Somewhat confident this is false",
+        "Unsure / Don't know",
+        "Somewhat confident this is true",
+        "Very confident this is true"
+      ],
+      "extended_text": "To the best of your knowledge, are the claims in each of the following statements about immigration and citizenship in the Canadian context true or false?  Refugee claimants must pass a security background and criminal check before receiving permanent resident status."
+    },
+    {
+      "id": "MIS_F_IMM_5",
+      "text": "Across Canadian cities, more immigration is associated with higher crime rates.",
+      "type": "likert",
+      "options": [
+        "Very confident this is false",
+        "Somewhat confident this is false",
+        "Unsure / Don't know",
+        "Somewhat confident this is true",
+        "Very confident this is true"
+      ],
+      "extended_text": "To the best of your knowledge, are the claims in each of the following statements about immigration and citizenship in the Canadian context true or false?  Across Canadian cities, more immigration is associated with higher crime rates."
+    },
+    {
+      "id": "DEM_SAT",
+      "text": "On the whole, how satisfied or dissatisfied are you with the way democracy works in Canada?",
+      "type": "likert",
+      "options": [
+        "Very dissatisfied",
+        "Somewhat dissatisfied",
+        "Neither satisfied nor dissatisfied",
+        "Somewhat satisfied",
+        "Very satisfied",
+        "Don't know"
+      ],
+      "extended_text": "On the whole, how satisfied or dissatisfied are you with the way democracy works in Canada?"
+    },
+    {
+      "id": "DEMCAN_INFLUENCE",
+      "text": "How much would you say the political system in Canada allows people like you to have an influence on politics?",
+      "type": "likert",
+      "options": [
+        "Not at all",
+        "Very little",
+        "Some",
+        "A lot"
+      ],
+      "extended_text": "How much would you say the political system in Canada allows people like you to have an influence on politics?"
+    },
+    {
+      "id": "DEMCAN_ACCEPTNEXTELEC",
+      "text": "I will accept the outcome of the next Canadian election, regardless of who wins.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "To what extent do you agree or disagree with the following statements?  I will accept the outcome of the next Canadian election, regardless of who wins."
+    },
+    {
+      "id": "DEMCAN_EXPPOLI",
+      "text": "Individuals in Canada are free to express their personal views on political topics without fear of surveillance or punishment.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "To what extent do you agree or disagree with the following statements?  Individuals in Canada are free to express their personal views on political topics without fear of surveillance or punishment."
+    },
+    {
+      "id": "DEMCAN_FREEASSEMBLE",
+      "text": "Individuals can freely assemble in Canada (e.g., freedom to protest peacefully, engage in petitions, organize public events).",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "To what extent do you agree or disagree with the following statements?  Individuals can freely assemble in Canada (e.g., freedom to protest peacefully, engage in petitions, organize public events)."
+    },
+    {
+      "id": "DEMCAN_JUSTSYS",
+      "text": "The Canadian justice system treats everyone equally.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "To what extent do you agree or disagree with the following statements?  The Canadian justice system treats everyone equally."
+    },
+    {
+      "id": "CAN_ELEC_FREEFAIR2025",
+      "text": "To what extent do you agree or disagree with the following statement: The last Canadian federal election (April 2025) was free and fair.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "To what extent do you agree or disagree with the following statement: The last Canadian federal election (April 2025) was free and fair."
+    },
+    {
+      "id": "CAN_ELEC_FREEFAIR2025_WHY_1",
+      "text": "In a few words, please explain why you <strongly disagree / somewhat disagree> that the last Canadian federal election (April 2025) was free and fair.",
+      "type": "categorical",
+      "options": [
+        "FPTP IS UNFAIR",
+        "MEDIA BIAS/INFLUENCE, CBC FAVOURS LIBERALS",
+        "REDRAWING BOUNDARIES BEFORE ELECTION TO FAVOUR LIBERALS",
+        "FOREIGN INTERFERENCE",
+        "LIBERAL CAMPAIGN TACTICS (FEAR/SCARE TACTICS, FALSE FACTS, S",
+        "LIBERAL CORRUPTION (MARK CARNEY GIVEN A SEAT AND NOT ELECTED",
+        "LONGEST BALLOT, TOO MANY CANDIDATES ON THE BALLOT WITH POILI",
+        "VOTING DAY PROCEDURES/PROCESSES WERE COMPROMISED (VOTER CARD",
+        "LIBERAL POLICIES ALLOWED MASS IMMIGRATION TO WIN WITH THE IM",
+        "SPECIAL INTEREST/ASSOCIATIONS/INSTITUTIONS INFLUENCING VOTES",
+        "DO NOT KNOW ANYONE WHO VOTED LIBERAL AND YET THEY WON/DOES N",
+        "TWO PARTY SYSTEM IS NOT FAIR, NOT ENOUGH PARTIES/CANDIDATES",
+        "OTHER"
+      ],
+      "extended_text": "In a few words, please explain why you <strongly disagree / somewhat disagree> that the last Canadian federal election (April 2025) was free and fair."
+    },
+    {
+      "id": "CAN_ELEC_FREEFAIR2025_WHY_2",
+      "text": "In a few words, please explain why you <strongly disagree / somewhat disagree> that the last Canadian federal election (April 2025) was free and fair.",
+      "type": "categorical",
+      "options": [
+        "FPTP IS UNFAIR",
+        "MEDIA BIAS/INFLUENCE, CBC FAVOURS LIBERALS",
+        "REDRAWING BOUNDARIES BEFORE ELECTION TO FAVOUR LIBERALS",
+        "FOREIGN INTERFERENCE",
+        "LIBERAL CAMPAIGN TACTICS (FEAR/SCARE TACTICS, FALSE FACTS, S",
+        "LIBERAL CORRUPTION (MARK CARNEY GIVEN A SEAT AND NOT ELECTED",
+        "LONGEST BALLOT, TOO MANY CANDIDATES ON THE BALLOT WITH POILI",
+        "VOTING DAY PROCEDURES/PROCESSES WERE COMPROMISED (VOTER CARD",
+        "LIBERAL POLICIES ALLOWED MASS IMMIGRATION TO WIN WITH THE IM",
+        "SPECIAL INTEREST/ASSOCIATIONS/INSTITUTIONS INFLUENCING VOTES",
+        "DO NOT KNOW ANYONE WHO VOTED LIBERAL AND YET THEY WON/DOES N",
+        "TWO PARTY SYSTEM IS NOT FAIR, NOT ENOUGH PARTIES/CANDIDATES",
+        "OTHER"
+      ],
+      "extended_text": "In a few words, please explain why you <strongly disagree / somewhat disagree> that the last Canadian federal election (April 2025) was free and fair."
+    },
+    {
+      "id": "CAN_ELEC_FREEFAIR2025_WHY_3",
+      "text": "In a few words, please explain why you <strongly disagree / somewhat disagree> that the last Canadian federal election (April 2025) was free and fair.",
+      "type": "categorical",
+      "options": [
+        "FPTP IS UNFAIR",
+        "MEDIA BIAS/INFLUENCE, CBC FAVOURS LIBERALS",
+        "REDRAWING BOUNDARIES BEFORE ELECTION TO FAVOUR LIBERALS",
+        "FOREIGN INTERFERENCE",
+        "LIBERAL CAMPAIGN TACTICS (FEAR/SCARE TACTICS, FALSE FACTS, S",
+        "LIBERAL CORRUPTION (MARK CARNEY GIVEN A SEAT AND NOT ELECTED",
+        "LONGEST BALLOT, TOO MANY CANDIDATES ON THE BALLOT WITH POILI",
+        "VOTING DAY PROCEDURES/PROCESSES WERE COMPROMISED (VOTER CARD",
+        "LIBERAL POLICIES ALLOWED MASS IMMIGRATION TO WIN WITH THE IM",
+        "SPECIAL INTEREST/ASSOCIATIONS/INSTITUTIONS INFLUENCING VOTES",
+        "DO NOT KNOW ANYONE WHO VOTED LIBERAL AND YET THEY WON/DOES N",
+        "TWO PARTY SYSTEM IS NOT FAIR, NOT ENOUGH PARTIES/CANDIDATES",
+        "OTHER"
+      ],
+      "extended_text": "In a few words, please explain why you <strongly disagree / somewhat disagree> that the last Canadian federal election (April 2025) was free and fair."
+    },
+    {
+      "id": "CAN_ELECTION2025_FRAUD",
+      "text": "Vote fraud and/or other irregularities had an impact on the election",
+      "type": "likert",
+      "options": [
+        "Highly unlikely",
+        "Somewhat unlikely",
+        "Don't know / Unsure",
+        "Somewhat likely",
+        "Highly likely"
+      ],
+      "extended_text": "Thinking about the last federal election in Canada, held in April 2025, how likely or unlikely do you think it is that the following happened?  Vote fraud and/or other irregularities had an impact on the election"
+    },
+    {
+      "id": "CAN_ELECTION2025_FOREIGN",
+      "text": "Foreign influence impacted the election",
+      "type": "likert",
+      "options": [
+        "Highly unlikely",
+        "Somewhat unlikely",
+        "Don't know / Unsure",
+        "Somewhat likely",
+        "Highly likely"
+      ],
+      "extended_text": "Thinking about the last federal election in Canada, held in April 2025, how likely or unlikely do you think it is that the following happened?  Foreign influence impacted the election"
+    },
+    {
+      "id": "POLGOVERN1",
+      "text": "Having a strong leader who does not have to bother with parliament and elections.",
+      "type": "likert",
+      "options": [
+        "Very bad",
+        "Bad",
+        "Good",
+        "Very good"
+      ],
+      "extended_text": "For each of the following, would you say it is a good or bad way of governing this country?  Having a strong leader who does not have to bother with parliament and elections."
+    },
+    {
+      "id": "POLGOVERN4",
+      "text": "Having a representative democracy where citizens vote to elect their representatives that make decisions on their behalf.",
+      "type": "likert",
+      "options": [
+        "Very bad",
+        "Bad",
+        "Good",
+        "Very good"
+      ],
+      "extended_text": "For each of the following, would you say it is a good or bad way of governing this country?  Having a representative democracy where citizens vote to elect their representatives that make decisions on their behalf."
+    },
+    {
+      "id": "POVO3A",
+      "text": "The use of force by ordinary citizens is sometimes necessary to achieve the political goals I support.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "To what extent do you agree or disagree with the following statements?  The use of force by ordinary citizens is sometimes necessary to achieve the political goals I support."
+    },
+    {
+      "id": "POVO3B",
+      "text": "I would personally use force to achieve the political goals I support.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "To what extent do you agree or disagree with the following statements?  I would personally use force to achieve the political goals I support."
+    },
+    {
+      "id": "POVO4",
+      "text": "We have gone too far in pushing equal rights in this country.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "To what extent do you agree or disagree with the following statements?  We have gone too far in pushing equal rights in this country."
+    },
+    {
+      "id": "POVO3B_CONS",
+      "text": "Approximately what percentage of adults in Canada do you think agree (i.e., they \"somewhat\" or \"strongly\" agree) with the following claim: I would personally use force to achieve the political goals I support. Note: here, we are not asking about how...",
+      "type": "categorical",
+      "options": [
+        "0%",
+        "10%",
+        "20%",
+        "30%",
+        "40%",
+        "50%",
+        "60%",
+        "70%",
+        "80%",
+        "90%",
+        "100%"
+      ],
+      "extended_text": "Approximately what percentage of adults in Canada do you think agree (i.e., they \"somewhat\" or \"strongly\" agree) with the following claim: I would personally use force to achieve the political goals I support. Note: here, we are not asking about how..."
+    },
+    {
+      "id": "POVO_OPEN_1",
+      "text": "What does \"the use of force by ordinary citizens to achieve political goals\" mean to you?",
+      "type": "categorical",
+      "options": [
+        "ACTING AGAINST GOVERNMENT POLICIES/DECISIONS THAT ARE NOT TH",
+        "RIOTING/CIVIL DISOBEDIENCE (DAMAGE TO INFRASTRUCTURE, VANDAL",
+        "VIOLENT PROTEST/PROTEST THAT TURN VIOLENT",
+        "USE OF VIOLENCE TO ACHIEVE GOALS (USE OF WEAPONS/FORCE, INFL",
+        "OPPOSITION TO AUTHORITARIAN ACTIONS OF GOVERNMENT, AGAINST A",
+        "OVERTHROWING GOVERNMENT. GOVERNMENT COUPS, REVOLUTION, REMOV",
+        "DEMONSTRATION/PROTESTS, PEACEFUL DEMONSTRATIONS/PROTESTS (SI",
+        "THE RIGHT/ABILITY TO DEFEND YOURSELF AND PERSONAL PROPERTY,",
+        "OTHER"
+      ],
+      "extended_text": "What does \"the use of force by ordinary citizens to achieve political goals\" mean to you?"
+    },
+    {
+      "id": "POVO_OPEN_2",
+      "text": "What does \"the use of force by ordinary citizens to achieve political goals\" mean to you?",
+      "type": "categorical",
+      "options": [
+        "ACTING AGAINST GOVERNMENT POLICIES/DECISIONS THAT ARE NOT TH",
+        "RIOTING/CIVIL DISOBEDIENCE (DAMAGE TO INFRASTRUCTURE, VANDAL",
+        "VIOLENT PROTEST/PROTEST THAT TURN VIOLENT",
+        "USE OF VIOLENCE TO ACHIEVE GOALS (USE OF WEAPONS/FORCE, INFL",
+        "OPPOSITION TO AUTHORITARIAN ACTIONS OF GOVERNMENT, AGAINST A",
+        "OVERTHROWING GOVERNMENT. GOVERNMENT COUPS, REVOLUTION, REMOV",
+        "DEMONSTRATION/PROTESTS, PEACEFUL DEMONSTRATIONS/PROTESTS (SI",
+        "THE RIGHT/ABILITY TO DEFEND YOURSELF AND PERSONAL PROPERTY,",
+        "OTHER"
+      ],
+      "extended_text": "What does \"the use of force by ordinary citizens to achieve political goals\" mean to you?"
+    },
+    {
+      "id": "POVO_OPEN_3",
+      "text": "What does \"the use of force by ordinary citizens to achieve political goals\" mean to you?",
+      "type": "categorical",
+      "options": [
+        "ACTING AGAINST GOVERNMENT POLICIES/DECISIONS THAT ARE NOT TH",
+        "RIOTING/CIVIL DISOBEDIENCE (DAMAGE TO INFRASTRUCTURE, VANDAL",
+        "VIOLENT PROTEST/PROTEST THAT TURN VIOLENT",
+        "USE OF VIOLENCE TO ACHIEVE GOALS (USE OF WEAPONS/FORCE, INFL",
+        "OPPOSITION TO AUTHORITARIAN ACTIONS OF GOVERNMENT, AGAINST A",
+        "OVERTHROWING GOVERNMENT. GOVERNMENT COUPS, REVOLUTION, REMOV",
+        "DEMONSTRATION/PROTESTS, PEACEFUL DEMONSTRATIONS/PROTESTS (SI",
+        "THE RIGHT/ABILITY TO DEFEND YOURSELF AND PERSONAL PROPERTY,",
+        "OTHER"
+      ],
+      "extended_text": "What does \"the use of force by ordinary citizens to achieve political goals\" mean to you?"
+    },
+    {
+      "id": "ANTIDEMNORMS_ONLINE",
+      "text": "...harass leaders of other political groups online?",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Rarely",
+        "Sometimes",
+        "Often",
+        "Always"
+      ],
+      "extended_text": "How often would you say each of the following are appropriate? When we say 'political group' think of the people, in Canada, who have similar political views.  When, if ever, is it okay for a supporter of my favoured political group to:  ...harass leaders of other political groups online?"
+    },
+    {
+      "id": "ANTIDEMNORMS_OFFLINE",
+      "text": "...harass leaders of other political groups in-person?",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Rarely",
+        "Sometimes",
+        "Often",
+        "Always"
+      ],
+      "extended_text": "How often would you say each of the following are appropriate? When we say 'political group' think of the people, in Canada, who have similar political views.  When, if ever, is it okay for a supporter of my favoured political group to:  ...harass leaders of other political groups in-person?"
+    },
+    {
+      "id": "CANADA_INT_INST_RIGHTS",
+      "text": "Has a political system that works for the benefit of all its people",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree",
+        "Don't know / Prefer not to answer"
+      ],
+      "extended_text": "To what extent do you agree or disagree that Canada:  Has a political system that works for the benefit of all its people"
+    },
+    {
+      "id": "CANADA_INT_INST_PEACE",
+      "text": "Contributes to peace and stability around the world",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree",
+        "Don't know / Prefer not to answer"
+      ],
+      "extended_text": "To what extent do you agree or disagree that Canada:  Contributes to peace and stability around the world"
+    },
+    {
+      "id": "USA_INT_INST_RIGHTS",
+      "text": "Has a political system that works for the benefit of all its people",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree",
+        "Don't know / Prefer not to answer"
+      ],
+      "extended_text": "To what extent do you agree or disagree that the United States:  Has a political system that works for the benefit of all its people"
+    },
+    {
+      "id": "USA_INT_INST_PEACE",
+      "text": "Contributes to peace and stability around the world",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree",
+        "Don't know / Prefer not to answer"
+      ],
+      "extended_text": "To what extent do you agree or disagree that the United States:  Contributes to peace and stability around the world"
+    },
+    {
+      "id": "RUSSIA_INT_INST_RIGHTS",
+      "text": "Has a political system that works for the benefit of all its people",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree",
+        "Don't know / Prefer not to answer"
+      ],
+      "extended_text": "To what extent do you agree or disagree that Russia:  Has a political system that works for the benefit of all its people"
+    },
+    {
+      "id": "RUSSIA_INT_INST_PEACE",
+      "text": "Contributes to peace and stability around the world",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree",
+        "Don't know / Prefer not to answer"
+      ],
+      "extended_text": "To what extent do you agree or disagree that Russia:  Contributes to peace and stability around the world"
+    },
+    {
+      "id": "CHINA_INT_INST_RIGHTS",
+      "text": "Has a political system that works for the benefit of all its people",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree",
+        "Don't know / Prefer not to answer"
+      ],
+      "extended_text": "To what extent do you agree or disagree that China:  Has a political system that works for the benefit of all its people"
+    },
+    {
+      "id": "CHINA_INT_INST_PEACE",
+      "text": "Contributes to peace and stability around the world",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree",
+        "Don't know / Prefer not to answer"
+      ],
+      "extended_text": "To what extent do you agree or disagree that China:  Contributes to peace and stability around the world"
+    },
+    {
+      "id": "SOC_TRUST_IMM",
+      "text": "People who recently immigrated to Canada",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "How much do you trust or distrust each of the following groups of people:  People who recently immigrated to Canada"
+    },
+    {
+      "id": "SOC_TRUST_POLIN",
+      "text": "People in Canada who share your political views",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "How much do you trust or distrust each of the following groups of people:  People in Canada who share your political views"
+    },
+    {
+      "id": "SOC_TRUST_POLOUT",
+      "text": "People in Canada who have political views that are different from yours",
+      "type": "likert",
+      "options": [
+        "Strongly distrust",
+        "Somewhat distrust",
+        "Neither trust nor distrust",
+        "Somewhat trust",
+        "Strongly trust",
+        "Don't know"
+      ],
+      "extended_text": "How much do you trust or distrust each of the following groups of people:  People in Canada who have political views that are different from yours"
+    },
+    {
+      "id": "POLARIZATION_MORALS_INGROUP",
+      "text": "Generally, people in Canada who share my political views are good people",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "To what extent do you agree or disagree with the following statements?  Generally, people in Canada who share my political views are good people"
+    },
+    {
+      "id": "POLARIZATION_MORALS_OUTGROUP",
+      "text": "Generally, people in Canada who have political views that are different from mine are good people",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "To what extent do you agree or disagree with the following statements?  Generally, people in Canada who have political views that are different from mine are good people"
+    },
+    {
+      "id": "MIDI_IMPACT_DIFF_TH",
+      "text": "People in Canada who have political views that are different from mine are a threat to democracy",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "To what extent do you agree or disagree with the following statements?  People in Canada who have political views that are different from mine are a threat to democracy"
+    },
+    {
+      "id": "CANVALUES_OPEN_1",
+      "text": "In your view, what are the values that best represent Canada or Canadians? Please respond in a few words.",
+      "type": "categorical",
+      "options": [
+        "HELPFUL, KIND, POLITE, RESPECTFUL/CARING OF OTHERS, GENEROUS",
+        "ACCEPTING/OPEN MINDED, TOLERANT/EMPATHETICCOLLABORATIVE/COOP",
+        "FAIR, HONEST, TRUSTWORTHY, HUMBLE, INTEGRITY",
+        "FREE, DEMOCRATIC, LIBERTY, GOOD GOVERNANCE. RESPECT FOR HUMA",
+        "EQUAL OPPORTUNITY, EQUALITY",
+        "BRAVE, RESILIANT, DETERMINED, BOLD, STANDS UP FOR WHAT IS RI",
+        "PEACEFUL, HARMONIOUS",
+        "PROUD",
+        "DIVERSE, MULTICULTURAL, CULTURAL RICHNESS",
+        "GOOD QUALITY OF LIFE, SOCIAL SAFETY NET/PROGRAMS, PROSPERITY",
+        "LAW-ABIDING, RESPECT FOR RULE OF LAW",
+        "HARD WORKING",
+        "COMMUNITY MINDED, CARE ABOUR THEIR COMMUNITY, COMMUNITY FORW",
+        "FUNNY/HAPPY, LIKE TO HAVE FUN, EASY GOING",
+        "EDUCATED/INTELLIGENT",
+        "UNITFIED, LOYAL TO CANADA, PATRIOTIC, SOLIDARITY",
+        "CREATIVE/INNOVATIVE, PROBLEM SOLVERS, PRODUCTIVE, STRATEGIC,",
+        "FAMILY ORIENTED",
+        "RELIGIOUS BELIEFS: CHRISTIANITY, WESTERN/CHRISTIAN JUDEO VAL",
+        "SAFE, SECURE, PROTECTED, STABLE",
+        "RESPECT FOR OUR CULTURE/HERITAGE/HISTORY, EMBRACE OUR NATION",
+        "NATURE, BEAUTY, LANDSCAPE, WIDE OPEN SPACES, LOVE/ENJOYMENT",
+        "RESPECT FOR THE ENVIRONMENT, CONSERVATION OF OUR RESOURCES/L",
+        "WE HAVE LOST OUR CORE VALUES, MOVED AWAY FROM WHAT CANADA ON",
+        "OTHER NEGATIVES: VARIOUS",
+        "THERE IS NOT ONE SINGLE IDENTITY, EAST/WEST/INDIVIDUAL DIFFE",
+        "OTHER",
+        "DON'T KNOW / NO RESPONSE"
+      ],
+      "extended_text": "In your view, what are the values that best represent Canada or Canadians? Please respond in a few words."
+    },
+    {
+      "id": "CANVALUES_OPEN_2",
+      "text": "In your view, what are the values that best represent Canada or Canadians? Please respond in a few words.",
+      "type": "categorical",
+      "options": [
+        "HELPFUL, KIND, POLITE, RESPECTFUL/CARING OF OTHERS, GENEROUS",
+        "ACCEPTING/OPEN MINDED, TOLERANT/EMPATHETICCOLLABORATIVE/COOP",
+        "FAIR, HONEST, TRUSTWORTHY, HUMBLE, INTEGRITY",
+        "FREE, DEMOCRATIC, LIBERTY, GOOD GOVERNANCE. RESPECT FOR HUMA",
+        "EQUAL OPPORTUNITY, EQUALITY",
+        "BRAVE, RESILIANT, DETERMINED, BOLD, STANDS UP FOR WHAT IS RI",
+        "PEACEFUL, HARMONIOUS",
+        "PROUD",
+        "DIVERSE, MULTICULTURAL, CULTURAL RICHNESS",
+        "GOOD QUALITY OF LIFE, SOCIAL SAFETY NET/PROGRAMS, PROSPERITY",
+        "LAW-ABIDING, RESPECT FOR RULE OF LAW",
+        "HARD WORKING",
+        "COMMUNITY MINDED, CARE ABOUR THEIR COMMUNITY, COMMUNITY FORW",
+        "FUNNY/HAPPY, LIKE TO HAVE FUN, EASY GOING",
+        "EDUCATED/INTELLIGENT",
+        "UNITFIED, LOYAL TO CANADA, PATRIOTIC, SOLIDARITY",
+        "CREATIVE/INNOVATIVE, PROBLEM SOLVERS, PRODUCTIVE, STRATEGIC,",
+        "FAMILY ORIENTED",
+        "RELIGIOUS BELIEFS: CHRISTIANITY, WESTERN/CHRISTIAN JUDEO VAL",
+        "SAFE, SECURE, PROTECTED, STABLE",
+        "RESPECT FOR OUR CULTURE/HERITAGE/HISTORY, EMBRACE OUR NATION",
+        "NATURE, BEAUTY, LANDSCAPE, WIDE OPEN SPACES, LOVE/ENJOYMENT",
+        "RESPECT FOR THE ENVIRONMENT, CONSERVATION OF OUR RESOURCES/L",
+        "WE HAVE LOST OUR CORE VALUES, MOVED AWAY FROM WHAT CANADA ON",
+        "OTHER NEGATIVES: VARIOUS",
+        "THERE IS NOT ONE SINGLE IDENTITY, EAST/WEST/INDIVIDUAL DIFFE",
+        "OTHER",
+        "DON'T KNOW / NO RESPONSE"
+      ],
+      "extended_text": "In your view, what are the values that best represent Canada or Canadians? Please respond in a few words."
+    },
+    {
+      "id": "CANVALUES_OPEN_3",
+      "text": "In your view, what are the values that best represent Canada or Canadians? Please respond in a few words.",
+      "type": "categorical",
+      "options": [
+        "HELPFUL, KIND, POLITE, RESPECTFUL/CARING OF OTHERS, GENEROUS",
+        "ACCEPTING/OPEN MINDED, TOLERANT/EMPATHETICCOLLABORATIVE/COOP",
+        "FAIR, HONEST, TRUSTWORTHY, HUMBLE, INTEGRITY",
+        "FREE, DEMOCRATIC, LIBERTY, GOOD GOVERNANCE. RESPECT FOR HUMA",
+        "EQUAL OPPORTUNITY, EQUALITY",
+        "BRAVE, RESILIANT, DETERMINED, BOLD, STANDS UP FOR WHAT IS RI",
+        "PEACEFUL, HARMONIOUS",
+        "PROUD",
+        "DIVERSE, MULTICULTURAL, CULTURAL RICHNESS",
+        "GOOD QUALITY OF LIFE, SOCIAL SAFETY NET/PROGRAMS, PROSPERITY",
+        "LAW-ABIDING, RESPECT FOR RULE OF LAW",
+        "HARD WORKING",
+        "COMMUNITY MINDED, CARE ABOUR THEIR COMMUNITY, COMMUNITY FORW",
+        "FUNNY/HAPPY, LIKE TO HAVE FUN, EASY GOING",
+        "EDUCATED/INTELLIGENT",
+        "UNITFIED, LOYAL TO CANADA, PATRIOTIC, SOLIDARITY",
+        "CREATIVE/INNOVATIVE, PROBLEM SOLVERS, PRODUCTIVE, STRATEGIC,",
+        "FAMILY ORIENTED",
+        "RELIGIOUS BELIEFS: CHRISTIANITY, WESTERN/CHRISTIAN JUDEO VAL",
+        "SAFE, SECURE, PROTECTED, STABLE",
+        "RESPECT FOR OUR CULTURE/HERITAGE/HISTORY, EMBRACE OUR NATION",
+        "NATURE, BEAUTY, LANDSCAPE, WIDE OPEN SPACES, LOVE/ENJOYMENT",
+        "RESPECT FOR THE ENVIRONMENT, CONSERVATION OF OUR RESOURCES/L",
+        "WE HAVE LOST OUR CORE VALUES, MOVED AWAY FROM WHAT CANADA ON",
+        "OTHER NEGATIVES: VARIOUS",
+        "THERE IS NOT ONE SINGLE IDENTITY, EAST/WEST/INDIVIDUAL DIFFE",
+        "OTHER",
+        "DON'T KNOW / NO RESPONSE"
+      ],
+      "extended_text": "In your view, what are the values that best represent Canada or Canadians? Please respond in a few words."
+    },
+    {
+      "id": "LONELINESS",
+      "text": "How often do you feel isolated from others?",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Rarely",
+        "Sometimes",
+        "Often",
+        "Always"
+      ],
+      "extended_text": "How often do you feel isolated from others?"
+    },
+    {
+      "id": "BELONG_CAN",
+      "text": "Canada",
+      "type": "likert",
+      "options": [
+        "Very weak",
+        "Somewhat weak",
+        "Somewhat strong",
+        "Very strong",
+        "No opinion"
+      ],
+      "extended_text": "How would you describe your sense of belonging to...  Canada"
+    },
+    {
+      "id": "BELONG_PROV",
+      "text": "<Insert Province/Territory>",
+      "type": "likert",
+      "options": [
+        "Very weak",
+        "Somewhat weak",
+        "Somewhat strong",
+        "Very strong",
+        "No opinion"
+      ],
+      "extended_text": "How would you describe your sense of belonging to...  <Insert Province/Territory>"
+    },
+    {
+      "id": "BELONG_LOCAL",
+      "text": "Your local community",
+      "type": "likert",
+      "options": [
+        "Very weak",
+        "Somewhat weak",
+        "Somewhat strong",
+        "Very strong",
+        "No opinion"
+      ],
+      "extended_text": "How would you describe your sense of belonging to...  Your local community"
+    },
+    {
+      "id": "BELONG_ONLINE",
+      "text": "Online communities where you spend time",
+      "type": "likert",
+      "options": [
+        "Very weak",
+        "Somewhat weak",
+        "Somewhat strong",
+        "Very strong",
+        "No opinion"
+      ],
+      "extended_text": "How would you describe your sense of belonging to...  Online communities where you spend time"
+    },
+    {
+      "id": "TRUE_CIV1",
+      "text": "To respect Canada's laws and political institutions",
+      "type": "likert",
+      "options": [
+        "Not at all important",
+        "Not very important",
+        "Somewhat important",
+        "Very important",
+        "Not sure",
+        "No opinion"
+      ],
+      "extended_text": "For each of the following, please indicate how important you think it is for a person to have this trait to be a \"true Canadian\":  To respect Canada's laws and political institutions"
+    },
+    {
+      "id": "TRUE_CIV3",
+      "text": "To be able to speak English or French",
+      "type": "likert",
+      "options": [
+        "Not at all important",
+        "Not very important",
+        "Somewhat important",
+        "Very important",
+        "Not sure",
+        "No opinion"
+      ],
+      "extended_text": "For each of the following, please indicate how important you think it is for a person to have this trait to be a \"true Canadian\":  To be able to speak English or French"
+    },
+    {
+      "id": "TRUE_ETH1",
+      "text": "To have been born in Canada",
+      "type": "likert",
+      "options": [
+        "Not at all important",
+        "Not very important",
+        "Somewhat important",
+        "Very important",
+        "Not sure",
+        "No opinion"
+      ],
+      "extended_text": "For each of the following, please indicate how important you think it is for a person to have this trait to be a \"true Canadian\":  To have been born in Canada"
+    },
+    {
+      "id": "TRUE_ETH2",
+      "text": "To have ancestors who have lived in Canada for several generations",
+      "type": "likert",
+      "options": [
+        "Not at all important",
+        "Not very important",
+        "Somewhat important",
+        "Very important",
+        "Not sure",
+        "No opinion"
+      ],
+      "extended_text": "For each of the following, please indicate how important you think it is for a person to have this trait to be a \"true Canadian\":  To have ancestors who have lived in Canada for several generations"
+    },
+    {
+      "id": "USMERGE_SUPPORT",
+      "text": "To what extent do you agree or disagree that Canada should become part of the United States (e.g., through a new political and economic union, as a new State or new States, etc.)?",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "To what extent do you agree or disagree that Canada should become part of the United States (e.g., through a new political and economic union, as a new State or new States, etc.)?"
+    },
+    {
+      "id": "PROSPECT_HOPE",
+      "text": "Canada will be in a better place ten years from now.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "Please indicate how much you agree or disagree with the following statements:  Canada will be in a better place ten years from now."
+    },
+    {
+      "id": "PROSPECT_BETTER",
+      "text": "My family and I will be better off in ten years.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "Please indicate how much you agree or disagree with the following statements:  My family and I will be better off in ten years."
+    },
+    {
+      "id": "SOCIAL_MOBIL",
+      "text": "People like me have a fair chance to succeed in Canada.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "Please indicate how much you agree or disagree with the following statements:  People like me have a fair chance to succeed in Canada."
+    },
+    {
+      "id": "IMMWVS_JOBS",
+      "text": "Fills important job vacancies",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "There are many potential impacts of immigration on Canadian society. Please indicate how much you agree or disagree that immigration...  Fills important job vacancies"
+    },
+    {
+      "id": "IMMWVS_CULTURE",
+      "text": "Strengthens culture",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "There are many potential impacts of immigration on Canadian society. Please indicate how much you agree or disagree that immigration...  Strengthens culture"
+    },
+    {
+      "id": "IMMWVS_UNEMPLOYMENT",
+      "text": "Increases unemployment for Canadians",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "There are many potential impacts of immigration on Canadian society. Please indicate how much you agree or disagree that immigration...  Increases unemployment for Canadians"
+    },
+    {
+      "id": "IMMWVS_HOUSING",
+      "text": "Reduces housing supply",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "There are many potential impacts of immigration on Canadian society. Please indicate how much you agree or disagree that immigration...  Reduces housing supply"
+    },
+    {
+      "id": "REPLACEMENT",
+      "text": "Please indicate how much you agree or disagree with the following statement: There is a group of people in this country who are trying to replace the native-born population with immigrants.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree",
+        "Don't know"
+      ],
+      "extended_text": "Please indicate how much you agree or disagree with the following statement: There is a group of people in this country who are trying to replace the native-born population with immigrants."
+    },
+    {
+      "id": "SOCMED_FB",
+      "text": "Facebook",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or a few times a month",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day",
+        "Several hours per day (or more)"
+      ],
+      "extended_text": "In the past few months, how often have you used each of the following social media platforms, apps, or websites?  Facebook"
+    },
+    {
+      "id": "SOCMED_TWI",
+      "text": "Twitter/X",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or a few times a month",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day",
+        "Several hours per day (or more)"
+      ],
+      "extended_text": "In the past few months, how often have you used each of the following social media platforms, apps, or websites?  Twitter/X"
+    },
+    {
+      "id": "SOCMED_INS",
+      "text": "Instagram",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or a few times a month",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day",
+        "Several hours per day (or more)"
+      ],
+      "extended_text": "In the past few months, how often have you used each of the following social media platforms, apps, or websites?  Instagram"
+    },
+    {
+      "id": "SOCMED_TIK",
+      "text": "TikTok",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or a few times a month",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day",
+        "Several hours per day (or more)"
+      ],
+      "extended_text": "In the past few months, how often have you used each of the following social media platforms, apps, or websites?  TikTok"
+    },
+    {
+      "id": "SOCMED_RED",
+      "text": "Reddit",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or a few times a month",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day",
+        "Several hours per day (or more)"
+      ],
+      "extended_text": "In the past few months, how often have you used each of the following social media platforms, apps, or websites?  Reddit"
+    },
+    {
+      "id": "SOCMED_YOU",
+      "text": "YouTube",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or a few times a month",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day",
+        "Several hours per day (or more)"
+      ],
+      "extended_text": "In the past few months, how often have you used each of the following social media platforms, apps, or websites?  YouTube"
+    },
+    {
+      "id": "SOCMED_TELEGRAM",
+      "text": "Telegram",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or a few times a month",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day",
+        "Several hours per day (or more)"
+      ],
+      "extended_text": "In the past few months, how often have you used each of the following social media platforms, apps, or websites?  Telegram"
+    },
+    {
+      "id": "INFO_USE_FRIENDFAM",
+      "text": "Family, friends, and/or colleagues",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or twice",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day"
+      ],
+      "extended_text": "In the past month, how often did you get news or current information from each of the following sources?  Family, friends, and/or colleagues"
+    },
+    {
+      "id": "INFO_USE_SOCMED",
+      "text": "Social media",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or twice",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day"
+      ],
+      "extended_text": "In the past month, how often did you get news or current information from each of the following sources?  Social media"
+    },
+    {
+      "id": "INFO_USE_SCI",
+      "text": "Scientific experts",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or twice",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day"
+      ],
+      "extended_text": "In the past month, how often did you get news or current information from each of the following sources?  Scientific experts"
+    },
+    {
+      "id": "INFO_USE_POL",
+      "text": "Politicians",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or twice",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day"
+      ],
+      "extended_text": "In the past month, how often did you get news or current information from each of the following sources?  Politicians"
+    },
+    {
+      "id": "INFO_USE_CANNEWS",
+      "text": "Large news organizations and journalists in Canada (e.g., CBC/SRC, CTV, National Post, La Presse)",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or twice",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day"
+      ],
+      "extended_text": "In the past month, how often did you get news or current information from each of the following sources?  Large news organizations and journalists in Canada (e.g., CBC/SRC, CTV, National Post, La Presse)"
+    },
+    {
+      "id": "INFO_USE_USNEWS",
+      "text": "Large news organizations and journalists in the United States (e.g., ABC, CNN, Fox, The Washington Post)",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or twice",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day"
+      ],
+      "extended_text": "In the past month, how often did you get news or current information from each of the following sources?  Large news organizations and journalists in the United States (e.g., ABC, CNN, Fox, The Washington Post)"
+    },
+    {
+      "id": "INFO_USE_INTLNEWS",
+      "text": "Large international news organizations and journalists (e.g., BBC, Le Monde, Reuters, AFP)",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or twice",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day"
+      ],
+      "extended_text": "In the past month, how often did you get news or current information from each of the following sources?  Large international news organizations and journalists (e.g., BBC, Le Monde, Reuters, AFP)"
+    },
+    {
+      "id": "INFO_USE_LOCALNEWS",
+      "text": "Your local newspaper or news outlet",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or twice",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day"
+      ],
+      "extended_text": "In the past month, how often did you get news or current information from each of the following sources?  Your local newspaper or news outlet"
+    },
+    {
+      "id": "INFO_USE_GCWEB",
+      "text": "Federal Government of Canada information sources (e.g., websites, social media accounts, commercials)",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or twice",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day"
+      ],
+      "extended_text": "In the past month, how often did you get news or current information from each of the following sources?  Federal Government of Canada information sources (e.g., websites, social media accounts, commercials)"
+    },
+    {
+      "id": "INFO_USE_INDIE",
+      "text": "Independent bloggers, podcasters, commentators, influencers, or journalists",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or twice",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day"
+      ],
+      "extended_text": "In the past month, how often did you get news or current information from each of the following sources?  Independent bloggers, podcasters, commentators, influencers, or journalists"
+    },
+    {
+      "id": "INFO_USE_AI",
+      "text": "Artificial intelligence chatbots (e.g., ChatGPT, Microsoft Copilot, Google Gemini, Meta AI, and Bing Chat)",
+      "type": "categorical",
+      "options": [
+        "Never",
+        "Once or twice",
+        "Once or a few times a week",
+        "Once a day",
+        "Multiple times a day"
+      ],
+      "extended_text": "In the past month, how often did you get news or current information from each of the following sources?  Artificial intelligence chatbots (e.g., ChatGPT, Microsoft Copilot, Google Gemini, Meta AI, and Bing Chat)"
+    },
+    {
+      "id": "ALGOLIT2",
+      "text": "When someone I follow or am friends with posts something, computer analyses of those posts decide whether I will see it.",
+      "type": "categorical",
+      "options": [
+        "True",
+        "False",
+        "Don't know"
+      ],
+      "extended_text": "To the best of your knowledge, are the following claims about social media true or false?  When someone I follow or am friends with posts something, computer analyses of those posts decide whether I will see it."
+    },
+    {
+      "id": "ALGOLIT3",
+      "text": "If two people search the same thing on Google (or another search engine), they will get the same set of results.",
+      "type": "categorical",
+      "options": [
+        "True",
+        "False",
+        "Don't know"
+      ],
+      "extended_text": "To the best of your knowledge, are the following claims about social media true or false?  If two people search the same thing on Google (or another search engine), they will get the same set of results."
+    },
+    {
+      "id": "ALGOLIT4",
+      "text": "Visiting websites outside of social media platforms cannot impact what I see on social media platforms.",
+      "type": "categorical",
+      "options": [
+        "True",
+        "False",
+        "Don't know"
+      ],
+      "extended_text": "To the best of your knowledge, are the following claims about social media true or false?  Visiting websites outside of social media platforms cannot impact what I see on social media platforms."
+    },
+    {
+      "id": "CYBERCRIME_EXPERIENCE_1",
+      "text": "Have you ever personally experienced any of the following types of cybercrimes or incidents?",
+      "type": "categorical",
+      "options": [
+        "Identity theft (e.g., use of your personal information witho",
+        "Online fraud or scams, even if not successful (e.g., phishin",
+        "Unauthorized access to your accounts or devices (e.g., hacki",
+        "A breach of your personal information or passwords (e.g., yo",
+        "Other, please specify",
+        "None of the above",
+        "Prefer not to say"
+      ],
+      "extended_text": "Have you ever personally experienced any of the following types of cybercrimes or incidents?"
+    },
+    {
+      "id": "CYBERCRIME_EXPERIENCE_2",
+      "text": "Have you ever personally experienced any of the following types of cybercrimes or incidents?",
+      "type": "categorical",
+      "options": [
+        "Identity theft (e.g., use of your personal information witho",
+        "Online fraud or scams, even if not successful (e.g., phishin",
+        "Unauthorized access to your accounts or devices (e.g., hacki",
+        "A breach of your personal information or passwords (e.g., yo",
+        "Other, please specify",
+        "None of the above",
+        "Prefer not to say"
+      ],
+      "extended_text": "Have you ever personally experienced any of the following types of cybercrimes or incidents?"
+    },
+    {
+      "id": "CYBERCRIME_EXPERIENCE_3",
+      "text": "Have you ever personally experienced any of the following types of cybercrimes or incidents?",
+      "type": "categorical",
+      "options": [
+        "Identity theft (e.g., use of your personal information witho",
+        "Online fraud or scams, even if not successful (e.g., phishin",
+        "Unauthorized access to your accounts or devices (e.g., hacki",
+        "A breach of your personal information or passwords (e.g., yo",
+        "Other, please specify",
+        "None of the above",
+        "Prefer not to say"
+      ],
+      "extended_text": "Have you ever personally experienced any of the following types of cybercrimes or incidents?"
+    },
+    {
+      "id": "CYBERCRIME_EXPERIENCE_4",
+      "text": "Have you ever personally experienced any of the following types of cybercrimes or incidents?",
+      "type": "categorical",
+      "options": [
+        "Identity theft (e.g., use of your personal information witho",
+        "Online fraud or scams, even if not successful (e.g., phishin",
+        "Unauthorized access to your accounts or devices (e.g., hacki",
+        "A breach of your personal information or passwords (e.g., yo",
+        "Other, please specify",
+        "None of the above",
+        "Prefer not to say"
+      ],
+      "extended_text": "Have you ever personally experienced any of the following types of cybercrimes or incidents?"
+    },
+    {
+      "id": "CYBERCRIME_EXPERIENCE_5",
+      "text": "Have you ever personally experienced any of the following types of cybercrimes or incidents?",
+      "type": "categorical",
+      "options": [
+        "Identity theft (e.g., use of your personal information witho",
+        "Online fraud or scams, even if not successful (e.g., phishin",
+        "Unauthorized access to your accounts or devices (e.g., hacki",
+        "A breach of your personal information or passwords (e.g., yo",
+        "Other, please specify",
+        "None of the above",
+        "Prefer not to say"
+      ],
+      "extended_text": "Have you ever personally experienced any of the following types of cybercrimes or incidents?"
+    },
+    {
+      "id": "CYBERCRIME_EXPERIENCE_6",
+      "text": "Have you ever personally experienced any of the following types of cybercrimes or incidents?",
+      "type": "categorical",
+      "options": [
+        "Identity theft (e.g., use of your personal information witho",
+        "Online fraud or scams, even if not successful (e.g., phishin",
+        "Unauthorized access to your accounts or devices (e.g., hacki",
+        "A breach of your personal information or passwords (e.g., yo",
+        "Other, please specify",
+        "None of the above",
+        "Prefer not to say"
+      ],
+      "extended_text": "Have you ever personally experienced any of the following types of cybercrimes or incidents?"
+    },
+    {
+      "id": "CYBERCRIME_FOLLOWUP_1",
+      "text": "How did you respond to the cybercrime(s) you experienced?",
+      "type": "likert",
+      "options": [
+        "I reported it to the police",
+        "I reported it to a government authority",
+        "I contacted my bank or financial institution",
+        "I changed my passwords or security settings",
+        "I installed or updated antivirus software",
+        "I sought help from a friend, family member, or tech support",
+        "Other, please specify",
+        "I did not take any action"
+      ],
+      "extended_text": "How did you respond to the cybercrime(s) you experienced?"
+    },
+    {
+      "id": "CYBERCRIME_FOLLOWUP_2",
+      "text": "How did you respond to the cybercrime(s) you experienced?",
+      "type": "likert",
+      "options": [
+        "I reported it to the police",
+        "I reported it to a government authority",
+        "I contacted my bank or financial institution",
+        "I changed my passwords or security settings",
+        "I installed or updated antivirus software",
+        "I sought help from a friend, family member, or tech support",
+        "Other, please specify",
+        "I did not take any action"
+      ],
+      "extended_text": "How did you respond to the cybercrime(s) you experienced?"
+    },
+    {
+      "id": "CYBERCRIME_FOLLOWUP_3",
+      "text": "How did you respond to the cybercrime(s) you experienced?",
+      "type": "likert",
+      "options": [
+        "I reported it to the police",
+        "I reported it to a government authority",
+        "I contacted my bank or financial institution",
+        "I changed my passwords or security settings",
+        "I installed or updated antivirus software",
+        "I sought help from a friend, family member, or tech support",
+        "Other, please specify",
+        "I did not take any action"
+      ],
+      "extended_text": "How did you respond to the cybercrime(s) you experienced?"
+    },
+    {
+      "id": "CYBERCRIME_FOLLOWUP_4",
+      "text": "How did you respond to the cybercrime(s) you experienced?",
+      "type": "likert",
+      "options": [
+        "I reported it to the police",
+        "I reported it to a government authority",
+        "I contacted my bank or financial institution",
+        "I changed my passwords or security settings",
+        "I installed or updated antivirus software",
+        "I sought help from a friend, family member, or tech support",
+        "Other, please specify",
+        "I did not take any action"
+      ],
+      "extended_text": "How did you respond to the cybercrime(s) you experienced?"
+    },
+    {
+      "id": "CYBERCRIME_FOLLOWUP_5",
+      "text": "How did you respond to the cybercrime(s) you experienced?",
+      "type": "likert",
+      "options": [
+        "I reported it to the police",
+        "I reported it to a government authority",
+        "I contacted my bank or financial institution",
+        "I changed my passwords or security settings",
+        "I installed or updated antivirus software",
+        "I sought help from a friend, family member, or tech support",
+        "Other, please specify",
+        "I did not take any action"
+      ],
+      "extended_text": "How did you respond to the cybercrime(s) you experienced?"
+    },
+    {
+      "id": "CYBERCRIME_FOLLOWUP_6",
+      "text": "How did you respond to the cybercrime(s) you experienced?",
+      "type": "likert",
+      "options": [
+        "I reported it to the police",
+        "I reported it to a government authority",
+        "I contacted my bank or financial institution",
+        "I changed my passwords or security settings",
+        "I installed or updated antivirus software",
+        "I sought help from a friend, family member, or tech support",
+        "Other, please specify",
+        "I did not take any action"
+      ],
+      "extended_text": "How did you respond to the cybercrime(s) you experienced?"
+    },
+    {
+      "id": "CYBERCRIME_FOLLOWUP_7",
+      "text": "How did you respond to the cybercrime(s) you experienced?",
+      "type": "likert",
+      "options": [
+        "I reported it to the police",
+        "I reported it to a government authority",
+        "I contacted my bank or financial institution",
+        "I changed my passwords or security settings",
+        "I installed or updated antivirus software",
+        "I sought help from a friend, family member, or tech support",
+        "Other, please specify",
+        "I did not take any action"
+      ],
+      "extended_text": "How did you respond to the cybercrime(s) you experienced?"
+    },
+    {
+      "id": "EXPOSURE_1",
+      "text": "In the past month, have you noticed any of the following online?",
+      "type": "categorical",
+      "options": [
+        "Verifiably false news",
+        "Fake accounts pretending to be real people (i.e., sometimes",
+        "Foreign propaganda (messages or information from another cou",
+        "Images or videos of politicians generated by artificial inte"
+      ],
+      "extended_text": "In the past month, have you noticed any of the following online?"
+    },
+    {
+      "id": "EXPOSURE_2",
+      "text": "In the past month, have you noticed any of the following online?",
+      "type": "categorical",
+      "options": [
+        "Verifiably false news",
+        "Fake accounts pretending to be real people (i.e., sometimes",
+        "Foreign propaganda (messages or information from another cou",
+        "Images or videos of politicians generated by artificial inte"
+      ],
+      "extended_text": "In the past month, have you noticed any of the following online?"
+    },
+    {
+      "id": "EXPOSURE_3",
+      "text": "In the past month, have you noticed any of the following online?",
+      "type": "categorical",
+      "options": [
+        "Verifiably false news",
+        "Fake accounts pretending to be real people (i.e., sometimes",
+        "Foreign propaganda (messages or information from another cou",
+        "Images or videos of politicians generated by artificial inte"
+      ],
+      "extended_text": "In the past month, have you noticed any of the following online?"
+    },
+    {
+      "id": "EXPOSURE_4",
+      "text": "In the past month, have you noticed any of the following online?",
+      "type": "categorical",
+      "options": [
+        "Verifiably false news",
+        "Fake accounts pretending to be real people (i.e., sometimes",
+        "Foreign propaganda (messages or information from another cou",
+        "Images or videos of politicians generated by artificial inte"
+      ],
+      "extended_text": "In the past month, have you noticed any of the following online?"
+    },
+    {
+      "id": "EXPOSURE_5",
+      "text": "In the past month, have you noticed any of the following online?",
+      "type": "categorical",
+      "options": [
+        "Verifiably false news",
+        "Fake accounts pretending to be real people (i.e., sometimes",
+        "Foreign propaganda (messages or information from another cou",
+        "Images or videos of politicians generated by artificial inte"
+      ],
+      "extended_text": "In the past month, have you noticed any of the following online?"
+    },
+    {
+      "id": "EXPOSURE_6",
+      "text": "In the past month, have you noticed any of the following online?",
+      "type": "categorical",
+      "options": [
+        "Verifiably false news",
+        "Fake accounts pretending to be real people (i.e., sometimes",
+        "Foreign propaganda (messages or information from another cou",
+        "Images or videos of politicians generated by artificial inte"
+      ],
+      "extended_text": "In the past month, have you noticed any of the following online?"
+    },
+    {
+      "id": "POLICYWHAT_1",
+      "text": "Hypothetically, if the Government of Canada were to allocate more resources to the following goals, which of them would you prioritize?",
+      "type": "categorical",
+      "options": [
+        "Responding to climate change",
+        "Protecting the environment",
+        "Growing Canada's economy",
+        "Reducing the cost of living",
+        "Improving the health care system",
+        "Improving the immigration system",
+        "Providing assistance to Ukraine in response to Russia's inva",
+        "Preventing foreign governments from interfering in Canada's",
+        "Advancing reconciliation with Indigenous peoples",
+        "Combatting the spread of misinformation and disinformation o",
+        "Reducing crime",
+        "Defending against terrorism"
+      ],
+      "extended_text": "Hypothetically, if the Government of Canada were to allocate more resources to the following goals, which of them would you prioritize?"
+    },
+    {
+      "id": "POLICYWHAT_2",
+      "text": "Hypothetically, if the Government of Canada were to allocate more resources to the following goals, which of them would you prioritize?",
+      "type": "categorical",
+      "options": [
+        "Responding to climate change",
+        "Protecting the environment",
+        "Growing Canada's economy",
+        "Reducing the cost of living",
+        "Improving the health care system",
+        "Improving the immigration system",
+        "Providing assistance to Ukraine in response to Russia's inva",
+        "Preventing foreign governments from interfering in Canada's",
+        "Advancing reconciliation with Indigenous peoples",
+        "Combatting the spread of misinformation and disinformation o",
+        "Reducing crime",
+        "Defending against terrorism"
+      ],
+      "extended_text": "Hypothetically, if the Government of Canada were to allocate more resources to the following goals, which of them would you prioritize?"
+    },
+    {
+      "id": "POLICYWHAT_3",
+      "text": "Hypothetically, if the Government of Canada were to allocate more resources to the following goals, which of them would you prioritize?",
+      "type": "categorical",
+      "options": [
+        "Responding to climate change",
+        "Protecting the environment",
+        "Growing Canada's economy",
+        "Reducing the cost of living",
+        "Improving the health care system",
+        "Improving the immigration system",
+        "Providing assistance to Ukraine in response to Russia's inva",
+        "Preventing foreign governments from interfering in Canada's",
+        "Advancing reconciliation with Indigenous peoples",
+        "Combatting the spread of misinformation and disinformation o",
+        "Reducing crime",
+        "Defending against terrorism"
+      ],
+      "extended_text": "Hypothetically, if the Government of Canada were to allocate more resources to the following goals, which of them would you prioritize?"
+    },
+    {
+      "id": "POLICYWHAT2_1",
+      "text": "Which of the following goals should the Government of Canada prioritize?",
+      "type": "likert",
+      "options": [
+        "Responding to climate change",
+        "Growing Canada's economy",
+        "Improving the health care system",
+        "Preventing foreign governments from interfering in Canada's",
+        "Combatting the spread of misinformation and disinformation o",
+        "Reducing crime",
+        "Reducing everyday costs",
+        "Making housing more affordable",
+        "Reducing the federal deficit",
+        "Implementing measures to prevent government corruption",
+        "Building a more united Canada",
+        "Strengthening Canada's national defence capabilities"
+      ],
+      "extended_text": "Which of the following goals should the Government of Canada prioritize?"
+    },
+    {
+      "id": "POLICYWHAT2_2",
+      "text": "Which of the following goals should the Government of Canada prioritize?",
+      "type": "likert",
+      "options": [
+        "Responding to climate change",
+        "Growing Canada's economy",
+        "Improving the health care system",
+        "Preventing foreign governments from interfering in Canada's",
+        "Combatting the spread of misinformation and disinformation o",
+        "Reducing crime",
+        "Reducing everyday costs",
+        "Making housing more affordable",
+        "Reducing the federal deficit",
+        "Implementing measures to prevent government corruption",
+        "Building a more united Canada",
+        "Strengthening Canada's national defence capabilities"
+      ],
+      "extended_text": "Which of the following goals should the Government of Canada prioritize?"
+    },
+    {
+      "id": "POLICYWHAT2_3",
+      "text": "Which of the following goals should the Government of Canada prioritize?",
+      "type": "likert",
+      "options": [
+        "Responding to climate change",
+        "Growing Canada's economy",
+        "Improving the health care system",
+        "Preventing foreign governments from interfering in Canada's",
+        "Combatting the spread of misinformation and disinformation o",
+        "Reducing crime",
+        "Reducing everyday costs",
+        "Making housing more affordable",
+        "Reducing the federal deficit",
+        "Implementing measures to prevent government corruption",
+        "Building a more united Canada",
+        "Strengthening Canada's national defence capabilities"
+      ],
+      "extended_text": "Which of the following goals should the Government of Canada prioritize?"
+    },
+    {
+      "id": "WORRIED_FIN",
+      "text": "You and/or your family's current financial situation",
+      "type": "likert",
+      "options": [
+        "Not at all worried",
+        "Slightly worried",
+        "Moderately worried",
+        "Very worried",
+        "Extremely worried",
+        "Not applicable"
+      ],
+      "extended_text": "How worried are you about...  You and/or your family's current financial situation"
+    },
+    {
+      "id": "WORRIED_CONFLICT",
+      "text": "Increasing global conflict",
+      "type": "likert",
+      "options": [
+        "Not at all worried",
+        "Slightly worried",
+        "Moderately worried",
+        "Very worried",
+        "Extremely worried",
+        "Not applicable"
+      ],
+      "extended_text": "How worried are you about...  Increasing global conflict"
+    },
+    {
+      "id": "WORRIED_SOCIETY",
+      "text": "Increasing divisiveness and/or conflict in Canadian society",
+      "type": "likert",
+      "options": [
+        "Not at all worried",
+        "Slightly worried",
+        "Moderately worried",
+        "Very worried",
+        "Extremely worried",
+        "Not applicable"
+      ],
+      "extended_text": "How worried are you about...  Increasing divisiveness and/or conflict in Canadian society"
+    },
+    {
+      "id": "WORRIED_AI_MIDI",
+      "text": "Artificial intelligence being used to generate false or misleading information",
+      "type": "likert",
+      "options": [
+        "Not at all worried",
+        "Slightly worried",
+        "Moderately worried",
+        "Very worried",
+        "Extremely worried",
+        "Not applicable"
+      ],
+      "extended_text": "How worried are you about...  Artificial intelligence being used to generate false or misleading information"
+    },
+    {
+      "id": "WORRIED_EXPRESSPOL",
+      "text": "Expressing your political opinions publicly",
+      "type": "likert",
+      "options": [
+        "Not at all worried",
+        "Slightly worried",
+        "Moderately worried",
+        "Very worried",
+        "Extremely worried",
+        "Not applicable"
+      ],
+      "extended_text": "How worried are you about...  Expressing your political opinions publicly"
+    },
+    {
+      "id": "WORRIED_COSTECON",
+      "text": "The state of the economy",
+      "type": "likert",
+      "options": [
+        "Not at all worried",
+        "Slightly worried",
+        "Moderately worried",
+        "Very worried",
+        "Extremely worried",
+        "Not applicable"
+      ],
+      "extended_text": "How worried are you about...  The state of the economy"
+    },
+    {
+      "id": "WORRIED_US",
+      "text": "Canada-U.S. relations",
+      "type": "likert",
+      "options": [
+        "Not at all worried",
+        "Slightly worried",
+        "Moderately worried",
+        "Very worried",
+        "Extremely worried",
+        "Not applicable"
+      ],
+      "extended_text": "How worried are you about...  Canada-U.S. relations"
+    },
+    {
+      "id": "WORRIED_JOB",
+      "text": "The impacts of tariffs on you and/or your family's financial situation",
+      "type": "likert",
+      "options": [
+        "Not at all worried",
+        "Slightly worried",
+        "Moderately worried",
+        "Very worried",
+        "Extremely worried",
+        "Not applicable"
+      ],
+      "extended_text": "How worried are you about...  The impacts of tariffs on you and/or your family's financial situation"
+    },
+    {
+      "id": "FINANCIAL_STRAIN",
+      "text": "In the past 12 months, how easy or difficult was it for your household to meet its financial needs in terms of housing, food, transportation, clothing and other necessary expenses?",
+      "type": "likert",
+      "options": [
+        "Very easy",
+        "Easy",
+        "Neither easy nor difficult",
+        "Difficult",
+        "Very difficult"
+      ],
+      "extended_text": "In the past 12 months, how easy or difficult was it for your household to meet its financial needs in terms of housing, food, transportation, clothing and other necessary expenses?"
+    },
+    {
+      "id": "PROP_RUS1",
+      "text": "The West pushed Ukraine toward a conflict with Russia.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "How much do you agree or disagree with the following claims?  The West pushed Ukraine toward a conflict with Russia."
+    },
+    {
+      "id": "PROP_RUS2",
+      "text": "Ukrainian government officials are the aggressor in the Russia-Ukraine conflict.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "How much do you agree or disagree with the following claims?  Ukrainian government officials are the aggressor in the Russia-Ukraine conflict."
+    },
+    {
+      "id": "PROP_RUS3",
+      "text": "Russia is going to win eventually, so sending aid to Ukraine is only delaying the inevitable.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "How much do you agree or disagree with the following claims?  Russia is going to win eventually, so sending aid to Ukraine is only delaying the inevitable."
+    },
+    {
+      "id": "NAR_TAIWAN",
+      "text": "Most people in Taiwan want Taiwan to unify with China.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "How much do you agree or disagree with the following claims?  Most people in Taiwan want Taiwan to unify with China."
+    },
+    {
+      "id": "NAR_2025ELEC",
+      "text": "China attempted to interfere with the 2025 Canadian election.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "How much do you agree or disagree with the following claims?  China attempted to interfere with the 2025 Canadian election."
+    },
+    {
+      "id": "CONSPOP_A",
+      "text": "Much of our lives are being controlled by plots hatched in secret places.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "Here are some ideas that some people agree with, and others disagree with. In thinking about each one, please tell us how much you agree or disagree with each of the statements below:  Much of our lives are being controlled by plots hatched in secret places."
+    },
+    {
+      "id": "CONSPOP_G",
+      "text": "Official government accounts of events cannot be trusted.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "Here are some ideas that some people agree with, and others disagree with. In thinking about each one, please tell us how much you agree or disagree with each of the statements below:  Official government accounts of events cannot be trusted."
+    },
+    {
+      "id": "CONSPOP_GOODEVIL",
+      "text": "Politics is a battle between good and evil.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "Here are some ideas that some people agree with, and others disagree with. In thinking about each one, please tell us how much you agree or disagree with each of the statements below:  Politics is a battle between good and evil."
+    },
+    {
+      "id": "ANTIINST2",
+      "text": "We cannot fix the problems in our social institutions, we need to tear them down and start over.",
+      "type": "likert",
+      "options": [
+        "Strongly disagree",
+        "Somewhat disagree",
+        "Neither agree nor disagree",
+        "Somewhat agree",
+        "Strongly agree"
+      ],
+      "extended_text": "Here are some ideas that some people agree with, and others disagree with. In thinking about each one, please tell us how much you agree or disagree with each of the statements below:  We cannot fix the problems in our social institutions, we need to tear them down and start over."
+    },
+    {
+      "id": "POVO_CAN",
+      "text": "How big of a problem, if at all, do you think political violence is in Canada today?",
+      "type": "likert",
+      "options": [
+        "Not a problem",
+        "Not very much of a problem",
+        "Somewhat of a problem",
+        "A very big problem",
+        "Not sure"
+      ],
+      "extended_text": "How big of a problem, if at all, do you think political violence is in Canada today?"
+    },
+    {
+      "id": "EDUCATION",
+      "text": "What is the highest certificate, diploma, or degree that you have completed?",
+      "type": "categorical",
+      "options": [
+        "Less than high school diploma or its equivalent",
+        "High school diploma or a high school equivalency certificate",
+        "Trades certificate or diploma",
+        "CEGEP or other non-university certificate or diploma (other",
+        "University certificate or diploma below the bachelor's level",
+        "Bachelor's degree (e.g., B.A., B.A. (Hons), B.Sc., B.Ed., LL",
+        "University certificate, diploma, or degree above the bachelo",
+        "Prefer not to say"
+      ],
+      "extended_text": "What is the highest certificate, diploma, or degree that you have completed?"
+    },
+    {
+      "id": "COMMUNITY_SIZE",
+      "text": "Which of the following best describes where you now live?",
+      "type": "categorical",
+      "options": [
+        "A large city",
+        "A suburb near a large city",
+        "A small city or town",
+        "A rural area",
+        "A remote area",
+        "Prefer not to say"
+      ],
+      "extended_text": "Which of the following best describes where you now live?"
+    },
+    {
+      "id": "IIU_EMPLOYMENT",
+      "text": "Which of the following categories best describes your current employment status?",
+      "type": "categorical",
+      "options": [
+        "Employed (e.g., for wages, salary) full time, that is, 30 or",
+        "Employed (e.g., for wages, salary) part-time, that is, less",
+        "On paid or unpaid employment leave (e.g., parental leave, lo",
+        "Self-employed",
+        "Employed without wages (e.g., unpaid internships, volunteer",
+        "Unemployed",
+        "A student attending school full-time",
+        "Retired",
+        "Full-time homemaker",
+        "Other, please specify",
+        "Prefer not to say"
+      ],
+      "extended_text": "Which of the following categories best describes your current employment status?"
+    },
+    {
+      "id": "WAVE",
+      "text": "TIDES Survey wave",
+      "type": "categorical",
+      "options": [
+        "Wave 1",
+        "Wave 2",
+        "Wave 3",
+        "Wave 4",
+        "Wave 5",
+        "Wave 6",
+        "Wave 7",
+        "Wave 8",
+        "Wave 9"
+      ],
+      "extended_text": "TIDES Survey wave"
+    },
+    {
+      "id": "LANGINT",
+      "text": "Language of Interview",
+      "type": "binary",
+      "options": [
+        "English",
+        "French"
+      ],
+      "extended_text": "Language of Interview"
+    },
+    {
+      "id": "DATE",
+      "text": "Completion Date (YYYYMMDD)",
+      "type": "numeric",
+      "extended_text": "Completion Date (YYYYMMDD)"
+    },
+    {
+      "id": "DATELAUNCH",
+      "text": "Day the survey was completed from the survey's launch",
+      "type": "numeric",
+      "extended_text": "Day the survey was completed from the survey's launch"
+    },
+    {
+      "id": "REMINDER1",
+      "text": "1st reminder invitation email sent",
+      "type": "binary",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "extended_text": "1st reminder invitation email sent"
+    },
+    {
+      "id": "REMINDER2",
+      "text": "2nd reminder invitation email sent",
+      "type": "binary",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "extended_text": "2nd reminder invitation email sent"
+    },
+    {
+      "id": "REMINDER3",
+      "text": "3rd reminder invitation email sent",
+      "type": "binary",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "extended_text": "3rd reminder invitation email sent"
+    },
+    {
+      "id": "MOBILEUSE",
+      "text": "Using mobile device",
+      "type": "binary",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "extended_text": "Using mobile device"
+    },
+    {
+      "id": "DEVICEUSE",
+      "text": "Device used",
+      "type": "categorical",
+      "options": [
+        "Windows",
+        "iMac",
+        "Chromebook",
+        "Linux",
+        "iPad",
+        "iPhone",
+        "Android"
+      ],
+      "extended_text": "Device used"
+    },
+    {
+      "id": "BROWSERUSE",
+      "text": "Browser used",
+      "type": "categorical",
+      "options": [
+        "Chromium-based",
+        "Safari",
+        "Firefox",
+        "Samsung"
+      ],
+      "extended_text": "Browser used"
+    },
+    {
+      "id": "OVERSAMPLE",
+      "text": "Oversample case",
+      "type": "binary",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "extended_text": "Oversample case"
+    },
+    {
+      "id": "OVERSAMPLE_YOUTH",
+      "text": "Oversample youth cases",
+      "type": "binary",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "extended_text": "Oversample youth cases"
+    },
+    {
+      "id": "OVERSAMPLE_PROVINCE",
+      "text": "Oversample province cases from SK MB NB NS PEI NL",
+      "type": "binary",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "extended_text": "Oversample province cases from SK MB NB NS PEI NL"
+    },
+    {
+      "id": "OVERSAMPLE_IMMIGRANT",
+      "text": "Oversample immigrant cases",
+      "type": "categorical",
+      "options": [
+        "Recent immigrants (past 20 years)",
+        "Longer term immigrants (over 20 years)",
+        "Not an immigrant oversample case"
+      ],
+      "extended_text": "Oversample immigrant cases"
+    },
+    {
+      "id": "COSMOSURVEY",
+      "text": "Participated in a COSMO survey",
+      "type": "binary",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "extended_text": "Participated in a COSMO survey"
+    },
+    {
+      "id": "COSMOLATEST",
+      "text": "Latest COSMO survey completed",
+      "type": "categorical",
+      "options": [
+        "Wave 1",
+        "Wave 2",
+        "Wave 3",
+        "Wave 4",
+        "Wave 5",
+        "Wave 6",
+        "Wave 7",
+        "Wave 8"
+      ],
+      "extended_text": "Latest COSMO survey completed"
+    },
+    {
+      "id": "TIDESSURVEY",
+      "text": "Participated in a TIDES survey from wave 1-8",
+      "type": "binary",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "extended_text": "Participated in a TIDES survey from wave 1-8"
+    },
+    {
+      "id": "TIDESLATEST",
+      "text": "Latest TIDES survey completed",
+      "type": "categorical",
+      "options": [
+        "Wave 1",
+        "Wave 2",
+        "Wave 3",
+        "Wave 4",
+        "Wave 5",
+        "Wave 6",
+        "Wave 7",
+        "Wave 8"
+      ],
+      "extended_text": "Latest TIDES survey completed"
+    },
+    {
+      "id": "PRETESTFLAG",
+      "text": "Pretest cases",
+      "type": "binary",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "extended_text": "Pretest cases"
+    },
+    {
+      "id": "INCENTIVE",
+      "text": "Incentive offered",
+      "type": "binary",
+      "options": [
+        "Draw of 1 of 4 prizes of $500",
+        "Dollar incentive offered for completing survey"
+      ],
+      "extended_text": "Incentive offered"
+    },
+    {
+      "id": "INCENTIVEAMOUNT",
+      "text": "Amount offered (for non-lottery)",
+      "type": "numeric",
+      "extended_text": "Amount offered (for non-lottery)"
+    },
+    {
+      "id": "ATSECT1AVG",
+      "text": "Section 1 average time (in seconds)",
+      "type": "numeric",
+      "extended_text": "Section 1 average time (in seconds)"
+    },
+    {
+      "id": "ATSECT2AVG",
+      "text": "Section 2 average time (in seconds)",
+      "type": "numeric",
+      "extended_text": "Section 2 average time (in seconds)"
+    },
+    {
+      "id": "ATSECT3AVG",
+      "text": "Section 3 average time (in seconds)",
+      "type": "numeric",
+      "extended_text": "Section 3 average time (in seconds)"
+    },
+    {
+      "id": "ATSECT4AVG",
+      "text": "Section 4 average time (in seconds)",
+      "type": "numeric",
+      "extended_text": "Section 4 average time (in seconds)"
+    },
+    {
+      "id": "ATSECT5AVG",
+      "text": "Section 5 average time (in seconds)",
+      "type": "numeric",
+      "extended_text": "Section 5 average time (in seconds)"
+    },
+    {
+      "id": "ATSECT6AVG",
+      "text": "Section 6 average time (in seconds)",
+      "type": "numeric",
+      "extended_text": "Section 6 average time (in seconds)"
+    },
+    {
+      "id": "ATSECT7AVG",
+      "text": "Section 7 average time (in seconds)",
+      "type": "numeric",
+      "extended_text": "Section 7 average time (in seconds)"
+    },
+    {
+      "id": "ATSECT8AVG",
+      "text": "Section 8 average time (in seconds)",
+      "type": "numeric",
+      "extended_text": "Section 8 average time (in seconds)"
+    },
+    {
+      "id": "ATSECT9AVG",
+      "text": "Section 9 average time (in seconds)",
+      "type": "numeric",
+      "extended_text": "Section 9 average time (in seconds)"
+    },
+    {
+      "id": "ATSECT10AVG",
+      "text": "Section 10 average time (in seconds)",
+      "type": "numeric",
+      "extended_text": "Section 10 average time (in seconds)"
+    },
+    {
+      "id": "ATENDAVG",
+      "text": "Survey average time (in seconds)",
+      "type": "numeric",
+      "extended_text": "Survey average time (in seconds)"
+    },
+    {
+      "id": "FLAGTRUST_GOV_POLS",
+      "text": "Straightlined the TRUST_GOV_POLS matrix",
+      "type": "binary",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "extended_text": "Straightlined the TRUST_GOV_POLS matrix"
+    },
+    {
+      "id": "FLAGTRUSTINST",
+      "text": "Straightlined the TRUSTINST matrix",
+      "type": "binary",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "extended_text": "Straightlined the TRUSTINST matrix"
+    },
+    {
+      "id": "FLAGINFO_USE",
+      "text": "Straightlined the INFO_USE matrix",
+      "type": "binary",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "extended_text": "Straightlined the INFO_USE matrix"
+    },
+    {
+      "id": "FLAGWORRIED",
+      "text": "Straightlined the WORRIED matrix",
+      "type": "binary",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "extended_text": "Straightlined the WORRIED matrix"
+    },
+    {
+      "id": "ALGORITHM",
+      "text": "Number of correct answers in the ALGOLIT matrix",
+      "type": "numeric",
+      "extended_text": "Number of correct answers in the ALGOLIT matrix"
+    },
+    {
+      "id": "UNIQUEIDCOSMO",
+      "text": "UniqueID used across COSMO wave 1-8",
+      "type": "numeric",
+      "extended_text": "UniqueID used across COSMO wave 1-8"
+    },
+    {
+      "id": "UNIQUEIDTIDES",
+      "text": "UniqueID used across TIDES wave 1-8",
+      "type": "numeric",
+      "extended_text": "UniqueID used across TIDES wave 1-8"
+    },
+    {
+      "id": "QEND",
+      "text": "Completion Marker",
+      "type": "categorical",
+      "options": [
+        "Total"
+      ],
+      "extended_text": "Completion Marker"
+    },
+    {
+      "id": "wgt1",
+      "text": "Weight",
+      "type": "numeric",
+      "extended_text": "Weight"
+    },
+    {
+      "id": "AGENDER",
+      "text": "What is your gender? Gender refers to an individual's personal and social identity as a man, a woman or a person who is not exclusively a man or a woman, for example, non-binary, agender, gender fluid, queer or Two-Spirit.",
+      "type": "numeric",
+      "extended_text": "What is your gender? Gender refers to an individual's personal and social identity as a man, a woman or a person who is not exclusively a man or a woman, for example, non-binary, agender, gender fluid, queer or Two-Spirit."
+    },
+    {
+      "id": "AETHNICITY",
+      "text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>",
+      "type": "numeric",
+      "extended_text": "<In addition to being an Indigenous person, you may belong to one or more racial or cultural groups on the following list. Are you...?/You may belong to one or more racial or cultural groups on the following list. Are you...?>"
+    },
+    {
+      "id": "ALANGUAGE",
+      "text": "Which language do you speak most often at home?",
+      "type": "numeric",
+      "extended_text": "Which language do you speak most often at home?"
+    },
+    {
+      "id": "ABIRTH_PLACE",
+      "text": "Where were you born?",
+      "type": "numeric",
+      "extended_text": "Where were you born?"
+    },
+    {
+      "id": "ARESIDENT_STATUS",
+      "text": "Which of the following categories best describes your current resident status in Canada?",
+      "type": "numeric",
+      "extended_text": "Which of the following categories best describes your current resident status in Canada?"
+    },
+    {
+      "id": "ACAN_ELEC_FREEFAIR2025_WHY",
+      "text": "In a few words, please explain why you <strongly disagree / somewhat disagree> that the last Canadian federal election (April 2025) was free and fair.",
+      "type": "numeric",
+      "extended_text": "In a few words, please explain why you <strongly disagree / somewhat disagree> that the last Canadian federal election (April 2025) was free and fair."
+    },
+    {
+      "id": "APOVO_OPEN",
+      "text": "What does \"the use of force by ordinary citizens to achieve political goals\" mean to you?",
+      "type": "numeric",
+      "extended_text": "What does \"the use of force by ordinary citizens to achieve political goals\" mean to you?"
+    },
+    {
+      "id": "ACANVALUES_OPEN",
+      "text": "In your view, what are the values that best represent Canada or Canadians? Please respond in a few words.",
+      "type": "numeric",
+      "extended_text": "In your view, what are the values that best represent Canada or Canadians? Please respond in a few words."
+    },
+    {
+      "id": "ACYBERCRIME_EXPERIENCE",
+      "text": "Have you ever personally experienced any of the following types of cybercrimes or incidents?",
+      "type": "numeric",
+      "extended_text": "Have you ever personally experienced any of the following types of cybercrimes or incidents?"
+    },
+    {
+      "id": "ACYBERCRIME_FOLLOWUP",
+      "text": "How did you respond to the cybercrime(s) you experienced?",
+      "type": "numeric",
+      "extended_text": "How did you respond to the cybercrime(s) you experienced?"
+    },
+    {
+      "id": "AIIU_EMPLOYMENT",
+      "text": "Which of the following categories best describes your current employment status?",
+      "type": "numeric",
+      "extended_text": "Which of the following categories best describes your current employment status?"
+    }
+  ]
+}

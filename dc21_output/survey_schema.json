@@ -1,0 +1,243 @@
+{
+  "survey_name": "DC21",
+  "questions": [
+    {
+      "id": "dc21_fed_gov_satisfa",
+      "text": "How satisfied are you with the performance of the federal government under Justin Trudeau?",
+      "type": "likert",
+      "options": [
+        "Very satisfied",
+        "Fairly satisfied",
+        "Not very satisfied",
+        "Not at all satisfied"
+      ]
+    },
+    {
+      "id": "dc21_confidence_inst_1",
+      "text": "Please indicate how much confidence you have in the following: The courts and justice system",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "dc21_confidence_inst_2",
+      "text": "Please indicate how much confidence you have in the following: The federal government",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "dc21_confidence_inst_3",
+      "text": "Please indicate how much confidence you have in the following: The media/news",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "dc21_confidence_inst_4",
+      "text": "Please indicate how much confidence you have in the following: Your provincial government",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "dc21_confidence_inst_5",
+      "text": "Please indicate how much confidence you have in the following: Elected officials generally",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "dc21_confidence_inst_6",
+      "text": "Please indicate how much confidence you have in the following: Scientists and researchers",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "dc21_confidence_inst_7",
+      "text": "Please indicate how much confidence you have in the following: Police",
+      "type": "likert",
+      "options": [
+        "A great deal",
+        "Quite a lot",
+        "Not very much",
+        "None at all"
+      ]
+    },
+    {
+      "id": "dc21_pos_govt_care",
+      "text": "The government does not care much about what people like me think.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "dc21_pos_govt_say",
+      "text": "People like me don't have any say about what the government does.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "dc21_pos_govt_comp",
+      "text": "Sometimes, politics and government seem so complicated that a person like me cannot really understand what is going on.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "dc21_pos_assim",
+      "text": "Too many recent immigrants just don't want to fit in to Canadian society.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "dc21_pos_take_jobs",
+      "text": "Immigrants take jobs away from other Canadians.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "dc21_pos_look_after",
+      "text": "We should look after Canadians born in this country first and others second.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "dc21_imm_level",
+      "text": "Do you think Canada should admit more immigrants, fewer immigrants, or about the same number as now?",
+      "type": "categorical",
+      "options": [
+        "More immigrants",
+        "Fewer immigrants",
+        "About the same number of immigrants as now"
+      ]
+    },
+    {
+      "id": "dc21_pos_family_val",
+      "text": "This country would have many fewer problems if there was more emphasis on traditional family values.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "dc21_newerlife",
+      "text": "Newer lifestyles are contributing to the breakdown of our society.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "dc21_inequality_gap",
+      "text": "How much do you think should be done to reduce the gap between the rich and poor in Canada?",
+      "type": "categorical",
+      "options": [
+        "Much more",
+        "Somewhat more",
+        "About the same as now",
+        "Somewhat less",
+        "Much less"
+      ]
+    },
+    {
+      "id": "dc21_pos_govt_jobs",
+      "text": "The government should leave it entirely to the private sector to create jobs.",
+      "type": "likert",
+      "options": [
+        "Strongly agree",
+        "Somewhat agree",
+        "Somewhat disagree",
+        "Strongly disagree"
+      ]
+    },
+    {
+      "id": "dc21_party_id",
+      "text": "In federal politics, do you usually think of yourself as a Liberal, Conservative, NDP, Bloc Qu\u00e9b\u00e9cois, or Green supporter?",
+      "type": "categorical",
+      "options": [
+        "Liberal",
+        "Conservative",
+        "ndp",
+        "Bloc Qu\u00e9b\u00e9cois",
+        "Green",
+        "Another party (please specify)",
+        "No party"
+      ]
+    },
+    {
+      "id": "dc21_vote_choice",
+      "text": "If a federal election were held today, which party would you be most likely to vote for?",
+      "type": "categorical",
+      "options": [
+        "Liberal Party",
+        "Conservative Party",
+        "New Democratic Party",
+        "Bloc Qu\u00e9b\u00e9cois",
+        "Green Party",
+        "Another party (please specify)",
+        "I am not eligible to vote",
+        "I would not vote"
+      ]
+    }
+  ]
+}

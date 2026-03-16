@@ -1,0 +1,27 @@
+{
+  "survey": "DC20",
+  "model": "Qwen/Qwen2.5-7B-Instruct-Turbo",
+  "timestamp": "2026-03-13T21:23:45.476646",
+  "generators": {
+    "irt": {
+      "n_personas": 1000,
+      "overall_score": 0.5694910899970517,
+      "duration_seconds": 0.08001494407653809
+    },
+    "llm_qwen": {
+      "n_personas": 100,
+      "overall_score": 0.7488528680407114,
+      "duration_seconds": 3729.506155014038
+    },
+    "agent_simulation": {
+      "n_personas": 500,
+      "overall_score": 0.5309682157200645,
+      "duration_seconds": 2.8370089530944824
+    }
+  },
+  "ranking": [
+    "llm_qwen",
+    "irt",
+    "agent_simulation"
+  ]
+}
